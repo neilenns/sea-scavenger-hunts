@@ -49,8 +49,8 @@ export default function Page() {
             </p>
             <p>
               All answers and items can be found in public spaces. There is no
-              need to enter any secure areas, and don&lsquo;t accidentally exit
-              to the pre-security side of the airport when hunting for items!
+              need to go through any doors, and don&apos;t accidentally exit to
+              the pre-security side of the airport when hunting for items!
             </p>
             {airportAreaNames.map(({ area, name }) => {
               const areaClues = grouped[area];
@@ -65,7 +65,7 @@ export default function Page() {
                     {name}
                     <a
                       href={`#${anchorId}`}
-                      aria-label={`Copy link to ${name}`}
+                      aria-label={`Link to ${name}`}
                       className="ml-1 text-muted-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
                       #
