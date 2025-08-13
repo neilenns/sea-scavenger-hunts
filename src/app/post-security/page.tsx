@@ -40,7 +40,9 @@ export default function Page() {
               orientation="vertical"
               className="mr-2 data-[orientation=vertical]:h-4"
             />
-            SEA scavenger hunt
+            <h1 className="inline !text-base font-normal m-0 text-[var(--primary)]">
+              SEA scavenger hunt
+            </h1>
           </header>
           <div className="grid gap-6 max-w-2xl mx-auto">
             <p>
