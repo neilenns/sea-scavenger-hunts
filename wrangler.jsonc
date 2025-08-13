@@ -26,7 +26,21 @@
     "ip": "0.0.0.0", // Required to enable accessing the dev server from outside the devcontainer.
   },
   "env": {
-    "dev": {},
-    "prod": {},
+    "dev": {
+      "routes": [
+        {
+          "pattern": "sea-hunts-dev.neilenns.com",
+          "custom_domain": true,
+        },
+      ],
+    },
+    "prod": {
+      "routes": [
+        {
+          "pattern": "sea-hunts.neilenns.com",
+          "custom_domain": true,
+        },
+      ],
+    },
   },
 }

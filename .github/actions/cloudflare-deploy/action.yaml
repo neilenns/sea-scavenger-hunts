@@ -2,9 +2,6 @@ name: "Deploy to Cloudflare"
 description: "Builds and deploys to Cloudflare"
 
 inputs:
-  flightaware_api_key:
-    required: true
-    description: "API key for connecting to FlightAware"
   cloudflare_account_id:
     required: true
     description: "Cloudflare account ID for deployment"
@@ -14,24 +11,6 @@ inputs:
   deploy_env:
     required: true
     description: "The environment to deploy to (e.g., production, staging)"
-  kinde_client_id:
-    required: true
-    description: "Client ID for interacting with Kinde authentication"
-  kinde_client_secret:
-    required: true
-    description: "Secret for interacting with Kinde authentication"
-  kinde_issuer_url:
-    required: true
-    description: "Issuer URL for interacting with Kinde authentication"
-  kinde_site_url:
-    required: true
-    description: "URL the site is hosted at, for interacting with Kinde authentication"
-  kinde_post_logout_redirect_url:
-    required: true
-    description: "Post-logout redirect URL for interacting with Kinde authentication"
-  kinde_post_login_redirect_url:
-    required: true
-    description: "Post-login redirect URL for interacting with Kinde authentication"
 
 runs:
   using: "composite"
@@ -69,29 +48,10 @@ runs:
       shell: bash
       run: pnpm run lint
 
-    - name: Deploy secrets to Cloudflare
-      run: |
-        echo "${{ inputs.kinde_client_id }}" | pnpx wrangler secret put KINDE_CLIENT_ID --env ${{ inputs.deploy_env }}
-        echo "${{ inputs.kinde_client_secret }}" | pnpx wrangler secret put KINDE_CLIENT_SECRET --env ${{ inputs.deploy_env }}
-        echo "${{ inputs.flightaware_api_key }}" | pnpx wrangler secret put FLIGHTAWARE_API_KEY --env ${{ inputs.deploy_env }}
-      shell: bash
-      env:
-        CLOUDFLARE_ACCOUNT_ID: ${{ inputs.cloudflare_account_id }}
-        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare_api_token }}
-
     - name: Deploy to Cloudflare
       run: pnpm run cf-deploy
       shell: bash
       env:
-        # The FlightAware API key is not included here to avoid running up costs
-        # when doing static site generation at build time. The key is pushed
-        # to Cloudflare and the page can be manually refreshed when needed.
         CLOUDFLARE_ACCOUNT_ID: ${{ inputs.cloudflare_account_id }}
         CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare_api_token }}
         DEPLOY_ENV: ${{ inputs.deploy_env }}
-        KINDE_CLIENT_ID: ${{ inputs.kinde_client_id }}
-        KINDE_CLIENT_SECRET: ${{ inputs.kinde_client_secret }}
-        KINDE_ISSUER_URL: ${{ inputs.kinde_issuer_url}}
-        KINDE_POST_LOGIN_REDIRECT_URL: ${{ inputs.kinde_post_login_redirect_url}}
-        KINDE_POST_LOGOUT_REDIRECT_URL: ${{ inputs.kinde_post_logout_redirect_url }}
-        KINDE_SITE_URL: ${{ inputs.kinde_site_url }}
