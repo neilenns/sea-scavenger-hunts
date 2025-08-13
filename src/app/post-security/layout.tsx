@@ -1,4 +1,4 @@
-import { WithChildren } from "@/types/layout-children";
+import { WithChildren } from "@/types/with-children";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
