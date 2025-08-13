@@ -1,4 +1,4 @@
-name: CI
+name: Require label
 
 on:
   pull_request:
