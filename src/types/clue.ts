@@ -21,7 +21,7 @@ export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
   { area: AirportArea.SOUTH_SATELLITE, name: "South satellite" },
   { area: AirportArea.CONCOURSE_A, name: "Concourse A" },
   { area: AirportArea.CONCOURSE_B, name: "Concourse B" },
-  { area: AirportArea.CENTRAL_TERMINAL, name: "Central Terminal" },
+  { area: AirportArea.CENTRAL_TERMINAL, name: "Central terminal" },
   { area: AirportArea.CONCOURSE_C, name: "Concourse C" },
   { area: AirportArea.CONCOURSE_D, name: "Concourse D" },
   { area: AirportArea.NORTH_SATELLITE, name: "North satellite" },
