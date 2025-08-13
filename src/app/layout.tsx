@@ -1,7 +1,7 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SEA resource guides",
-  description: "Resource guides for SEA",
+  title: "SEA scavenger hunts",
+  description: "Scavenger hunts for SEA",
 };
 
 export default function RootLayout({
