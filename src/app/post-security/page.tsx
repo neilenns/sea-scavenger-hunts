@@ -61,16 +61,15 @@ export default function Page() {
 
               return (
                 <div key={area} role="region" aria-labelledby={anchorId}>
-                  <h2 id={anchorId} className="flex items-center gap-2">
-                    {name}
-                    <a
-                      href={`#${anchorId}`}
-                      aria-label={`Link to ${name}`}
-                      className="ml-1 text-muted-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                    >
-                      #
-                    </a>
-                  </h2>
+                  <a
+                    href={`#${anchorId}`}
+                    aria-label={`Link to ${name}`}
+                    className="ml-1 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <h2 id={anchorId} className="flex items-center gap-2">
+                      {name}
+                    </h2>
+                  </a>
                   {areaClues.map((clue) => (
                     <div key={clue.id} className="py-2">
                       <Card>
