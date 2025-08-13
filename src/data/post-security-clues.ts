@@ -328,4 +328,32 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     // answer: "",
     // hint: "",
   },
+  {
+    id: "uzxCpAxD0O", // cspell: disable-line
+    clue: "Take a selfie at every information desk.",
+    airportArea: AirportArea.AIRPORT_WIDE,
+    answerType: AnswerType.IMAGE,
+    hint: "There are eight information desks post-security.",
+    // answer: "",
+    answerDetails: `The information desks are:
+    
+  - **A info**: across from Swarovski in Concourse A
+  - **A3 info**: across from Starbucks by gate A3
+  - **Checkpoint 1**: inside checkpoint 1 on the landing between Concourse A and the A train station
+  - **A train**: in the A train station
+  - **Central info**: in the central terminal near Dilettante Chocolates & Mocha Cafe
+  - **D info**: Across from the all-gender restrooms in Concourse D
+  - **D train**: in the D train station
+  - **N info**: in the north satellite
+  `,
+    // hint: "",
+  },
+  {
+    id: "Ajg7X3_CWe", // cspell: disable-line
+    clue: "Take a selfie with a SEA pup.",
+    airportArea: AirportArea.CENTRAL_TERMINAL,
+    answerType: AnswerType.IMAGE,
+    // answer: "",
+    hint: "[SEA pups](https://www.portseattle.org/page/sea-pups) are usually at the airport from 10:00am - 12:00pm at the central terminal.",
+  },
 ];

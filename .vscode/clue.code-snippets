@@ -1,0 +1,16 @@
+{
+  "Insert new clue": {
+    "prefix": "clue",
+    "body": [
+      "{",
+      "  id: \"${1:uniqueId}\", // cspell: disable-line",
+      "  clue: \"${2:Clue text here}\",",
+      "  airportArea: AirportArea.${3:CONCOURSE_A},",
+      "  answerType: AnswerType.${4:TEXT},",
+      "  // answer: \"${5:}\",",
+      "  // hint: \"${6:}\",",
+      "},",
+    ],
+    "description": "Insert a new clue object for postSecurityClues.",
+  },
+}
