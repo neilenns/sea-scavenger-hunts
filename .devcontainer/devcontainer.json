@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "customizations": {
+    "vscode": {
+      "extensions": ["Jacano.vscode-pnpm"]
+    }
+  },
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "forwardPorts": [3000],
+  "name": "SEA resource guides development",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}

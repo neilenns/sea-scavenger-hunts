@@ -1,0 +1,97 @@
+name: "Deploy to Cloudflare"
+description: "Builds and deploys to Cloudflare"
+
+inputs:
+  flightaware_api_key:
+    required: true
+    description: "API key for connecting to FlightAware"
+  cloudflare_account_id:
+    required: true
+    description: "Cloudflare account ID for deployment"
+  cloudflare_api_token:
+    required: true
+    description: "Cloudflare API token for deployment"
+  deploy_env:
+    required: true
+    description: "The environment to deploy to (e.g., production, staging)"
+  kinde_client_id:
+    required: true
+    description: "Client ID for interacting with Kinde authentication"
+  kinde_client_secret:
+    required: true
+    description: "Secret for interacting with Kinde authentication"
+  kinde_issuer_url:
+    required: true
+    description: "Issuer URL for interacting with Kinde authentication"
+  kinde_site_url:
+    required: true
+    description: "URL the site is hosted at, for interacting with Kinde authentication"
+  kinde_post_logout_redirect_url:
+    required: true
+    description: "Post-logout redirect URL for interacting with Kinde authentication"
+  kinde_post_login_redirect_url:
+    required: true
+    description: "Post-login redirect URL for interacting with Kinde authentication"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        run_install: false
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ".nvmrc"
+        cache: "pnpm"
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash
+
+    - name: Cache nextjs
+      uses: actions/cache@v4
+      with:
+        path: |
+          .next/cache
+        # Generate a new cache whenever packages or source files change.
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+        # If source files changed but packages didn't, rebuild from a prior cache.
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
+
+    - name: Lint
+      shell: bash
+      run: pnpm run lint
+
+    - name: Deploy secrets to Cloudflare
+      run: |
+        echo "${{ inputs.kinde_client_id }}" | pnpx wrangler secret put KINDE_CLIENT_ID --env ${{ inputs.deploy_env }}
+        echo "${{ inputs.kinde_client_secret }}" | pnpx wrangler secret put KINDE_CLIENT_SECRET --env ${{ inputs.deploy_env }}
+        echo "${{ inputs.flightaware_api_key }}" | pnpx wrangler secret put FLIGHTAWARE_API_KEY --env ${{ inputs.deploy_env }}
+      shell: bash
+      env:
+        CLOUDFLARE_ACCOUNT_ID: ${{ inputs.cloudflare_account_id }}
+        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare_api_token }}
+
+    - name: Deploy to Cloudflare
+      run: pnpm run cf-deploy
+      shell: bash
+      env:
+        # The FlightAware API key is not included here to avoid running up costs
+        # when doing static site generation at build time. The key is pushed
+        # to Cloudflare and the page can be manually refreshed when needed.
+        CLOUDFLARE_ACCOUNT_ID: ${{ inputs.cloudflare_account_id }}
+        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare_api_token }}
+        DEPLOY_ENV: ${{ inputs.deploy_env }}
+        KINDE_CLIENT_ID: ${{ inputs.kinde_client_id }}
+        KINDE_CLIENT_SECRET: ${{ inputs.kinde_client_secret }}
+        KINDE_ISSUER_URL: ${{ inputs.kinde_issuer_url}}
+        KINDE_POST_LOGIN_REDIRECT_URL: ${{ inputs.kinde_post_login_redirect_url}}
+        KINDE_POST_LOGOUT_REDIRECT_URL: ${{ inputs.kinde_post_logout_redirect_url }}
+        KINDE_SITE_URL: ${{ inputs.kinde_site_url }}

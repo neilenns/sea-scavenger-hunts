@@ -1,0 +1,10 @@
+# Ignore all node_modules in root and workspaces
+**/node_modules/
+
+# Build artifacts in any workspace
+**/dist/
+**/build/
+**/out/
+
+# Shadcn components
+**/src/components/ui

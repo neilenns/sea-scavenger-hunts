@@ -1,0 +1,33 @@
+language: "en-US"
+reviews:
+  collapse_walkthrough: true
+  sequence_diagrams: false
+  tools:
+    # Disable eslint and markdown lint since they are handled separately
+    # by the ci.yaml workflow, and coderabbit doesn't know how to eslint
+    # nextjs projects.
+    eslint:
+      enabled: false
+    markdownlint:
+      enabled: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!src/components/ui/**"
+    - "!src/hooks/**"
+  path_instructions:
+    - path: "**/*.tsx"
+      instructions: |
+        Review all TypeScript files and ensure that:
+          - Components have appropriate accessibility attributes on them
+          - All headings are in sentence, not title, case.
+          - Table headers are in sentence case.
+
+    - path: "**/*.md"
+      instructions: |
+        Review all markdown files and ensure that:
+          - All headings are in sentence, not title, case.
+          - All list sentences end in a period.
+          - Spelling and grammar is correct.
+          - Table headers are in sentence case.

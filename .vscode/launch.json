@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "command": "pnpm run dev",
+      "name": "Launch dev",
+      "request": "launch",
+      "serverReadyAction": {
+        "action": "debugWithEdge",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}/src"
+      },
+      "type": "node-terminal"
+    }
+  ],
+  "version": "0.2.0"
+}
