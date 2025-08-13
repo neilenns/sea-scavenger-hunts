@@ -259,7 +259,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.IMAGE,
     answer:
-      "The vending machines near the escalators in the south concourse sell a variety of Japanese food and drinks.",
+      "The vending machines near the escalators in the south satellite sell a variety of Japanese food and drinks.",
     // hint: "",
   },
   {

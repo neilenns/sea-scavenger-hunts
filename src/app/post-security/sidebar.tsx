@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -25,31 +24,56 @@ import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import * as React from "react";
+import { useEffect, useState } from "react";
 
 export function PostSecuritySidebar({
   ...properties
 }: React.ComponentProps<typeof Sidebar>) {
   const [open, setOpen] = useState(false);
+  const [hash, setHash] = useState<string>("");
+  const router = useRouter();
+
+  useEffect(() => {
+    const update = () => setHash(globalThis.location?.hash ?? "");
+    update();
+    globalThis.addEventListener?.("hashchange", update);
+    return () => globalThis.removeEventListener?.("hashchange", update);
+  }, []);
 
   async function handleClear() {
-    await clearAllAnswers();
-    setOpen(false);
-    globalThis.location.reload(); // reset components
+    try {
+      await clearAllAnswers();
+      setOpen(false);
+
+      // Prefer soft refresh when available
+      if (router?.refresh) {
+        router.refresh();
+      } else {
+        globalThis.location.reload();
+      }
+    } catch (error) {
+      console.error("Failed to clear answers", error);
+    }
   }
 
   return (
-    <Sidebar variant="floating" {...properties}>
+    <Sidebar
+      variant="floating"
+      aria-label="Post-security hunt navigation"
+      {...properties}
+    >
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  <PlaneIcon className="size-4" />
+                  <PlaneIcon aria-hidden="true" className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">SEA Scavenger hunt</span>
+                  <span className="font-medium">SEA scavenger hunt</span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -64,7 +88,13 @@ export function PostSecuritySidebar({
               return (
                 <SidebarMenuItem key={area}>
                   <SidebarMenuButton asChild>
-                    <a href={`#${anchorId}`} className="font-medium">
+                    <a
+                      href={`#${anchorId}`}
+                      className="font-medium"
+                      aria-current={
+                        hash === `#${anchorId}` ? "page" : undefined
+                      }
+                    >
                       {name}
                     </a>
                   </SidebarMenuButton>
@@ -77,7 +107,7 @@ export function PostSecuritySidebar({
       <SidebarFooter>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button variant="destructive">Clear answers</Button>
+            <Button variant="default">Clear answers</Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>

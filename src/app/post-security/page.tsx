@@ -40,7 +40,7 @@ export default function Page() {
               orientation="vertical"
               className="mr-2 data-[orientation=vertical]:h-4"
             />
-            SEA scavenger hunt
+            <h1 className="text-base font-semibold">SEA scavenger hunt</h1>
           </header>
           <div className="grid gap-6 max-w-2xl mx-auto">
             <p>
@@ -50,7 +50,7 @@ export default function Page() {
             <p>
               All answers and items can be found in public spaces. There is no
               need to enter any secure areas, and don&lsquo;t accidentally exit
-              to the secure side of the airport when hunting for items!
+              to the pre-security side of the airport when hunting for items!
             </p>
             {airportAreaNames.map(({ area, name }) => {
               const areaClues = grouped[area];

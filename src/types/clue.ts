@@ -16,7 +16,7 @@ export enum AnswerType {
 
 // The order of the elements in this array also defines the order of the groups
 // on the page.
-export const airportAreaNames = [
+export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
   { area: AirportArea.AIRPORT_WIDE, name: "Airport-wide" },
   { area: AirportArea.SOUTH_SATELLITE, name: "South satellite" },
   { area: AirportArea.CONCOURSE_A, name: "Concourse A" },
