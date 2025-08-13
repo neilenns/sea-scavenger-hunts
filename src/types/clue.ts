@@ -5,8 +5,8 @@ export enum AirportArea {
   CONCOURSE_B,
   CONCOURSE_C,
   CONCOURSE_D,
-  CONCOURSE_N,
-  CONCOURSE_S,
+  NORTH_SATELLITE,
+  SOUTH_SATELLITE,
 }
 
 export enum AnswerType {
@@ -14,16 +14,18 @@ export enum AnswerType {
   IMAGE = "image",
 }
 
-export const airportAreaNames: Record<AirportArea, string> = {
-  [AirportArea.AIRPORT_WIDE]: "Airport-wide",
-  [AirportArea.CONCOURSE_A]: "Concourse A",
-  [AirportArea.CONCOURSE_B]: "Concourse B",
-  [AirportArea.CENTRAL_TERMINAL]: "Central Terminal",
-  [AirportArea.CONCOURSE_C]: "Concourse C",
-  [AirportArea.CONCOURSE_D]: "Concourse D",
-  [AirportArea.CONCOURSE_N]: "Concourse N",
-  [AirportArea.CONCOURSE_S]: "Concourse S",
-};
+// The order of the elements in this array also defines the order of the groups
+// on the page.
+export const airportAreaNames = [
+  { area: AirportArea.AIRPORT_WIDE, name: "Airport-wide" },
+  { area: AirportArea.SOUTH_SATELLITE, name: "South satellite" },
+  { area: AirportArea.CONCOURSE_A, name: "Concourse A" },
+  { area: AirportArea.CONCOURSE_B, name: "Concourse B" },
+  { area: AirportArea.CENTRAL_TERMINAL, name: "Central Terminal" },
+  { area: AirportArea.CONCOURSE_C, name: "Concourse C" },
+  { area: AirportArea.CONCOURSE_D, name: "Concourse D" },
+  { area: AirportArea.NORTH_SATELLITE, name: "North satellite" },
+];
 
 export interface Clue {
   id: string;

@@ -240,7 +240,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "yTNP29jtdB", // cspell: disable-line
     clue: "What restaurant is on the mezzanine?",
-    airportArea: AirportArea.CONCOURSE_N,
+    airportArea: AirportArea.NORTH_SATELLITE,
     answerType: AnswerType.TEXT,
     answer: "PF Chang's",
     // hint: "",
@@ -256,7 +256,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "JjwwVsnaNJ", // cspell: disable-line
     clue: "Take a photo of a Japanese sandwich.",
-    airportArea: AirportArea.CONCOURSE_S,
+    airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.IMAGE,
     answer:
       "The vending machines near the escalators in the south concourse sell a variety of Japanese food and drinks.",
