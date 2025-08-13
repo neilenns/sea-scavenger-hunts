@@ -60,10 +60,16 @@ export default function Page() {
               const anchorId = getAnchorId(name);
 
               return (
-                <div key={area}>
+                <div key={area} role="region" aria-labelledby={anchorId}>
                   <h2 id={anchorId} className="flex items-center gap-2">
                     {name}
-                    <a href={`#${anchorId}`} aria-label={`Link to ${name}`}></a>
+                    <a
+                      href={`#${anchorId}`}
+                      aria-label={`Copy link to ${name}`}
+                      className="ml-1 text-muted-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    >
+                      #
+                    </a>
                   </h2>
                   {areaClues.map((clue) => (
                     <div key={clue.id} className="py-2">
