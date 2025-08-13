@@ -40,7 +40,7 @@ export default function Page() {
               orientation="vertical"
               className="mr-2 data-[orientation=vertical]:h-4"
             />
-            <h1 className="text-base font-semibold">SEA scavenger hunt</h1>
+            SEA scavenger hunt
           </header>
           <div className="grid gap-6 max-w-2xl mx-auto">
             <p>
@@ -64,9 +64,12 @@ export default function Page() {
                   <a
                     href={`#${anchorId}`}
                     aria-label={`Link to ${name}`}
-                    className="ml-1 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
-                    <h2 id={anchorId} className="flex items-center gap-2">
+                    <h2
+                      id={anchorId}
+                      className="flex items-center gap-2 text-[var(--primary)]"
+                    >
                       {name}
                     </h2>
                   </a>
