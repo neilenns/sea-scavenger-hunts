@@ -29,11 +29,11 @@ export default function Page() {
   }
 
   return (
-    <main className="h-screen flex flex-col overflow-hidden">
+    <main className="min-h-screen flex flex-col">
       <SidebarProvider>
         <PostSecuritySidebar />
-        <SidebarInset className="flex flex-col h-full">
-          <header className="flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <SidebarInset className="flex flex-col min-h-screen">
+          <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <SidebarTrigger aria-label="Open sidebar" className="-ml-1" />
             <Separator
               orientation="vertical"
@@ -43,7 +43,7 @@ export default function Page() {
               SEA scavenger hunt
             </h1>
           </header>
-          <div className="flex-1 overflow-y-auto p-4">
+          <div className="flex-1 p-4">
             <div className="grid gap-6 max-w-2xl mx-auto">
               <p>
                 Welcome to SEA! This scavenger hunt helps you explore the entire

@@ -19,6 +19,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  useSidebar,
 } from "@/components/ui/sidebar";
 import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
@@ -34,6 +35,7 @@ export function PostSecuritySidebar({
   const [open, setOpen] = useState(false);
   const [hash, setHash] = useState<string>("");
   const router = useRouter();
+  const { setOpenMobile } = useSidebar();
 
   useEffect(() => {
     const update = () => setHash(globalThis.location?.hash ?? "");
@@ -41,6 +43,11 @@ export function PostSecuritySidebar({
     globalThis.addEventListener?.("hashchange", update);
     return () => globalThis.removeEventListener?.("hashchange", update);
   }, []);
+
+  const handleMenuItemClick = () => {
+    // Close the sidebar on mobile/floating mode
+    setOpenMobile(false);
+  };
 
   async function handleClear() {
     try {
@@ -91,6 +98,7 @@ export function PostSecuritySidebar({
                     <a
                       href={`#${anchorId}`}
                       className="font-medium"
+                      onClick={handleMenuItemClick}
                       aria-current={
                         hash === `#${anchorId}` ? "page" : undefined
                       }
