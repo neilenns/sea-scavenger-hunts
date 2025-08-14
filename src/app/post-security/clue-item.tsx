@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Card, CardContent } from "@/components/ui/card";
 import { AnswerType, Clue } from "@/types/clue";
 
 export interface ClueItemProperties {
@@ -16,25 +17,32 @@ export interface ClueItemProperties {
 
 export function ClueItem({ clue }: ClueItemProperties) {
   return (
-    <div>
-      {clue.hint && (
-        <div className="text-gray-500 mb-2">
-          <Markdown>{clue.hint}</Markdown>
-        </div>
-      )}
-      {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
-      {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
-      {(clue.answer || clue.answerDetails) && (
-        <Accordion type="single" collapsible className="w-full mt-4">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Answer</AccordionTrigger>
-            <AccordionContent>
-              {clue.answer && <p className="mb-2">{clue.answer}</p>}
-              {clue.answerDetails && <Markdown>{clue.answerDetails}</Markdown>}
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      )}
-    </div>
+    <Card className="p-0" aria-labelledby={`clue-${clue.id}`} role="group">
+      <CardContent className="px-4 py-3">
+        <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
+          {clue.clue}
+        </h3>
+        {clue.hint && (
+          <Markdown className="text-muted-foreground mb-2">
+            {clue.hint}
+          </Markdown>
+        )}
+        {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
+        {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
+        {(clue.answer || clue.answerDetails) && (
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="answer">
+              <AccordionTrigger className="pt-4 pb-0">Answer</AccordionTrigger>
+              <AccordionContent className="pb-0 mt-2">
+                {clue.answer && <p>{clue.answer}</p>}
+                {clue.answerDetails && (
+                  <Markdown>{clue.answerDetails}</Markdown>
+                )}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        )}
+      </CardContent>
+    </Card>
   );
 }
