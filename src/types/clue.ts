@@ -14,6 +14,11 @@ export enum AnswerType {
   IMAGE = "image",
 }
 
+export enum ClueType {
+  TEXT = "text",
+  IMAGE = "image",
+}
+
 // The order of the elements in this array also defines the order of the groups
 // on the page.
 export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
@@ -27,12 +32,27 @@ export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
   { area: AirportArea.NORTH_SATELLITE, name: "North satellite" },
 ];
 
-export interface Clue {
-  id: string;
-  clue: string;
+export type ImageClue = {
   airportArea: AirportArea;
-  answerType: AnswerType;
   answer?: string;
   answerDetails?: string;
+  answerType: AnswerType;
+  clue: string;
+  clueType: ClueType.IMAGE;
+  alternateText: string;
   hint?: string;
-}
+  id: string;
+};
+
+export type TextClue = {
+  airportArea: AirportArea;
+  answer?: string;
+  answerDetails?: string;
+  answerType: AnswerType;
+  clue: string;
+  clueType: ClueType.TEXT;
+  hint?: string;
+  id: string;
+};
+
+export type Clue = TextClue | ImageClue;
