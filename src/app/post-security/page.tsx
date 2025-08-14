@@ -29,11 +29,11 @@ export default function Page() {
   }
 
   return (
-    <main className="overflow-y-auto p-4">
+    <main className="min-h-screen flex flex-col">
       <SidebarProvider>
         <PostSecuritySidebar />
-        <SidebarInset>
-          <header className="flex h-16 shrink-0 items-center gap-2 px-4">
+        <SidebarInset className="flex flex-col">
+          <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <SidebarTrigger aria-label="Open sidebar" className="-ml-1" />
             <Separator
               orientation="vertical"
@@ -43,52 +43,54 @@ export default function Page() {
               SEA scavenger hunt
             </h1>
           </header>
-          <div className="grid gap-6 max-w-2xl mx-auto">
-            <p>
-              Welcome to SEA! This scavenger hunt helps you explore the entire
-              airport. How many items can you find?
-            </p>
-            <p>
-              All answers and items can be found in public spaces. There is no
-              need to go through any doors, and don&apos;t accidentally exit to
-              the pre-security side of the airport when hunting for items!
-            </p>
-            <p>
-              Your answers are stored locally in your browser and are never sent
-              to a server.
-            </p>
-            {airportAreaNames.map(({ area, name }) => {
-              const areaClues = grouped[area];
+          <div className="flex-1 p-4">
+            <div className="grid gap-6 max-w-2xl mx-auto">
+              <p>
+                Welcome to SEA! This scavenger hunt helps you explore the entire
+                airport. How many items can you find?
+              </p>
+              <p>
+                All answers and items can be found in public spaces. There is no
+                need to go through any doors, and don&apos;t accidentally exit
+                to the pre-security side of the airport when hunting for items!
+              </p>
+              <p>
+                Your answers are stored locally in your browser and are never
+                sent to a server.
+              </p>
+              {airportAreaNames.map(({ area, name }) => {
+                const areaClues = grouped[area];
 
-              if (!areaClues || areaClues.length === 0) return;
+                if (!areaClues || areaClues.length === 0) return;
 
-              const anchorId = getAnchorId(name);
+                const anchorId = getAnchorId(name);
 
-              return (
-                <div
-                  key={area}
-                  role="region"
-                  aria-labelledby={anchorId}
-                  className="space-y-2"
-                >
-                  <a
-                    href={`#${anchorId}`}
-                    aria-label={`Link to ${name}`}
-                    className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                return (
+                  <div
+                    key={area}
+                    role="region"
+                    aria-labelledby={anchorId}
+                    className="space-y-2"
                   >
-                    <h2
-                      id={anchorId}
-                      className="flex items-center gap-2 text-[var(--primary)]"
+                    <a
+                      href={`#${anchorId}`}
+                      className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
-                      {name}
-                    </h2>
-                  </a>
-                  {areaClues.map((clue) => (
-                    <ClueItem key={clue.id} clue={clue} />
-                  ))}
-                </div>
-              );
-            })}
+                      <h2
+                        id={anchorId}
+                        tabIndex={-1}
+                        className="flex items-center gap-2 text-[var(--primary)]"
+                      >
+                        {name}
+                      </h2>
+                    </a>
+                    {areaClues.map((clue) => (
+                      <ClueItem key={clue.id} clue={clue} />
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </SidebarInset>
       </SidebarProvider>
