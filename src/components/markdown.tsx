@@ -28,7 +28,7 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
               style={{
                 listStyleType: "disc",
                 paddingLeft: "1.5em",
-                margin: "1em 0",
+                margin: "0.5em 0",
               }}
             >
               {children}

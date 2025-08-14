@@ -61,7 +61,12 @@ export default function Page() {
               const anchorId = getAnchorId(name);
 
               return (
-                <div key={area} role="region" aria-labelledby={anchorId}>
+                <div
+                  key={area}
+                  role="region"
+                  aria-labelledby={anchorId}
+                  className="space-y-2"
+                >
                   <a
                     href={`#${anchorId}`}
                     aria-label={`Link to ${name}`}
@@ -75,9 +80,7 @@ export default function Page() {
                     </h2>
                   </a>
                   {areaClues.map((clue) => (
-                    <div key={clue.id} className="py-2">
-                      <ClueItem clue={clue} />
-                    </div>
+                    <ClueItem key={clue.id} clue={clue} />
                   ))}
                 </div>
               );
