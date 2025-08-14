@@ -28,7 +28,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "BL5xfCD1Pl", // cspell: disable-line
-    clue: "Take a picture of three different aircraft tails for non-US carriers.",
+    clue: "Take a photo of three different aircraft tails for non-US carriers.",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -36,7 +36,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "WOflQcqqRa", // cspell: disable-line
-    clue: "Listen to SEA Tower and take a picture of a plane you heard cleared for takeoff.",
+    clue: "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -47,7 +47,8 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    answer:
+    answer: "North flow or south flow",
+    answerDetails:
       "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow.",
     hint: "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow.",
   },
@@ -125,10 +126,10 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "Z8uD5RIdFk", // cspell: disable-line
-    clue: "Explore the shops. What's the single most expensive item you can find for sale?",
+    clue: "Explore the shops. Take a photo of the single most expensive item you can find for sale.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
-    answer: "Could be anywhere!",
+    answerType: AnswerType.IMAGE,
+    // answerDetails: ""
     // hint: "",
   },
   {
@@ -157,7 +158,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "xH4xrNHYJe", // cspell: disable-line
-    clue: "Find the shadow in the terrazzo floor. What object's cast the shadow?",
+    clue: "Find the shadow in the terrazzo floor. What object casts the shadow?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "A boat.",
@@ -248,7 +249,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "-buCfuZ_Js", // cspell: disable-line
-    clue: "“You’ve got a postcard to mail. Where in the Central Terminal can you buy postage stamps?",
+    clue: "You've got a postcard to mail. Where in the Central Terminal can you buy postage stamps?",
     airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.TEXT,
     answer: "Sub Pop, near Concourse C.",
