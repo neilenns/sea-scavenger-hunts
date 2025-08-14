@@ -31,7 +31,7 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "underline" }}
+                className="underline"
                 {...(anchorProperties as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
               >
                 {children}
@@ -40,7 +40,7 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
             ) : (
               <Link
                 href={url}
-                style={{ textDecoration: "underline" }}
+                className="underline"
                 {...(anchorProperties as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
               >
                 {children}
@@ -48,19 +48,9 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
             );
           },
           ul: ({ children }) => (
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "1.5em",
-                margin: "0.5em 0",
-              }}
-            >
-              {children}
-            </ul>
+            <ul className="list-disc pl-6 my-2">{children}</ul>
           ),
-          li: ({ children }) => (
-            <li style={{ marginBottom: "0.25em" }}>{children}</li>
-          ),
+          li: ({ children }) => <li className="mb-1">{children}</li>,
         }}
       >
         {children}

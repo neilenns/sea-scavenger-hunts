@@ -17,7 +17,7 @@ export interface ClueItemProperties {
 
 export function ClueItem({ clue }: ClueItemProperties) {
   return (
-    <Card className="py-3" aria-labelledby={`clue-${clue.id}`}>
+    <Card className="py-3" aria-labelledby={`clue-${clue.id}`} role="group">
       <CardContent className="px-4">
         <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
           {clue.clue}
