@@ -41,7 +41,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "WOflQcqqRa", // cspell: disable-line
     clue: "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -50,7 +50,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "GpyOC1fxZv", // cspell: disable-line
     clue: "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
     answer: "North flow or south flow",
@@ -88,7 +88,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "CEDiAt5_TD", // cspell: disable-line
     clue: "Take a selfie with a gate sign for a flight heading outside of the United States.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -97,7 +97,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "mdihls1FXP", // cspell: disable-line
     clue: "Find a gate with a flight to a city inside Washington State and take a selfie with the sign.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -151,7 +151,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "U2Ml_N2Ao1", // cspell: disable-line
     clue: "Take a photo of an album cover with the letter S on it.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -160,7 +160,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "uaPC_HvMqd", // cspell: disable-line
     clue: "Take a photo of something with the Space Needle on it.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -297,7 +297,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "ewJw9uhuxK", // cspell: disable-line
     clue: "Take a selfie with a live plant.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -306,7 +306,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "ndC0lIJES6", // cspell: disable-line
     clue: "Take a photo of a hibiscus flower.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.NORTH_SATELLITE,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
@@ -335,7 +335,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "6IjATuH8h-", // cspell: disable-line
     clue: "Take a photo of a plane passing underneath the international arrivals skybridge.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
