@@ -3,7 +3,7 @@ import { AirportArea, AnswerType, Clue } from "@/types/clue";
 export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "KFNxBoixx9", // cspell: disable-line
-    clue: "What is the highest-numbered B gate?",
+    clue: "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
     answer: "21",
@@ -12,7 +12,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "XU2Q6uk5Sj", // cspell: disable-line
-    clue: "How many fish are carrying suitcases?",
+    clue: "How many fish are carrying suitcases along the floor of the concourse?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
     answer: "4 (to be verified)",
@@ -29,7 +29,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "BL5xfCD1Pl", // cspell: disable-line
     clue: "Take a picture of three different aircraft tails for non-US carriers.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
@@ -44,7 +44,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "GpyOC1fxZv", // cspell: disable-line
-    clue: "What flow is the airport in?",
+    clue: "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer:
@@ -53,7 +53,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "wIuAhUYSUJ", // cspell: disable-line
-    clue: "What is the phone number to contact Customs and Border Protection (CBP)?",
+    clue: "Find the CBP office in Concourse A. What's the phone number posted outside?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
     answer: "+1-800-TBD-9999 (to be verified)",
@@ -69,7 +69,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "Mr8NTBLVuw", // cspell: disable-line
-    clue: "How many faucets are in the all-gender restroom?",
+    clue: "Visit the all-gender restroom. How many faucets are at the sink?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "6 (to be verified)",
@@ -85,7 +85,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "mdihls1FXP", // cspell: disable-line
-    clue: "Take a selfie with a gate sign for a flight heading to a city inside Washington State.",
+    clue: "Find a gate with a flight to a city inside Washington State and take a selfie with the sign.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -93,7 +93,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "qsWmZtJQx9", // cspell: disable-line
-    clue: "Take a photo of a gate screen with the highest flight number you can find.",
+    clue: "Search the gate screens and snap a photo of the highest flight number you spot.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -101,7 +101,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "vVzEujhDHt", // cspell: disable-line
-    clue: "Where can you cash a winning Washington Lotto ticket?",
+    clue: "If you hit the jackpot, where in Concourse C would you cash your Washington Lotto ticket?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "At the Washington Lotto desk near gate C10.",
@@ -125,7 +125,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "Z8uD5RIdFk", // cspell: disable-line
-    clue: "What is the most expensive item you can find for sale?",
+    clue: "Explore the shops. What's the single most expensive item you can find for sale?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer: "Could be anywhere!",
@@ -149,7 +149,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "1XWgzKECE6", // cspell: disable-line
-    clue: "How many different add-ins are there for boba drinks?",
+    clue: "Find the boba shop. How many different add-ins can you choose from?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "5 (to be verified)",
@@ -157,7 +157,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "xH4xrNHYJe", // cspell: disable-line
-    clue: "What object casts a shadow into the terrazzo floor?",
+    clue: "Find the shadow in the terrazzo floor. What object's cast the shadow?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "A boat.",
@@ -195,7 +195,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "ShfXCzAYKC", // cspell: disable-line
-    clue: "How many faces are in the modern mask?",
+    clue: 'Find the painted wood sculpture "Modern Mask." How many faces stare back at you?',
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "5 (to be verified)",
@@ -205,7 +205,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "4B8BuOoy-A", // cspell: disable-line
-    clue: "What is the highest-numbered D gate?",
+    clue: "Head downstairs and away from the crowds. What's the highest D gate number you see?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "26",
@@ -222,7 +222,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "PWYzT5xEM_", // cspell: disable-line
-    clue: "What are the three train colors in the SEA underground train system?",
+    clue: "Take a ride on the SEA underground. What are the three colors of the different train lines?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer: "Blue, yellow, and green.",
@@ -230,7 +230,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "VGDb3ekZZs", // cspell: disable-line
-    clue: "From the exit of checkpoint 1, is it faster to walk or take the train to C gates?",
+    clue: "Check the travel time display between Concourse A and the train station. Is it faster to walk or take the train to C gates?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
     answer: "Walk",
@@ -240,7 +240,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "yTNP29jtdB", // cspell: disable-line
-    clue: "What restaurant is on the mezzanine?",
+    clue: "Head upstairs to the mezzanine in the North Satellite. Which restaurant is there?",
     airportArea: AirportArea.NORTH_SATELLITE,
     answerType: AnswerType.TEXT,
     answer: "PF Chang's",
@@ -248,7 +248,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "-buCfuZ_Js", // cspell: disable-line
-    clue: "Where can you buy postage stamps?",
+    clue: "“You’ve got a postcard to mail. Where in the Central Terminal can you buy postage stamps?",
     airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.TEXT,
     answer: "Sub Pop, near Concourse C.",
@@ -281,7 +281,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "v86d2mm7UT", // cspell: disable-line
-    clue: "How many gates have a letter after the number?",
+    clue: "Check the gate signs around the airport. How many gates have a letter after the number?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer: "10 (to be verified)",
@@ -289,7 +289,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "FwkTyDghkR", // cspell: disable-line
-    clue: "How many clouds hang from the ceiling?",
+    clue: "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
     answer: "20 (to be verified)",
@@ -315,7 +315,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "glwn2opFlc", // cspell: disable-line
-    clue: "Where can you buy deconstructed hash?",
+    clue: "Which restaurant serves a dish called deconstructed hash?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "Skillet, near gate C10.",
@@ -356,6 +356,31 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.TEXT,
     answer: "Japan Airlines (JAL) and Qatar Airways",
     // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "sZLbWTNUXK", // cspell: disable-line
+    clue: "Take a photo of a sign written in a language other than English.",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.IMAGE,
+    // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "-GLJeZ-L-K", // cspell: disable-line
+    clue: "Find the biggest drink cup for sale and take a photo next to it.",
+    airportArea: AirportArea.CONCOURSE_D,
+    answerType: AnswerType.IMAGE,
+    // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "Y7qiTGjFDA", // cspell: disable-line
+    clue: "Ride the blue train to the south satellite. How many languages are shown on the train display screens during the ride?",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.TEXT,
+    answer: "5 (to be verified)",
+    answerDetails: "The languages are: English, etc.",
     // hint: "",
   },
 ];
