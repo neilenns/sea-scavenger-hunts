@@ -48,8 +48,8 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer:
-      "If planes are taking from right to left, the airport is in south flow. If the planes are taking off from left to right, the airport is in north flow.",
-    hint: "Airport flow is the direction airplanes take off towards. For example, if planes takeoff towards the south, the airport is in South flow.",
+      "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow.",
+    hint: "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow.",
   },
   {
     id: "wIuAhUYSUJ", // cspell: disable-line
@@ -79,7 +79,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     id: "CEDiAt5_TD", // cspell: disable-line
     clue: "Take a selfie with a gate sign for a flight heading outside of the United States.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
@@ -87,7 +87,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     id: "mdihls1FXP", // cspell: disable-line
     clue: "Take a selfie with a gate sign for a flight heading to a city inside Washington State.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
@@ -95,7 +95,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     id: "qsWmZtJQx9", // cspell: disable-line
     clue: "Take a photo of a gate screen with the highest flight number you can find.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
@@ -141,7 +141,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "uaPC_HvMqd", // cspell: disable-line
-    clue: "Take a photo of something with the Space Needle on it",
+    clue: "Take a photo of something with the Space Needle on it.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -180,7 +180,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
 * American Express Centurion (Central Terminal)
 * Alaska (C16)
 * Alaska (D1)
-* Alaska (mezzanine above N13*N18)
+* Alaska (mezzanine above N13-N18)
 * The Club (above S10)
 * British Airways (above S10).`,
     hint: "There are eleven lounges at SEA, with ten entrances.",
@@ -259,7 +259,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "Take a photo of a Japanese sandwich.",
     airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.IMAGE,
-    answer:
+    answerDetails:
       "The vending machines near the escalators in the south satellite sell a variety of Japanese food and drinks.",
     // hint: "",
   },
@@ -273,7 +273,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "ndC0lIJES6", // cspell: disable-line
-    clue: "Take a photo of a hibiscus flower",
+    clue: "Take a photo of a hibiscus flower.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -307,10 +307,10 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "nGRX7LLH2E", // cspell: disable-line
-    clue: "Take a selfie with the neon dog",
+    clue: "Take a selfie with the neon dog.",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.IMAGE,
-    answer: "The dog is located at Hachi-Ko.",
+    answerDetails: "The dog is located at Hachi-Ko.",
     // hint: "",
   },
   {
