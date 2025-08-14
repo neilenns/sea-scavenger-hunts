@@ -19,7 +19,7 @@ export function ClueItem({ clue }: ClueItemProperties) {
   return (
     <Card className="py-4">
       <CardContent className="px-4">
-        <div className="pb-2">{clue.clue}</div>
+        <div className="pb-2 font-bold">{clue.clue}</div>
         {clue.hint && (
           <div className="text-gray-500 mb-2">
             <Markdown>{clue.hint}</Markdown>
