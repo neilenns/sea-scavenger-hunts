@@ -54,6 +54,10 @@ export default function Page() {
                 need to go through any doors, and don&apos;t accidentally exit
                 to the pre-security side of the airport when hunting for items!
               </p>
+              <p>
+                Your answers are stored locally in your browser and are never
+                sent to a server.
+              </p>
               {airportAreaNames.map(({ area, name }) => {
                 const areaClues = grouped[area];
 
