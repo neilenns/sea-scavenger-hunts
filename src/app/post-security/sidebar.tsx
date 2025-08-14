@@ -100,7 +100,7 @@ export function PostSecuritySidebar({
                       className="font-medium"
                       onClick={handleMenuItemClick}
                       aria-current={
-                        hash === `#${anchorId}` ? "page" : undefined
+                        hash === `#${anchorId}` ? "location" : undefined
                       }
                     >
                       {name}

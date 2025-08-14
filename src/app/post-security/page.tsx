@@ -32,7 +32,7 @@ export default function Page() {
     <main className="min-h-screen flex flex-col">
       <SidebarProvider>
         <PostSecuritySidebar />
-        <SidebarInset className="flex flex-col min-h-screen">
+        <SidebarInset className="flex flex-col">
           <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <SidebarTrigger aria-label="Open sidebar" className="-ml-1" />
             <Separator
@@ -70,11 +70,11 @@ export default function Page() {
                   >
                     <a
                       href={`#${anchorId}`}
-                      aria-label={`Link to ${name}`}
                       className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
                       <h2
                         id={anchorId}
+                        tabIndex={-1}
                         className="flex items-center gap-2 text-[var(--primary)]"
                       >
                         {name}
