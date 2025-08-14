@@ -29,6 +29,7 @@ export function ClueItem({ clue }: ClueItemProperties) {
               alt={clue.alternateText}
               src={`/clue-images/${clue.id}.jpg`}
               fill
+              sizes="(max-width: 420px) 100vw, 400px"
               className="object-contain"
             />
           </div>

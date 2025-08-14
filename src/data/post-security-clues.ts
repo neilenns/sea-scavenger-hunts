@@ -443,7 +443,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "Find someone wearing Buc-ee's clothing and take a photo of the logo.",
     clueType: ClueType.IMAGE,
     airportArea: AirportArea.NORTH_SATELLITE,
-    answerType: AnswerType.TEXT,
-    alternateText: "Photo of a thing",
+    answerType: AnswerType.IMAGE,
+    alternateText: "Buc-ee's logo on clothing.",
   },
 ];
