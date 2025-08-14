@@ -53,6 +53,7 @@ export default function Page() {
               need to go through any doors, and don&apos;t accidentally exit to
               the pre-security side of the airport when hunting for items!
             </p>
+            <p>All answers are stored locally on your device.</p>
             {airportAreaNames.map(({ area, name }) => {
               const areaClues = grouped[area];
 
