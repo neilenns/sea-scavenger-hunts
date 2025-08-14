@@ -383,4 +383,14 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerDetails: "The languages are: English, etc.",
     // hint: "",
   },
+  {
+    id: "xNr6O90eQa", // cspell: disable-line
+    clue: "Listen to the airport announcements. What is the name of the volunteer?",
+    airportArea: AirportArea.AIRPORT_WIDE,
+    answerType: AnswerType.TEXT,
+    answer: "Susan",
+    answerDetails:
+      "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program.",
+    // hint: "",
+  },
 ];
