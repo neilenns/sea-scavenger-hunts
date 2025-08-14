@@ -1,5 +1,4 @@
 "use client";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,
@@ -77,12 +76,7 @@ export default function Page() {
                   </a>
                   {areaClues.map((clue) => (
                     <div key={clue.id} className="py-2">
-                      <Card>
-                        <CardHeader>{clue.clue}</CardHeader>
-                        <CardContent className="px-4">
-                          <ClueItem clue={clue} />
-                        </CardContent>
-                      </Card>
+                      <ClueItem clue={clue} />
                     </div>
                   ))}
                 </div>
