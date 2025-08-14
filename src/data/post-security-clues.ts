@@ -3,7 +3,7 @@ import { AirportArea, AnswerType, Clue } from "@/types/clue";
 export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "KFNxBoixx9", // cspell: disable-line
-    clue: "What is the highest-numbered B gate?",
+    clue: "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
     answer: "21",
@@ -12,10 +12,10 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "XU2Q6uk5Sj", // cspell: disable-line
-    clue: "How many fish are carrying suitcases?",
+    clue: "How many fish are carrying suitcases along the floor of the concourse?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "4 (to be verified)",
     // hint: "",
   },
   {
@@ -23,20 +23,20 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many airplanes have fins?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "3 (to be verified)",
     // hint: "",
   },
   {
     id: "BL5xfCD1Pl", // cspell: disable-line
-    clue: "Take a picture of three different aircraft tails for non-US carriers.",
-    airportArea: AirportArea.AIRPORT_WIDE,
+    clue: "Take a photo of three different aircraft tails for non-US carriers.",
+    airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
   {
     id: "WOflQcqqRa", // cspell: disable-line
-    clue: "Listen to SEA Tower and take a picture of a plane you heard cleared for takeoff.",
+    clue: "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -44,18 +44,20 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "GpyOC1fxZv", // cspell: disable-line
-    clue: "What flow is the airport in?",
+    clue: "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    // answer: "",
-    hint: "Airport flow is the direction airplanes take off towards. For example, if planes takeoff towards the south, the airport is in South flow.",
+    answer: "North flow or south flow",
+    answerDetails:
+      "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow.",
+    hint: "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow.",
   },
   {
     id: "wIuAhUYSUJ", // cspell: disable-line
-    clue: "What is the phone number to contact Customs and Border Protection (CBP)?",
+    clue: "Find the CBP office in Concourse A. What's the phone number posted outside?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "+1-800-TBD-9999 (to be verified)",
     // hint: "",
   },
   {
@@ -63,44 +65,44 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many balls are in the sculpture?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "10 (to be verified)",
     // hint: "",
   },
   {
     id: "Mr8NTBLVuw", // cspell: disable-line
-    clue: "How many faucets are in the all-gender restroom?",
+    clue: "Visit the all-gender restroom. How many faucets are at the sink?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "6 (to be verified)",
     // hint: "",
   },
   {
     id: "CEDiAt5_TD", // cspell: disable-line
     clue: "Take a selfie with a gate sign for a flight heading outside of the United States.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
   {
     id: "mdihls1FXP", // cspell: disable-line
-    clue: "Take a selfie with a gate sign for a flight heading to a city inside Washington State.",
+    clue: "Find a gate with a flight to a city inside Washington State and take a selfie with the sign.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
   {
     id: "qsWmZtJQx9", // cspell: disable-line
-    clue: "Take a photo of a gate screen with the highest flight number you can find.",
+    clue: "Search the gate screens and snap a photo of the highest flight number you spot.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
+    answerType: AnswerType.IMAGE,
     // answer: "",
     // hint: "",
   },
   {
     id: "vVzEujhDHt", // cspell: disable-line
-    clue: "Where can you cash a winning Washington Lotto ticket?",
+    clue: "If you hit the jackpot, where in Concourse C would you cash your Washington Lotto ticket?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "At the Washington Lotto desk near gate C10.",
@@ -124,10 +126,10 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "Z8uD5RIdFk", // cspell: disable-line
-    clue: "What is the most expensive item you can find for sale?",
+    clue: "Explore the shops. Take a photo of the single most expensive item you can find for sale.",
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
-    // answer: "",
+    answerType: AnswerType.IMAGE,
+    // answerDetails: ""
     // hint: "",
   },
   {
@@ -140,7 +142,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "uaPC_HvMqd", // cspell: disable-line
-    clue: "Take a photo of something with the Space Needle on it",
+    clue: "Take a photo of something with the Space Needle on it.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -148,15 +150,15 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "1XWgzKECE6", // cspell: disable-line
-    clue: "How many different add-ins are there for boba drinks?",
+    clue: "Find the boba shop. How many different add-ins can you choose from?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "5 (to be verified)",
     // hint: "",
   },
   {
     id: "xH4xrNHYJe", // cspell: disable-line
-    clue: "What object casts a shadow into the terrazzo floor?",
+    clue: "Find the shadow in the terrazzo floor. What object casts the shadow?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "A boat.",
@@ -179,7 +181,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
 * American Express Centurion (Central Terminal)
 * Alaska (C16)
 * Alaska (D1)
-* Alaska (mezzanine above N13*N18)
+* Alaska (mezzanine above N13-N18)
 * The Club (above S10)
 * British Airways (above S10).`,
     hint: "There are eleven lounges at SEA, with ten entrances.",
@@ -194,17 +196,17 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "ShfXCzAYKC", // cspell: disable-line
-    clue: "How many faces are in the modern mask?",
+    clue: 'Find the painted wood sculpture "Modern Mask." How many faces stare back at you?',
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
-    answer: "5",
+    answer: "5 (to be verified)",
     answerDetails:
       '"[Modern Mask](https://www.portseattle.org/page/modern-mask)" by James Schoppert is a 3\' tall painted wood sculpture.',
     // hint: "",
   },
   {
     id: "4B8BuOoy-A", // cspell: disable-line
-    clue: "What is the highest-numbered D gate?",
+    clue: "Head downstairs and away from the crowds. What's the highest D gate number you see?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     answer: "26",
@@ -221,7 +223,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "PWYzT5xEM_", // cspell: disable-line
-    clue: "What are the three train colors in the SEA underground train system?",
+    clue: "Take a ride on the SEA underground. What are the three colors of the different train lines?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
     answer: "Blue, yellow, and green.",
@@ -229,7 +231,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "VGDb3ekZZs", // cspell: disable-line
-    clue: "From the exit of checkpoint 1, is it faster to walk or take the train to C gates?",
+    clue: "Check the travel time display between Concourse A and the train station. Is it faster to walk or take the train to C gates?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
     answer: "Walk",
@@ -239,7 +241,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "yTNP29jtdB", // cspell: disable-line
-    clue: "What restaurant is on the mezzanine?",
+    clue: "Head upstairs to the mezzanine in the North Satellite. Which restaurant is there?",
     airportArea: AirportArea.NORTH_SATELLITE,
     answerType: AnswerType.TEXT,
     answer: "PF Chang's",
@@ -247,7 +249,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "-buCfuZ_Js", // cspell: disable-line
-    clue: "Where can you buy postage stamps?",
+    clue: "You've got a postcard to mail. Where in the Central Terminal can you buy postage stamps?",
     airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.TEXT,
     answer: "Sub Pop, near Concourse C.",
@@ -258,7 +260,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "Take a photo of a Japanese sandwich.",
     airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.IMAGE,
-    answer:
+    answerDetails:
       "The vending machines near the escalators in the south satellite sell a variety of Japanese food and drinks.",
     // hint: "",
   },
@@ -272,7 +274,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "ndC0lIJES6", // cspell: disable-line
-    clue: "Take a photo of a hibiscus flower",
+    clue: "Take a photo of a hibiscus flower.",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.IMAGE,
     // answer: "",
@@ -280,18 +282,18 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "v86d2mm7UT", // cspell: disable-line
-    clue: "How many gates have a letter after the number?",
+    clue: "Check the gate signs around the airport. How many gates have a letter after the number?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    answer: "",
+    answer: "10 (to be verified)",
     // hint: "",
   },
   {
     id: "FwkTyDghkR", // cspell: disable-line
-    clue: "How many clouds hang from the ceiling?",
+    clue: "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "20 (to be verified)",
     answerDetails:
       '"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)" by Peter Shelton hangs above Concourse A near Seattle Beer Union.',
     // hint: "",
@@ -306,26 +308,18 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "nGRX7LLH2E", // cspell: disable-line
-    clue: "Take a selfie with the neon dog",
+    clue: "Take a selfie with the neon dog.",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.IMAGE,
-    answer: "The dog is located at Hachi-Ko.",
+    answerDetails: "The dog is located at Hachi-Ko.",
     // hint: "",
   },
   {
     id: "glwn2opFlc", // cspell: disable-line
-    clue: "Where can you buy deconstructed hash?",
+    clue: "Which restaurant serves a dish called deconstructed hash?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "Skillet, near gate C10.",
-    // hint: "",
-  },
-  {
-    id: "e16Jzz7ew5", // cspell: disable-line
-    clue: "Find a plane that just parked at a gate. How many bags are unloaded from the plane?",
-    airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.TEXT,
-    // answer: "",
     // hint: "",
   },
   {
@@ -355,5 +349,49 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.IMAGE,
     // answer: "",
     hint: "[SEA pups](https://www.portseattle.org/page/sea-pups) are usually at the airport from 10:00am - 12:00pm at the central terminal.",
+  },
+  {
+    id: "tYEDPlu30G", // cspell: disable-line
+    clue: "Which airlines grant business class passengers access to both The Club and British Airways Terraces lounges?",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.TEXT,
+    answer: "Japan Airlines (JAL) and Qatar Airways",
+    // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "sZLbWTNUXK", // cspell: disable-line
+    clue: "Take a photo of a sign written in a language other than English.",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.IMAGE,
+    // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "-GLJeZ-L-K", // cspell: disable-line
+    clue: "Find the biggest drink cup for sale and take a photo next to it.",
+    airportArea: AirportArea.CONCOURSE_D,
+    answerType: AnswerType.IMAGE,
+    // answerDetails: "",
+    // hint: "",
+  },
+  {
+    id: "Y7qiTGjFDA", // cspell: disable-line
+    clue: "Ride the blue train to the south satellite. How many languages are shown on the train display screens during the ride?",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.TEXT,
+    answer: "5 (to be verified)",
+    answerDetails: "The languages are: English, etc.",
+    // hint: "",
+  },
+  {
+    id: "xNr6O90eQa", // cspell: disable-line
+    clue: "Listen to the airport announcements. What is the name of the volunteer?",
+    airportArea: AirportArea.AIRPORT_WIDE,
+    answerType: AnswerType.TEXT,
+    answer: "Susan",
+    answerDetails:
+      "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program.",
+    // hint: "",
   },
 ];
