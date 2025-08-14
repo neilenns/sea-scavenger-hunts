@@ -26,6 +26,7 @@ reviews:
           - Clues that have an answer specified are marked with the TEXT answerType.
           - Grammar and spelling is correct.
           - Clues have a consistent phrasing and style.
+          - Clues with the IMAGE clueType have a jpg file in public/clue-images folder with the same name as the clue's id.
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:
