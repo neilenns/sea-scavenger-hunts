@@ -15,7 +15,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many fish are carrying suitcases?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "4 (to be verified)",
     // hint: "",
   },
   {
@@ -23,7 +23,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many airplanes have fins?",
     airportArea: AirportArea.CONCOURSE_B,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "3 (to be verified)",
     // hint: "",
   },
   {
@@ -47,7 +47,8 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "What flow is the airport in?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer:
+      "If planes are taking from right to left, the airport is in south flow. If the planes are taking off from left to right, the airport is in north flow.",
     hint: "Airport flow is the direction airplanes take off towards. For example, if planes takeoff towards the south, the airport is in South flow.",
   },
   {
@@ -55,7 +56,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "What is the phone number to contact Customs and Border Protection (CBP)?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "+1-800-TBD-9999 (to be verified)",
     // hint: "",
   },
   {
@@ -63,7 +64,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many balls are in the sculpture?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "10 (to be verified)",
     // hint: "",
   },
   {
@@ -71,7 +72,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many faucets are in the all-gender restroom?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "6 (to be verified)",
     // hint: "",
   },
   {
@@ -127,7 +128,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "What is the most expensive item you can find for sale?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "Could be anywhere!",
     // hint: "",
   },
   {
@@ -151,7 +152,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many different add-ins are there for boba drinks?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "5 (to be verified)",
     // hint: "",
   },
   {
@@ -197,7 +198,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many faces are in the modern mask?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
-    answer: "5",
+    answer: "5 (to be verified)",
     answerDetails:
       '"[Modern Mask](https://www.portseattle.org/page/modern-mask)" by James Schoppert is a 3\' tall painted wood sculpture.',
     // hint: "",
@@ -283,7 +284,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many gates have a letter after the number?",
     airportArea: AirportArea.AIRPORT_WIDE,
     answerType: AnswerType.TEXT,
-    answer: "",
+    answer: "10 (to be verified)",
     // hint: "",
   },
   {
@@ -291,7 +292,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clue: "How many clouds hang from the ceiling?",
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    // answer: "",
+    answer: "20 (to be verified)",
     answerDetails:
       '"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)" by Peter Shelton hangs above Concourse A near Seattle Beer Union.',
     // hint: "",
@@ -318,14 +319,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     answer: "Skillet, near gate C10.",
-    // hint: "",
-  },
-  {
-    id: "e16Jzz7ew5", // cspell: disable-line
-    clue: "Find a plane that just parked at a gate. How many bags are unloaded from the plane?",
-    airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.TEXT,
-    // answer: "",
     // hint: "",
   },
   {

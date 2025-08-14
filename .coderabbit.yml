@@ -24,6 +24,8 @@ reviews:
           - Clues that ask a question have an answer specified.
           - Clues that ask for a photo or a selfie are marked with the IMAGE answerType.
           - Clues that have an answer specified are marked with the TEXT answerType.
+          - Grammar and spelling is correct.
+          - Clues have a consistent phrasing and style.
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:
