@@ -17,13 +17,19 @@ reviews:
     - "!src/components/ui/**"
     - "!src/hooks/**"
   path_instructions:
+    - path: "src/data/*clues.ts"
+      instructions: |
+        Review all clues and ensure that:
+          - Clues have appropriate ending punctuation (period or question mark, depending on type of clue).
+          - Clues that ask a question have an answer specified.
+          - Clues that ask for a photo or a selfie are marked with the IMAGE answerType.
+          - Clues that have an answer specified are marked with the TEXT answerType.
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:
-          - Components have appropriate accessibility attributes on them
+          - Components have appropriate accessibility attributes on them.
           - All headings are in sentence, not title, case.
           - Table headers are in sentence case.
-
     - path: "**/*.md"
       instructions: |
         Review all markdown files and ensure that:
