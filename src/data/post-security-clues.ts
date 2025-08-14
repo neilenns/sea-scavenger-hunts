@@ -446,4 +446,14 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.IMAGE,
     alternateText: "Buc-ee's logo on clothing.",
   },
+  {
+    id: "a8vW4xzkkW", // cspell: disable-line
+    clue: "Find the water bottle filler with the highest number of bottles saved, and take a photo of the bottle count.",
+    airportArea: AirportArea.AIRPORT_WIDE,
+    answerType: AnswerType.IMAGE,
+    clueType: ClueType.TEXT,
+    // answer: "",
+    // answerDetails: "",
+    // hint: "",
+  },
 ];
