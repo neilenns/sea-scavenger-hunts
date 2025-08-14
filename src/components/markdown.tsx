@@ -13,16 +13,40 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          a: ({ href, children }) => (
-            <Link
-              href={href ?? "#"}
-              target="_blank"
-              rel="noreferrer noopener"
-              style={{ textDecoration: "underline" }}
-            >
-              {children}
-            </Link>
-          ),
+          a: ({ href, children, ...properties }) => {
+            const url = href ?? "#";
+
+            // Consider http/https as external. Leave mailto/tel as-is (no target).
+            const isExternal = /^https?:\/\//i.test(url);
+
+            // ReactMarkdown passes `node` which should not be spread onto DOM elements.
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { node, ...anchorProperties } = (properties ?? {}) as Record<
+              string,
+              unknown
+            >;
+
+            return isExternal ? (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "underline" }}
+                {...(anchorProperties as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+              >
+                {children}
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            ) : (
+              <Link
+                href={url}
+                style={{ textDecoration: "underline" }}
+                {...(anchorProperties as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+              >
+                {children}
+              </Link>
+            );
+          },
           ul: ({ children }) => (
             <ul
               style={{

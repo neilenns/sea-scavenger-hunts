@@ -17,9 +17,11 @@ export interface ClueItemProperties {
 
 export function ClueItem({ clue }: ClueItemProperties) {
   return (
-    <Card className="py-3">
+    <Card className="py-3" aria-labelledby={`clue-${clue.id}`}>
       <CardContent className="px-4">
-        <h3 className="pb-2 font-bold !text-base">{clue.clue}</h3>
+        <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
+          {clue.clue}
+        </h3>
         {clue.hint && (
           <div className="text-gray-500 mb-2">
             <Markdown>{clue.hint}</Markdown>
@@ -30,12 +32,7 @@ export function ClueItem({ clue }: ClueItemProperties) {
         {(clue.answer || clue.answerDetails) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
-              <AccordionTrigger
-                className="pt-4 pb-0"
-                aria-label={`Toggle answer for ${clue.clue}`}
-              >
-                Answer
-              </AccordionTrigger>
+              <AccordionTrigger className="pt-4 pb-0">Answer</AccordionTrigger>
               <AccordionContent className="pb-0 mt-2">
                 {clue.answer && <p>{clue.answer}</p>}
                 {clue.answerDetails && (
