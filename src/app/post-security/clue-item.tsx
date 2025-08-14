@@ -17,15 +17,15 @@ export interface ClueItemProperties {
 
 export function ClueItem({ clue }: ClueItemProperties) {
   return (
-    <Card className="py-3" aria-labelledby={`clue-${clue.id}`} role="group">
-      <CardContent className="px-4">
+    <Card className="p-0" aria-labelledby={`clue-${clue.id}`} role="group">
+      <CardContent className="px-4 py-3">
         <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
           {clue.clue}
         </h3>
         {clue.hint && (
-          <div className="text-gray-500 mb-2">
-            <Markdown>{clue.hint}</Markdown>
-          </div>
+          <Markdown className="text-muted-foreground mb-2">
+            {clue.hint}
+          </Markdown>
         )}
         {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
         {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
