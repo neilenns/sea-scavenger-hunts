@@ -349,4 +349,13 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     // answer: "",
     hint: "[SEA pups](https://www.portseattle.org/page/sea-pups) are usually at the airport from 10:00am - 12:00pm at the central terminal.",
   },
+  {
+    id: "tYEDPlu30G", // cspell: disable-line
+    clue: "Which airlines grant business class passengers access to both The Club and British Airways Terraces lounges?",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.TEXT,
+    answer: "Japan Airlines (JAL) and Qatar Airways",
+    // answerDetails: "",
+    // hint: "",
+  },
 ];
