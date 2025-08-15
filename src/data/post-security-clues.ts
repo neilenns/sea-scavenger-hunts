@@ -36,7 +36,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     clueType: ClueType.TEXT,
     answer: "21",
     answerDetails:
-      "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near gate B15.",
+      "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near Gate B15.",
   },
   {
     id: "JTaK-wv-cm", // cspell: disable-line
@@ -87,7 +87,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "Y7qiTGjFDA", // cspell: disable-line
-    clue: "Ride the blue train to the south satellite. How many languages are shown on the train display screens during the ride?",
+    clue: "Ride the blue train to the South Satellite. How many languages are shown on the train display screens during the ride?",
     airportArea: AirportArea.SOUTH_SATELLITE,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
@@ -128,7 +128,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "At the Washington Lotto desk near gate C10.",
+    answer: "At the Washington Lotto desk near Gate C10.",
     // hint: "",
   },
   {
@@ -137,7 +137,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "Cordell works at the Luck Shines shoe shine near gate D2.",
+    answer: "Cordell works at the Luck Shines shoe shine near Gate D2.",
     // hint: "",
   },
   {
@@ -244,7 +244,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
     answer: "26",
-    answerDetails: "Gate D26 is located downstairs, across from gate D5.",
+    answerDetails: "Gate D26 is located downstairs, across from Gate D5.",
     // hint: "",
   },
   {
@@ -312,7 +312,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     answerDetails:
-      "The vending machines near the escalators in the south satellite sell a variety of Japanese food and drinks.",
+      "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks.",
     // hint: "",
   },
   {
@@ -366,7 +366,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "Skillet, near gate C10.",
+    answer: "Skillet, near Gate C10.",
     // hint: "",
   },
   {
@@ -380,13 +380,13 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerDetails: `The information desks are:
     
   - **A info**: across from Swarovski in Concourse A
-  - **A3 info**: across from Starbucks by gate A3
-  - **Checkpoint 1**: inside checkpoint 1 on the landing between Concourse A and the A train station
+  - **A3 info**: across from Starbucks by Gate A3
+  - **Checkpoint 1**: inside Checkpoint 1 on the landing between Concourse A and the A train station
   - **A train**: in the A train station
   - **Central info**: in the central terminal near Dilettante Chocolates & Mocha Cafe
   - **D info**: Across from the all-gender restrooms in Concourse D
   - **D train**: in the D train station
-  - **N info**: in the north satellite
+  - **N info**: in the North Satellite
   `,
     // hint: "",
   },
