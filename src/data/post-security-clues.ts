@@ -32,7 +32,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "BL5xfCD1Pl", // cspell: disable-line
     clue: "Take a photo of three different aircraft tails for non-US carriers.",
-    airportArea: AirportArea.CONCOURSE_B,
+    airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answer: "",
