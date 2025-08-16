@@ -1,17 +1,16 @@
 "use client";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { postSecurityClues } from "@/data/post-security-clues";
 import { getAnchorId } from "@/lib/anchors";
 import { AirportArea, airportAreaNames, Clue } from "@/types/clue";
+import { useTranslations } from "next-intl";
 import { ClueItem } from "./clue-item";
+import { Header } from "./header";
 import { PostSecuritySidebar } from "./sidebar";
 
 export default function Page() {
+  const t = useTranslations("post-security-page");
+
   const grouped: Record<AirportArea, Clue[]> = {
     [AirportArea.AIRPORT_WIDE]: [],
     [AirportArea.CENTRAL_TERMINAL]: [],
@@ -33,37 +32,18 @@ export default function Page() {
       <SidebarProvider>
         <PostSecuritySidebar />
         <SidebarInset className="flex flex-col">
-          <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <SidebarTrigger aria-label="Open sidebar" className="-ml-1" />
-            <Separator
-              orientation="vertical"
-              className="mr-2 data-[orientation=vertical]:h-4"
-            />
-            <h1 className="inline !text-base font-normal m-0 text-[var(--primary)]">
-              SEA scavenger hunt
-            </h1>
-          </header>
+          <Header />
           <div className="flex-1 p-4">
             <div className="grid gap-6 max-w-2xl mx-auto">
-              <p>
-                Welcome to SEA! This scavenger hunt helps you explore the entire
-                airport. How many items can you find?
-              </p>
-              <p>
-                All answers and items can be found in public spaces. There is no
-                need to go through any doors, and don&apos;t accidentally exit
-                to the pre-security side of the airport when hunting for items!
-              </p>
-              <p>
-                Your answers are stored locally in your browser and are never
-                sent to a server.
-              </p>
-              {airportAreaNames.map(({ area, name }) => {
+              <p>{t("introduction1")}</p>
+              <p>{t("introduction2")}</p>
+              <p>{t("introduction3")}</p>
+              {airportAreaNames.map(({ area, key }) => {
                 const areaClues = grouped[area];
 
                 if (!areaClues || areaClues.length === 0) return;
 
-                const anchorId = getAnchorId(name);
+                const anchorId = getAnchorId(key);
 
                 return (
                   <div
@@ -81,7 +61,7 @@ export default function Page() {
                         tabIndex={-1}
                         className="flex items-center gap-2 text-[var(--primary)]"
                       >
-                        {name}
+                        {t(`areas.${key}`)}
                       </h2>
                     </a>
                     {areaClues.map((clue) => (

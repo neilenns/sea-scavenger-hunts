@@ -20,16 +20,15 @@ reviews:
     - path: "src/data/*clues.ts"
       instructions: |
         Review all clues and ensure that:
-          - Clues have appropriate ending punctuation (period or question mark, depending on type of clue).
+          - Clues have corresponding text in the messages/*.json files.
           - Clues that ask a question have an answer specified.
           - Clues that ask for a photo or a selfie are marked with the IMAGE answerType.
           - Clues that have an answer specified are marked with the TEXT answerType.
-          - Grammar and spelling is correct.
-          - Clues have a consistent phrasing and style.
           - Clues with the IMAGE clueType have a jpg file in public/clue-images folder with the same name as the clue's id.
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:
+          - No UI strings are hardcoded.
           - Components have appropriate accessibility attributes on them.
           - All headings are in sentence, not title, case.
           - Table headers are in sentence case.

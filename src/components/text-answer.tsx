@@ -1,6 +1,7 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { useTranslations } from "next-intl";
 import { Input } from "./ui/input";
 
 export interface TextAnswerProperties {
@@ -9,6 +10,7 @@ export interface TextAnswerProperties {
 
 export function TextAnswer({ id }: TextAnswerProperties) {
   const [text, setText, loaded] = usePersistentAnswer<string>(id, "");
+  const t = useTranslations("text-answer");
 
   if (!loaded) return;
 
@@ -17,7 +19,7 @@ export function TextAnswer({ id }: TextAnswerProperties) {
       type="text"
       value={text}
       onChange={(event) => setText(event.target.value)}
-      placeholder="Type your answer..."
+      placeholder={t("input-placeholder")}
     />
   );
 }

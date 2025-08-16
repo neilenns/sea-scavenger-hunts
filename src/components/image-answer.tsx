@@ -1,6 +1,7 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -11,6 +12,7 @@ export interface ImageAnswerProperties {
 export function ImageAnswer({ id }: ImageAnswerProperties) {
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
+  const t = useTranslations("image-answer");
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) return;
@@ -45,7 +47,7 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
         onClick={() => fileInputReference.current?.click()}
         className="rounded bg-gray-100 px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-200"
       >
-        Choose file
+        {t("choose-files-button")}
       </button>
 
       {files.length > 0 && (
