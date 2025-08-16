@@ -30,7 +30,11 @@ export function ClueItem({ clue }: ClueItemProperties) {
         {clue.clueType === ClueType.IMAGE && (
           <div className="relative mx-auto max-w-[400px] aspect-video">
             <Image
-              alt={translatedClues(`${clue.id}.alternateText`)}
+              alt={
+                translatedClues.has(`${clue.id}.alternateText`)
+                  ? translatedClues(`${clue.id}.alternateText`)
+                  : translatedClues(`${clue.id}.clue`)
+              }
               src={`/clue-images/${clue.id}.jpg`}
               fill
               sizes="(max-width: 420px) 100vw, 400px"

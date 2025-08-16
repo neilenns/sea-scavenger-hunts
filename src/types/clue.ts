@@ -36,7 +36,9 @@ export const airportAreaNames = [
 
 export interface Clue {
   airportArea: AirportArea;
+  /** Expected answer input type */
   answerType: AnswerType;
+  /** How clue content is rendered */
   clueType: ClueType;
   id: string;
 }
