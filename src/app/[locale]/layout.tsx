@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// eslint-disable-next-line unicorn/prevent-abbreviations
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({
   params,
 }: Readonly<{

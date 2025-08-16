@@ -1,15 +1,11 @@
 "use client";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { postSecurityClues } from "@/data/post-security-clues";
 import { getAnchorId } from "@/lib/anchors";
 import { AirportArea, airportAreaNames, Clue } from "@/types/clue";
 import { useTranslations } from "next-intl";
 import { ClueItem } from "./clue-item";
+import { Header } from "./header";
 import { PostSecuritySidebar } from "./sidebar";
 
 export default function Page() {
@@ -36,19 +32,7 @@ export default function Page() {
       <SidebarProvider>
         <PostSecuritySidebar />
         <SidebarInset className="flex flex-col">
-          <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <SidebarTrigger
-              aria-label={t("sidebar-aria-label")}
-              className="-ml-1"
-            />
-            <Separator
-              orientation="vertical"
-              className="mr-2 data-[orientation=vertical]:h-4"
-            />
-            <h1 className="inline !text-base font-normal m-0 text-[var(--primary)]">
-              {t("title")}
-            </h1>
-          </header>
+          <Header />
           <div className="flex-1 p-4">
             <div className="grid gap-6 max-w-2xl mx-auto">
               <p>{t("introduction1")}</p>
