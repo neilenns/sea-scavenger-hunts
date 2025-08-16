@@ -2,6 +2,9 @@
   "HomePage": {
     "title": "Hello world!"
   },
+  "clue-item": {
+    "answer": "Answer"
+  },
   "clues": {
     "-GLJeZ-L-K": {
       "clue": "Find the biggest drink cup for sale and take a photo next to it."
@@ -183,7 +186,10 @@
       "clue": "Head upstairs to the mezzanine in the North Satellite. Which restaurant is there?"
     }
   },
-  "postSecurityPage": {
+  "image-answer": {
+    "choose-files-button": "Choose files"
+  },
+  "post-security-page": {
     "areas": {
       "airport-wide": "Airport-wide",
       "central-terminal": "Central Terminal",
@@ -194,9 +200,19 @@
       "north-satellite": "North Satellite",
       "south-satellite": "South Satellite"
     },
+    "clear-answers-dialog": {
+      "cancel": "Cancel",
+      "clear": "Clear",
+      "description": "This will delete all saved answers. This action cannot be undone.",
+      "title": "Clear all answers?",
+      "trigger": "Clear answers"
+    },
     "introduction1": "Welcome to SEA! This scavenger hunt helps you explore the entire airport. How many items can you find?",
     "introduction2": "All answers and items can be found in public spaces. There is no need to go through any doors, and don't accidentally exit to the pre-security side of the airport when hunting for items!",
     "introduction3": "Your answers are stored locally in your browser and are never sent to a server.",
     "title": "SEA scavenger hunt"
+  },
+  "text-answer": {
+    "input-placeholder": "Type your answer..."
   }
 }

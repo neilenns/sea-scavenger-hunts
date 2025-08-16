@@ -37,7 +37,7 @@ export function PostSecuritySidebar({
   const [hash, setHash] = useState<string>("");
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
-  const t = useTranslations("postSecurityPage");
+  const t = useTranslations("post-security-page");
 
   useEffect(() => {
     const update = () => setHash(globalThis.location?.hash ?? "");
@@ -117,22 +117,23 @@ export function PostSecuritySidebar({
       <SidebarFooter>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button variant="default">Clear answers</Button>
+            <Button variant="default">
+              {t(`clear-answers-dialog.trigger`)}
+            </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Clear all answers?</DialogTitle>
+              <DialogTitle> {t(`clear-answers-dialog.title`)}</DialogTitle>
               <DialogDescription>
-                This will delete all saved answers. This action cannot be
-                undone.
+                {t(`clear-answers-dialog.description`)}
               </DialogDescription>
             </DialogHeader>
             <DialogFooter className="flex justify-end gap-2">
               <Button variant="outline" onClick={() => setOpen(false)}>
-                Cancel
+                {t(`clear-answers-dialog.cancel`)}
               </Button>
               <Button variant="destructive" onClick={handleClear}>
-                Clear
+                {t(`clear-answers-dialog.clear`)}
               </Button>
             </DialogFooter>
           </DialogContent>

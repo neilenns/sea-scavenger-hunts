@@ -13,7 +13,7 @@ import { ClueItem } from "./clue-item";
 import { PostSecuritySidebar } from "./sidebar";
 
 export default function Page() {
-  const t = useTranslations("postSecurityPage");
+  const t = useTranslations("post-security-page");
 
   const grouped: Record<AirportArea, Clue[]> = {
     [AirportArea.AIRPORT_WIDE]: [],

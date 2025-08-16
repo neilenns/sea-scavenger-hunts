@@ -2,6 +2,9 @@
   "HomePage": {
     "title": "Salut le monde !"
   },
+  "clue-item": {
+    "answer": "Réponse"
+  },
   "clues": {
     "-GLJeZ-L-K": {
       "clue": "Trouvez le plus grand gobelet à boisson en vente et prenez une photo à côté."
@@ -182,5 +185,34 @@
       "answer": "PF Chang's",
       "clue": "Montez à l'étage vers la mezzanine dans le Satellite Nord. Quel restaurant s'y trouve ?"
     }
+  },
+  "image-answer": {
+    "choose-files-button": "Choisir des fichiers"
+  },
+  "post-security-page": {
+    "areas": {
+      "airport-wide": "Dans tout l'aéroport",
+      "central-terminal": "Terminal Central",
+      "concourse-a": "Concourse A",
+      "concourse-b": "Concourse B",
+      "concourse-c": "Concourse C",
+      "concourse-d": "Concourse D",
+      "north-satellite": "Satellite Nord",
+      "south-satellite": "Satellite Sud"
+    },
+    "clear-answers-dialog": {
+      "cancel": "Annuler",
+      "clear": "Effacer",
+      "description": "Cela supprimera toutes les réponses sauvegardées. Cette action ne peut pas être annulée.",
+      "title": "Effacer toutes les réponses?",
+      "trigger": "Effacer les réponses"
+    },
+    "introduction1": "Bienvenue à SEA ! Cette chasse au trésor vous aide à explorer tout l'aéroport. Combien d'objets pouvez-vous trouver?",
+    "introduction2": "Toutes les réponses et tous les objets peuvent être trouvés dans les espaces publics. Il n'est pas nécessaire de franchir des portes, et ne sortez pas accidentellement du côté pré-sécurité de l'aéroport en cherchant des objets !",
+    "introduction3": "Vos réponses sont stockées localement dans votre navigateur et ne sont jamais envoyées à un serveur.",
+    "title": "Chasse au trésor SEA"
+  },
+  "text-answer": {
+    "input-placeholder": "Tapez votre réponse..."
   }
 }
