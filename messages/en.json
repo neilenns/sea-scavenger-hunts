@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
-  },
   "clue-item": {
     "answer": "Answer"
   },
@@ -189,6 +186,10 @@
   "image-answer": {
     "choose-files-button": "Choose files"
   },
+  "main-page": {
+    "description": "Scavenger hunts for SEA airport",
+    "title": "SEA scavenger hunts"
+  },
   "post-security-page": {
     "areas": {
       "airport-wide": "Airport-wide",
@@ -207,6 +208,7 @@
       "title": "Clear all answers?",
       "trigger": "Clear answers"
     },
+    "description": "Scavenger hunt for SEA airport",
     "introduction1": "Welcome to SEA! This scavenger hunt helps you explore the entire airport. How many items can you find?",
     "introduction2": "All answers and items can be found in public spaces. There is no need to go through any doors, and don't accidentally exit to the pre-security side of the airport when hunting for items!",
     "introduction3": "Your answers are stored locally in your browser and are never sent to a server.",

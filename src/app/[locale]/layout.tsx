@@ -3,7 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,10 +17,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "SEA scavenger hunts",
-  description: "Scavenger hunts for SEA",
-};
+export async function generateMetadata({
+  params,
+}: Readonly<{
+  params: Promise<{ locale: string }>;
+}>) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "main-page" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    appleWebApp: {
+      capable: true,
+      title: t("title"),
+    },
+    icons: {
+      other: {
+        rel: "apple-touch-icon",
+        url: "/icons/airside.png",
+      },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -31,9 +50,13 @@ export default async function RootLayout({
 }>) {
   // Ensure that the incoming `locale` is valid
   const { locale } = await params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  // Enable static rendering
+  setRequestLocale(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>

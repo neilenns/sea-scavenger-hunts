@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("main-page");
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
