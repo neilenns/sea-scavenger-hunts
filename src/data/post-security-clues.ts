@@ -167,7 +167,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     id: "FwkTyDghkR", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
     answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT, // hint: "",
+    clueType: ClueType.TEXT,
   },
   {
     id: "VGDb3ekZZs", // cspell: disable-line

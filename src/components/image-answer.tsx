@@ -12,6 +12,7 @@ export interface ImageAnswerProperties {
 export function ImageAnswer({ id }: ImageAnswerProperties) {
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
+
   const t = useTranslations("image-answer");
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
@@ -59,7 +60,7 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
             >
               <Image
                 src={URL.createObjectURL(file)}
-                alt={`Preview ${index + 1}`}
+                alt=""
                 fill
                 className="object-cover"
               />
@@ -67,8 +68,9 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
                 type="button"
                 onClick={() => handleRemove(index)}
                 className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs opacity-0 group-hover:opacity-100 transition"
+                aria-label={t("remove-image-aria", { index: index + 1 })}
               >
-                ×
+                <span aria-hidden>×</span>
               </button>
             </div>
           ))}

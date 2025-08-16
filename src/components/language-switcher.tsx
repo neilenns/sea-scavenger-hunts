@@ -7,11 +7,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { FR, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 const languages = [
-  { code: "en", name: "English", flagComponent: US },
-  { code: "fr", name: "Français", flagComponent: FR }, // cspell: disable-line
+  { code: "en", flagComponent: US },
+  { code: "fr", flagComponent: FR }, // cspell: disable-line
 ];
 
 export interface LanguageSwitcherProperties {
@@ -23,6 +24,7 @@ export default function LanguageSwitcher({
 }: LanguageSwitcherProperties) {
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations("language-switcher");
 
   // Extract current language from pathname
   const getCurrentLanguage = () => {
@@ -45,39 +47,66 @@ export default function LanguageSwitcher({
     }
 
     const newPath = segments.join("/");
-    router.push(newPath);
+    const search =
+      globalThis.window === undefined ? "" : globalThis.location.search;
+    const hash =
+      globalThis.window === undefined ? "" : globalThis.location.hash;
+    router.push(`${newPath}${search}${hash}`);
   };
 
   return (
     <div className={className}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="sm" className="gap-2">
-            <GlobeIcon className="h-4 w-4" />
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-2"
+            aria-label={t(currentLanguage.code)}
+          >
+            <GlobeIcon
+              className="h-4 w-4"
+              aria-hidden="true"
+              focusable="false"
+            />
             <span className="hidden sm:inline-flex items-center gap-2">
-              <currentLanguage.flagComponent className="w-4 h-3" />
-              {currentLanguage.name}
+              <currentLanguage.flagComponent
+                className="w-4 h-3"
+                aria-hidden="true"
+                focusable="false"
+              />
+              {t(currentLanguage.code)}
             </span>
             <span className="sm:hidden">
-              <currentLanguage.flagComponent className="w-4 h-3" />
+              <currentLanguage.flagComponent
+                className="w-4 h-3"
+                aria-hidden="true"
+                focusable="false"
+              />
             </span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="min-w-[150px]">
-          {languages.map((language) => (
-            <DropdownMenuItem
-              key={language.code}
-              onClick={() => switchLanguage(language.code)}
-              className={`cursor-pointer ${
-                currentLanguage.code === language.code
-                  ? "bg-accent text-accent-foreground"
-                  : ""
-              }`}
-            >
-              <language.flagComponent className="w-4 h-3 mr-2" />
-              {language.name}
-            </DropdownMenuItem>
-          ))}
+          {languages.map((language) => {
+            const selected = currentLanguage.code === language.code;
+
+            return (
+              <DropdownMenuItem
+                key={language.code}
+                onClick={() => switchLanguage(language.code)}
+                role="menuitemradio"
+                aria-checked={selected}
+                className={`cursor-pointer ${selected ? "bg-accent text-accent-foreground" : ""}`}
+              >
+                <language.flagComponent
+                  className="w-4 h-3 mr-2"
+                  aria-hidden="true"
+                  focusable="false"
+                />
+                {t(language.code)}
+              </DropdownMenuItem>
+            );
+          })}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

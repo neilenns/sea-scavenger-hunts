@@ -184,8 +184,14 @@
     }
   },
   "image-answer": {
-    "choose-files-button": "Choisir des fichiers"
+    "choose-files-button": "Choisir des fichiers",
+    "remove-image-aria": "Supprimer l'image {index, number}"
   },
+  "language-switcher": {
+    "en": "English",
+    "fr": "Français"
+  },
+
   "main-page": {
     "description": "Chasses au trésor à l'aéroport SEA",
     "title": "Chasses au trésor SEA"
@@ -205,10 +211,10 @@
       "cancel": "Annuler",
       "clear": "Effacer",
       "description": "Cela supprimera toutes les réponses sauvegardées. Cette action ne peut pas être annulée.",
-      "title": "Effacer toutes les réponses?",
+      "title": "Effacer toutes les réponses ?",
       "trigger": "Effacer les réponses"
     },
-    "description": "Chasse au trésor à aéroport SEA",
+    "description": "Chasse au trésor à l'aéroport SEA",
     "introduction1": "Bienvenue à SEA ! Cette chasse au trésor vous aide à explorer tout l'aéroport. Combien d'objets pouvez-vous trouver?",
     "introduction2": "Toutes les réponses et tous les objets peuvent être trouvés dans les espaces publics. Il n'est pas nécessaire de franchir des portes, et ne sortez pas accidentellement du côté pré-sécurité de l'aéroport en cherchant des objets !",
     "introduction3": "Vos réponses sont stockées localement dans votre navigateur et ne sont jamais envoyées à un serveur.",
@@ -217,6 +223,7 @@
     "title": "Chasse au trésor SEA"
   },
   "text-answer": {
+    "input-aria-label": "Tapez votre réponse...",
     "input-placeholder": "Tapez votre réponse..."
   }
 }

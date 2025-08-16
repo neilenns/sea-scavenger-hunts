@@ -1,3 +1,4 @@
+"use client";
 import LanguageSwitcher from "@/components/language-switcher";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";

@@ -10,6 +10,6 @@ export default withNextIntl(nextConfig);
 
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
-initOpenNextCloudflareForDev({
-  environment: "dev",
-});
+if (process.env.NODE_ENV === "development") {
+  initOpenNextCloudflareForDev({ environment: "dev" });
+}

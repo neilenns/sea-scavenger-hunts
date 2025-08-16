@@ -123,7 +123,7 @@ export function PostSecuritySidebar({
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle> {t(`clear-answers-dialog.title`)}</DialogTitle>
+              <DialogTitle>{t(`clear-answers-dialog.title`)}</DialogTitle>
               <DialogDescription>
                 {t(`clear-answers-dialog.description`)}
               </DialogDescription>

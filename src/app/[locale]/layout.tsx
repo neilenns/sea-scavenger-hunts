@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { WithChildren } from "@/types/with-children";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,11 +24,11 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params,
+  params: parameters,
 }: Readonly<{
   params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params;
+  const { locale } = await parameters;
   const t = await getTranslations({ locale, namespace: "main-page" });
 
   return {
@@ -48,13 +49,10 @@ export async function generateMetadata({
 
 export default async function RootLayout({
   children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+  params: parameters,
+}: WithChildren) {
   // Ensure that the incoming `locale` is valid
-  const { locale } = await params;
+  const { locale } = await parameters;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();

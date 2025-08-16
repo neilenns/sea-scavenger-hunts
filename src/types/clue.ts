@@ -21,7 +21,7 @@ export enum ClueType {
 
 // The order of the elements in this array also defines the order of the groups
 // on the page. key is the string used to look up the i18n display name.
-export const airportAreaNames: Array<{ area: AirportArea; key: string }> = [
+export const airportAreaNames = [
   { area: AirportArea.AIRPORT_WIDE, key: "airport-wide" },
   { area: AirportArea.SOUTH_SATELLITE, key: "south-satellite" },
   { area: AirportArea.CONCOURSE_A, key: "concourse-a" },
@@ -30,7 +30,9 @@ export const airportAreaNames: Array<{ area: AirportArea; key: string }> = [
   { area: AirportArea.CONCOURSE_C, key: "concourse-c" },
   { area: AirportArea.CONCOURSE_D, key: "concourse-d" },
   { area: AirportArea.NORTH_SATELLITE, key: "north-satellite" },
-];
+] as const satisfies ReadonlyArray<
+  Readonly<{ area: AirportArea; key: string }>
+>;
 
 export interface Clue {
   airportArea: AirportArea;

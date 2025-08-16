@@ -16,10 +16,12 @@ export function TextAnswer({ id }: TextAnswerProperties) {
 
   return (
     <Input
+      id={id}
       type="text"
       value={text}
       onChange={(event) => setText(event.target.value)}
       placeholder={t("input-placeholder")}
+      aria-label={t("input-aria-label")}
     />
   );
 }

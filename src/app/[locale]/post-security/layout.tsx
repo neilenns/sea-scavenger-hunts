@@ -10,11 +10,11 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params,
+  params: parameters,
 }: Readonly<{
   params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params;
+  const { locale } = await parameters;
   const t = await getTranslations({ locale, namespace: "post-security-page" });
 
   return {
@@ -33,8 +33,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function Layout({ children, params }: WithChildren) {
-  const { locale } = await params;
+export default async function Layout({
+  children,
+  params: parameters,
+}: WithChildren) {
+  const { locale } = await parameters;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
