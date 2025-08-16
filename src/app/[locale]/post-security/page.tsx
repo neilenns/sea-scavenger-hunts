@@ -5,15 +5,13 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { usePostSecurityClues } from "@/hooks/use-post-security-clues";
+import { postSecurityClues } from "@/data/post-security-clues";
 import { getAnchorId } from "@/lib/anchors";
 import { AirportArea, airportAreaNames, Clue } from "@/types/clue";
 import { ClueItem } from "./clue-item";
 import { PostSecuritySidebar } from "./sidebar";
 
 export default function Page() {
-  const localizedClues = usePostSecurityClues();
-
   const grouped: Record<AirportArea, Clue[]> = {
     [AirportArea.AIRPORT_WIDE]: [],
     [AirportArea.CENTRAL_TERMINAL]: [],
@@ -25,7 +23,7 @@ export default function Page() {
     [AirportArea.SOUTH_SATELLITE]: [],
   };
 
-  for (const clue of localizedClues) {
+  for (const clue of postSecurityClues) {
     if (!grouped[clue.airportArea]) grouped[clue.airportArea] = [];
     grouped[clue.airportArea].push(clue);
   }

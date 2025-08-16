@@ -59,6 +59,7 @@
       "clue": "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?"
     },
     "MSjgrbHme1": {
+      "alternateText": "Buc-ee's logo on clothing.",
       "clue": "Find someone wearing Buc-ee's clothing and take a photo of the logo."
     },
     "Mr8NTBLVuw": {
@@ -70,7 +71,9 @@
       "clue": "Take a ride on the SEA underground. What are the three colors of the different train lines?"
     },
     "ShfXCzAYKC": {
-      "answer": "5 (to be verified)"
+      "answer": "5 (to be verified)",
+      "answerDetails": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" by James Schoppert is a 3' tall painted wood sculpture.",
+      "clue": "Find the painted wood sculpture \"Modern Mask.\" How many faces stare back at you?"
     },
     "U2Ml_N2Ao1": {
       "clue": "Take a photo of an album cover with the letter S on it."
@@ -104,7 +107,8 @@
       "clue": "Take a selfie with a live plant."
     },
     "fId26KufqS": {
-      "answer": "Cordell works at the Luck Shines shoe shine near gate D2."
+      "answer": "Cordell works at the Luck Shines shoe shine near gate D2.",
+      "clue": "Where does Cordell \"The Transformer\" Truluck work?"
     },
     "glwn2opFlc": {
       "answer": "Skillet, near gate C10.",

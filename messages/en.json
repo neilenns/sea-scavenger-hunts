@@ -16,6 +16,7 @@
     },
     "4B8BuOoy-A": {
       "answer": "26",
+      "answerDetails": "Gate D26 is located downstairs, across from Gate D5.",
       "clue": "Head downstairs and away from the crowds. What's the highest D gate number you see?"
     },
     "6IjATuH8h-": {
@@ -40,10 +41,12 @@
     },
     "FwkTyDghkR": {
       "answer": "20 (to be verified)",
+      "answerDetails": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" by Peter Shelton hangs above Concourse A near Seattle Beer Union.",
       "clue": "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?"
     },
     "GpyOC1fxZv": {
       "answer": "North flow or south flow",
+      "answerDetails": "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow.",
       "clue": "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
       "hint": "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow."
     },
@@ -52,13 +55,16 @@
       "clue": "How many balls are in the sculpture?"
     },
     "JjwwVsnaNJ": {
+      "answerDetails": "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks.",
       "clue": "Take a photo of a Japanese sandwich."
     },
     "KFNxBoixx9": {
       "answer": "21",
+      "answerDetails": "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near Gate B15.",
       "clue": "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?"
     },
     "MSjgrbHme1": {
+      "alternateText": "Buc-ee's logo on clothing.",
       "clue": "Find someone wearing Buc-ee's clothing and take a photo of the logo."
     },
     "Mr8NTBLVuw": {
@@ -70,13 +76,16 @@
       "clue": "Take a ride on the SEA underground. What are the three colors of the different train lines?"
     },
     "ShfXCzAYKC": {
-      "answer": "5 (to be verified)"
+      "answer": "5 (to be verified)",
+      "answerDetails": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" by James Schoppert is a 3' tall painted wood sculpture.",
+      "clue": "Find the painted wood sculpture \"Modern Mask.\" How many faces stare back at you?"
     },
     "U2Ml_N2Ao1": {
       "clue": "Take a photo of an album cover with the letter S on it."
     },
     "VGDb3ekZZs": {
       "answer": "Walk",
+      "answerDetails": "It takes nine minutes to walk, and 11 minutes to take the train. The times are shown at the bottom of the map on the information display on the landing between A gates and the train station.",
       "clue": "Check the travel time display between Concourse A and the train station. Is it faster to walk or take the train to C gates?"
     },
     "WOflQcqqRa": {
@@ -104,7 +113,8 @@
       "clue": "Take a selfie with a live plant."
     },
     "fId26KufqS": {
-      "answer": "Cordell works at the Luck Shines shoe shine near gate D2."
+      "answer": "Cordell works at the Luck Shines shoe shine near gate D2.",
+      "clue": "Where does Cordell \"The Transformer\" Truluck work?"
     },
     "glwn2opFlc": {
       "answer": "Skillet, near gate C10.",
@@ -114,6 +124,7 @@
       "clue": "Find a gate with a flight to a city inside Washington State and take a selfie with the sign."
     },
     "nGRX7LLH2E": {
+      "answerDetails": "The dog is located at Hachi-Ko.",
       "clue": "Take a selfie with the neon dog."
     },
     "ndC0lIJES6": {
@@ -138,6 +149,7 @@
       "clue": "Take a photo of something with the Space Needle on it."
     },
     "uzxCpAxD0O": {
+      "answerDetails": "The information desks are: - A info: across from Swarovski in Concourse A - A3 info: across from Starbucks by Gate A3 - Checkpoint 1: inside Checkpoint 1 on the landing between Concourse A and the A train station - A train: in the A train station - Central info: in the central terminal near Dilettante Chocolates & Mocha Cafe - D info: Across from the all-gender restrooms in Concourse D - D train: in the D train station - N info: in the North Satellite",
       "clue": "Take a selfie at every information desk.",
       "hint": "There are eight information desks post-security."
     },
@@ -163,6 +175,7 @@
     },
     "xNr6O90eQa": {
       "answer": "Susan",
+      "answerDetails": "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program.",
       "clue": "Listen to the airport announcements. What is the name of the volunteer?"
     },
     "yTNP29jtdB": {

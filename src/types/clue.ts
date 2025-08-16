@@ -32,27 +32,9 @@ export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
   { area: AirportArea.NORTH_SATELLITE, name: "North satellite" },
 ];
 
-export type ImageClue = {
+export interface Clue {
   airportArea: AirportArea;
-  answer?: string;
-  answerDetails?: string;
   answerType: AnswerType;
-  clue: string;
-  clueType: ClueType.IMAGE;
-  alternateText: string;
-  hint?: string;
+  clueType: ClueType;
   id: string;
-};
-
-export type TextClue = {
-  airportArea: AirportArea;
-  answer?: string;
-  answerDetails?: string;
-  answerType: AnswerType;
-  clue: string;
-  clueType: ClueType.TEXT;
-  hint?: string;
-  id: string;
-};
-
-export type Clue = TextClue | ImageClue;
+}
