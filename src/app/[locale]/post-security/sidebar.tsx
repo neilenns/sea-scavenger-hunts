@@ -70,7 +70,7 @@ export function PostSecuritySidebar({
   return (
     <Sidebar
       variant="floating"
-      aria-label="Post-security hunt navigation"
+      aria-label={t("sidebar-aria-label")}
       {...properties}
     >
       <SidebarHeader>
