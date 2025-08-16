@@ -191,35 +191,22 @@ export function usePostSecurityClues() {
     },
     {
       id: "xH4xrNHYJe", // cspell: disable-line
-      clue: "Find the shadow in the terrazzo floor. What object casts the shadow?",
+      clue: t("xH4xrNHYJe.clue"),
       airportArea: AirportArea.CONCOURSE_D,
       answerType: AnswerType.TEXT,
       clueType: ClueType.TEXT,
-      answer: "A boat.",
-      answerDetails:
-        '"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)" by Larry Kirkland is a 32\' long boat made out of aluminum and glass. The shadow is made from approximately seventy bronze elements.',
+      answer: t("xH4xrNHYJe.answer"),
+      answerDetails: t("xH4xrNHYJe.answerDetails"),
       // hint: "",
     },
     {
       id: "pB53_yVOPQ", // cspell: disable-line
-      clue: "Take a selfie outside the entrance of each airport lounge.",
+      clue: t("pB53_yVOPQ.clue"),
       airportArea: AirportArea.AIRPORT_WIDE,
       answerType: AnswerType.IMAGE,
       clueType: ClueType.TEXT,
-      answerDetails: `The lounges are: 
-      
-* Delta (A11)
-* Delta One (A11)
-* The Club (A11)
-* United (A10)
-* Delta (A1)
-* American Express Centurion (Central Terminal)
-* Alaska (C16)
-* Alaska (D1)
-* Alaska (mezzanine above N13-N18)
-* The Club (above S10)
-* British Airways (above S10).`,
-      hint: "There are eleven lounges at SEA, with ten entrances.",
+      answerDetails: t("pB53_yVOPQ.answerDetails"),
+      hint: t("pB53_yVOPQ.hint"),
     },
     {
       id: "96FePKs7zD", // cspell: disable-line
