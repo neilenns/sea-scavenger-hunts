@@ -2,16 +2,6 @@ import { AirportArea, AnswerType, Clue, ClueType } from "@/types/clue";
 
 export const postSecurityClues: ReadonlyArray<Clue> = [
   {
-    id: "KFNxBoixx9", // cspell: disable-line
-    clue: "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?",
-    airportArea: AirportArea.CONCOURSE_B,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
-    answer: "21",
-    answerDetails:
-      "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near gate B15.",
-  },
-  {
     id: "XU2Q6uk5Sj", // cspell: disable-line
     clue: "How many fish are carrying suitcases along the floor of the concourse?",
     airportArea: AirportArea.CONCOURSE_B,
@@ -39,13 +29,23 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     // hint: "",
   },
   {
-    id: "WOflQcqqRa", // cspell: disable-line
-    clue: "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
-    airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.IMAGE,
+    id: "KFNxBoixx9", // cspell: disable-line
+    clue: "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?",
+    airportArea: AirportArea.CONCOURSE_B,
+    answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    // answer: "",
-    hint: "LiveATC [broadcasts audio from SEA East Tower](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea).",
+    answer: "21",
+    answerDetails:
+      "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near Gate B15.",
+  },
+  {
+    id: "JTaK-wv-cm", // cspell: disable-line
+    clue: "How many balls are in the sculpture?",
+    airportArea: AirportArea.CONCOURSE_A,
+    answerType: AnswerType.TEXT,
+    clueType: ClueType.TEXT,
+    answer: "10 (to be verified)",
+    // hint: "",
   },
   {
     id: "GpyOC1fxZv", // cspell: disable-line
@@ -59,6 +59,15 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     hint: "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow.",
   },
   {
+    id: "WOflQcqqRa", // cspell: disable-line
+    clue: "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
+    airportArea: AirportArea.CONCOURSE_A,
+    answerType: AnswerType.IMAGE,
+    clueType: ClueType.TEXT,
+    // answer: "",
+    hint: "LiveATC [broadcasts audio from SEA East Tower](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea).",
+  },
+  {
     id: "wIuAhUYSUJ", // cspell: disable-line
     clue: "Find the CBP office in Concourse A. What's the phone number posted outside?",
     airportArea: AirportArea.CONCOURSE_A,
@@ -68,21 +77,22 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     // hint: "",
   },
   {
-    id: "JTaK-wv-cm", // cspell: disable-line
-    clue: "How many balls are in the sculpture?",
-    airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
-    answer: "10 (to be verified)",
-    // hint: "",
-  },
-  {
     id: "Mr8NTBLVuw", // cspell: disable-line
     clue: "Visit the all-gender restroom. How many faucets are at the sink?",
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
     answer: "6 (to be verified)",
+    // hint: "",
+  },
+  {
+    id: "Y7qiTGjFDA", // cspell: disable-line
+    clue: "Ride the blue train to the South Satellite. How many languages are shown on the train display screens during the ride?",
+    airportArea: AirportArea.SOUTH_SATELLITE,
+    answerType: AnswerType.TEXT,
+    clueType: ClueType.TEXT,
+    answer: "5 (to be verified)",
+    answerDetails: "The languages are: English, etc.",
     // hint: "",
   },
   {
@@ -114,11 +124,11 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "vVzEujhDHt", // cspell: disable-line
-    clue: "If you hit the jackpot, where in Concourse C would you cash your Washington Lotto ticket?",
+    clue: "If you hit the jackpot, where would you cash your Washington Lotto ticket?",
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "At the Washington Lotto desk near gate C10.",
+    answer: "At the Washington Lotto desk near Gate C10.",
     // hint: "",
   },
   {
@@ -127,7 +137,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_D,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "Cordell works at the Luck Shines shoe shine near gate D2.",
+    answer: "Cordell works at the Luck Shines shoe shine near Gate D2.",
     // hint: "",
   },
   {
@@ -234,7 +244,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
     answer: "26",
-    answerDetails: "Gate D26 is located downstairs, across from gate D5.",
+    answerDetails: "Gate D26 is located downstairs, across from Gate D5.",
     // hint: "",
   },
   {
@@ -253,6 +263,17 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
     answer: "Blue, yellow, and green.",
+    // hint: "",
+  },
+  {
+    id: "FwkTyDghkR", // cspell: disable-line
+    clue: "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?",
+    airportArea: AirportArea.CONCOURSE_A,
+    answerType: AnswerType.TEXT,
+    clueType: ClueType.TEXT,
+    answer: "20 (to be verified)",
+    answerDetails:
+      '"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)" by Peter Shelton hangs above Concourse A near Seattle Beer Union.',
     // hint: "",
   },
   {
@@ -277,7 +298,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   },
   {
     id: "-buCfuZ_Js", // cspell: disable-line
-    clue: "You've got a postcard to mail. Where in the Central Terminal can you buy postage stamps?",
+    clue: "You've got a postcard to mail. Where can you buy postage stamps?",
     airportArea: AirportArea.CENTRAL_TERMINAL,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
@@ -291,7 +312,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     answerDetails:
-      "The vending machines near the escalators in the south satellite sell a variety of Japanese food and drinks.",
+      "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks.",
     // hint: "",
   },
   {
@@ -322,17 +343,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     // hint: "",
   },
   {
-    id: "FwkTyDghkR", // cspell: disable-line
-    clue: "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?",
-    airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
-    answer: "20 (to be verified)",
-    answerDetails:
-      '"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)" by Peter Shelton hangs above Concourse A near Seattle Beer Union.',
-    // hint: "",
-  },
-  {
     id: "6IjATuH8h-", // cspell: disable-line
     clue: "Take a photo of a plane passing underneath the international arrivals skybridge.",
     airportArea: AirportArea.CONCOURSE_B,
@@ -356,7 +366,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     airportArea: AirportArea.CONCOURSE_C,
     answerType: AnswerType.TEXT,
     clueType: ClueType.TEXT,
-    answer: "Skillet, near gate C10.",
+    answer: "Skillet, near Gate C10.",
     // hint: "",
   },
   {
@@ -370,13 +380,13 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerDetails: `The information desks are:
     
   - **A info**: across from Swarovski in Concourse A
-  - **A3 info**: across from Starbucks by gate A3
-  - **Checkpoint 1**: inside checkpoint 1 on the landing between Concourse A and the A train station
+  - **A3 info**: across from Starbucks by Gate A3
+  - **Checkpoint 1**: inside Checkpoint 1 on the landing between Concourse A and the A train station
   - **A train**: in the A train station
   - **Central info**: in the central terminal near Dilettante Chocolates & Mocha Cafe
   - **D info**: Across from the all-gender restrooms in Concourse D
   - **D train**: in the D train station
-  - **N info**: in the north satellite
+  - **N info**: in the North Satellite
   `,
     // hint: "",
   },
@@ -415,16 +425,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answerType: AnswerType.IMAGE,
     clueType: ClueType.TEXT,
     // answerDetails: "",
-    // hint: "",
-  },
-  {
-    id: "Y7qiTGjFDA", // cspell: disable-line
-    clue: "Ride the blue train to the south satellite. How many languages are shown on the train display screens during the ride?",
-    airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
-    answer: "5 (to be verified)",
-    answerDetails: "The languages are: English, etc.",
     // hint: "",
   },
   {
