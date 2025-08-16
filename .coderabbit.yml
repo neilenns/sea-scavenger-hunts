@@ -28,6 +28,7 @@ reviews:
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:
+          - No UI strings are hardcoded.
           - Components have appropriate accessibility attributes on them.
           - All headings are in sentence, not title, case.
           - Table headers are in sentence case.

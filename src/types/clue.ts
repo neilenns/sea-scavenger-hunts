@@ -20,16 +20,16 @@ export enum ClueType {
 }
 
 // The order of the elements in this array also defines the order of the groups
-// on the page.
-export const airportAreaNames: Array<{ area: AirportArea; name: string }> = [
-  { area: AirportArea.AIRPORT_WIDE, name: "Airport-wide" },
-  { area: AirportArea.SOUTH_SATELLITE, name: "South satellite" },
-  { area: AirportArea.CONCOURSE_A, name: "Concourse A" },
-  { area: AirportArea.CONCOURSE_B, name: "Concourse B" },
-  { area: AirportArea.CENTRAL_TERMINAL, name: "Central terminal" },
-  { area: AirportArea.CONCOURSE_C, name: "Concourse C" },
-  { area: AirportArea.CONCOURSE_D, name: "Concourse D" },
-  { area: AirportArea.NORTH_SATELLITE, name: "North satellite" },
+// on the page. key is the string used to look up the i18n display name.
+export const airportAreaNames: Array<{ area: AirportArea; key: string }> = [
+  { area: AirportArea.AIRPORT_WIDE, key: "airport-wide" },
+  { area: AirportArea.SOUTH_SATELLITE, key: "south-satellite" },
+  { area: AirportArea.CONCOURSE_A, key: "concourse-a" },
+  { area: AirportArea.CONCOURSE_B, key: "concourse-b" },
+  { area: AirportArea.CENTRAL_TERMINAL, key: "central-terminal" },
+  { area: AirportArea.CONCOURSE_C, key: "concourse-c" },
+  { area: AirportArea.CONCOURSE_D, key: "concourse-d" },
+  { area: AirportArea.NORTH_SATELLITE, key: "north-satellite" },
 ];
 
 export interface Clue {

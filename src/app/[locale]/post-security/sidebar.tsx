@@ -25,6 +25,7 @@ import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState } from "react";
@@ -36,6 +37,7 @@ export function PostSecuritySidebar({
   const [hash, setHash] = useState<string>("");
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
+  const t = useTranslations("postSecurityPage");
 
   useEffect(() => {
     const update = () => setHash(globalThis.location?.hash ?? "");
@@ -80,7 +82,7 @@ export function PostSecuritySidebar({
                   <PlaneIcon aria-hidden="true" className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">SEA scavenger hunt</span>
+                  <span className="font-medium">{t("title")}</span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -90,8 +92,8 @@ export function PostSecuritySidebar({
       <SidebarContent>
         <SidebarGroup>
           <SidebarMenu className="gap-2">
-            {airportAreaNames.map(({ area, name }) => {
-              const anchorId = getAnchorId(name);
+            {airportAreaNames.map(({ area, key }) => {
+              const anchorId = getAnchorId(key);
               return (
                 <SidebarMenuItem key={area}>
                   <SidebarMenuButton asChild>
@@ -103,7 +105,7 @@ export function PostSecuritySidebar({
                         hash === `#${anchorId}` ? "location" : undefined
                       }
                     >
-                      {name}
+                      {t(`areas.${key}`)}
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
