@@ -25,6 +25,7 @@ import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState } from "react";
@@ -34,8 +35,10 @@ export function PostSecuritySidebar({
 }: React.ComponentProps<typeof Sidebar>) {
   const [open, setOpen] = useState(false);
   const [hash, setHash] = useState<string>("");
+  const [isClearing, setIsClearing] = useState(false);
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
+  const t = useTranslations("post-security-page");
 
   useEffect(() => {
     const update = () => setHash(globalThis.location?.hash ?? "");
@@ -50,6 +53,10 @@ export function PostSecuritySidebar({
   };
 
   async function handleClear() {
+    if (isClearing) return;
+
+    setIsClearing(true);
+
     try {
       await clearAllAnswers();
       setOpen(false);
@@ -62,13 +69,15 @@ export function PostSecuritySidebar({
       }
     } catch (error) {
       console.error("Failed to clear answers", error);
+    } finally {
+      setIsClearing(false);
     }
   }
 
   return (
     <Sidebar
       variant="floating"
-      aria-label="Post-security hunt navigation"
+      aria-label={t("sidebar.aria-label")}
       {...properties}
     >
       <SidebarHeader>
@@ -80,7 +89,7 @@ export function PostSecuritySidebar({
                   <PlaneIcon aria-hidden="true" className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">SEA scavenger hunt</span>
+                  <span className="font-medium">{t("sidebar.title")}</span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -90,10 +99,10 @@ export function PostSecuritySidebar({
       <SidebarContent>
         <SidebarGroup>
           <SidebarMenu className="gap-2">
-            {airportAreaNames.map(({ area, name }) => {
-              const anchorId = getAnchorId(name);
+            {airportAreaNames.map(({ key }) => {
+              const anchorId = getAnchorId(key);
               return (
-                <SidebarMenuItem key={area}>
+                <SidebarMenuItem key={key}>
                   <SidebarMenuButton asChild>
                     <a
                       href={`#${anchorId}`}
@@ -103,7 +112,7 @@ export function PostSecuritySidebar({
                         hash === `#${anchorId}` ? "location" : undefined
                       }
                     >
-                      {name}
+                      {t(`areas.${key}`)}
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -115,22 +124,28 @@ export function PostSecuritySidebar({
       <SidebarFooter>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button variant="default">Clear answers</Button>
+            <Button variant="default">
+              {t(`clear-answers-dialog.trigger`)}
+            </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Clear all answers?</DialogTitle>
+              <DialogTitle>{t(`clear-answers-dialog.title`)}</DialogTitle>
               <DialogDescription>
-                This will delete all saved answers. This action cannot be
-                undone.
+                {t(`clear-answers-dialog.description`)}
               </DialogDescription>
             </DialogHeader>
             <DialogFooter className="flex justify-end gap-2">
               <Button variant="outline" onClick={() => setOpen(false)}>
-                Cancel
+                {t(`clear-answers-dialog.cancel`)}
               </Button>
-              <Button variant="destructive" onClick={handleClear}>
-                Clear
+              <Button
+                variant="destructive"
+                onClick={handleClear}
+                disabled={isClearing}
+                aria-busy={isClearing}
+              >
+                {t(`clear-answers-dialog.clear`)}
               </Button>
             </DialogFooter>
           </DialogContent>
