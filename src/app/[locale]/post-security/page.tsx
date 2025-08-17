@@ -65,7 +65,11 @@ export default function Page() {
                       </h2>
                     </a>
                     {areaClues.map((clue) => (
-                      <ClueItem key={clue.id} clue={clue} />
+                      <ClueItem
+                        key={clue.id}
+                        clue={clue}
+                        namespace="post-security-page"
+                      />
                     ))}
                   </div>
                 );
