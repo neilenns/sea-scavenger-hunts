@@ -74,5 +74,9 @@
     "**/.pnpm-store": true,
     "**/.wrangler": true
   },
+  "i18n-ally.localesPaths": [
+    "messages",
+    "src/i18n"
+  ],
   "npm.packageManager": "pnpm"
 }

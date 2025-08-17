@@ -3,7 +3,10 @@
 {
   "customizations": {
     "vscode": {
-      "extensions": ["Jacano.vscode-pnpm"]
+      "extensions": [
+        "Jacano.vscode-pnpm",
+        "lokalise.i18n-ally"
+      ]
     }
   },
   "dockerComposeFile": "docker-compose.yaml",
