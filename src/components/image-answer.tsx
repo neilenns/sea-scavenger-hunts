@@ -13,7 +13,7 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
 
-  const t = useTranslations("image-answer");
+  const t = useTranslations("components");
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) return;
@@ -48,7 +48,7 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
         onClick={() => fileInputReference.current?.click()}
         className="rounded bg-gray-100 px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-200"
       >
-        {t("choose-files-button")}
+        {t("image-answer.choose-files-button")}
       </button>
 
       {files.length > 0 && (
@@ -68,7 +68,9 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
                 type="button"
                 onClick={() => handleRemove(index)}
                 className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs opacity-0 group-hover:opacity-100 transition"
-                aria-label={t("remove-image-aria", { index: index + 1 })}
+                aria-label={t("image-answer.remove-image-aria", {
+                  index: index + 1,
+                })}
               >
                 <span aria-hidden>×</span>
               </button>

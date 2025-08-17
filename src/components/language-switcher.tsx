@@ -24,7 +24,7 @@ export default function LanguageSwitcher({
 }: LanguageSwitcherProperties) {
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslations("language-switcher");
+  const t = useTranslations("components");
 
   // Extract current language from pathname
   const getCurrentLanguage = () => {
@@ -34,7 +34,9 @@ export default function LanguageSwitcher({
   };
 
   const currentLanguage = getCurrentLanguage();
-
+  const localizedLanguageString = t(
+    `language-switcher.${currentLanguage.code}`,
+  );
   const switchLanguage = (languageCode: string) => {
     const segments = pathname.split("/");
 
@@ -62,7 +64,7 @@ export default function LanguageSwitcher({
             variant="outline"
             size="sm"
             className="gap-2"
-            aria-label={t(currentLanguage.code)}
+            aria-label={localizedLanguageString}
           >
             <GlobeIcon
               className="h-4 w-4"
@@ -75,7 +77,7 @@ export default function LanguageSwitcher({
                 aria-hidden="true"
                 focusable="false"
               />
-              {t(currentLanguage.code)}
+              {localizedLanguageString}
             </span>
             <span className="sm:hidden">
               <currentLanguage.flagComponent
@@ -103,7 +105,7 @@ export default function LanguageSwitcher({
                   aria-hidden="true"
                   focusable="false"
                 />
-                {t(language.code)}
+                {t(`language-switcher.${language.code}`)}
               </DropdownMenuItem>
             );
           })}

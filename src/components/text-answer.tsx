@@ -10,7 +10,7 @@ export interface TextAnswerProperties {
 
 export function TextAnswer({ id }: TextAnswerProperties) {
   const [text, setText, loaded] = usePersistentAnswer<string>(id, "");
-  const t = useTranslations("text-answer");
+  const t = useTranslations("components");
 
   if (!loaded) return;
 
@@ -20,8 +20,8 @@ export function TextAnswer({ id }: TextAnswerProperties) {
       type="text"
       value={text}
       onChange={(event) => setText(event.target.value)}
-      placeholder={t("input-placeholder")}
-      aria-label={t("input-aria-label")}
+      placeholder={t("text-answer.input-placeholder")}
+      aria-label={t("text-answer.input-aria-label")}
     />
   );
 }

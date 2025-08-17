@@ -183,6 +183,12 @@
       "clue": "Montez à l'étage vers la mezzanine dans le Satellite Nord. Quel restaurant s'y trouve ?"
     }
   },
+  "components": {
+    "text-answer": {
+      "input-aria-label": "Tapez votre réponse...",
+      "input-placeholder": "Tapez votre réponse..."
+    }
+  },
   "image-answer": {
     "choose-files-button": "Choisir des fichiers",
     "remove-image-aria": "Supprimer l'image {index, number}"
@@ -215,15 +221,15 @@
       "trigger": "Effacer les réponses"
     },
     "description": "Chasse au trésor à l'aéroport SEA",
+    "header:": {
+      "trigger-aria-label": "Basculer la barre latérale"
+    },
     "introduction1": "Bienvenue à SEA ! Cette chasse au trésor vous aide à explorer tout l'aéroport. Combien d'objets pouvez-vous trouver?",
     "introduction2": "Toutes les réponses et tous les objets peuvent être trouvés dans les espaces publics. Il n'est pas nécessaire de franchir des portes, et ne sortez pas accidentellement du côté pré-sécurité de l'aéroport en cherchant des objets !",
     "introduction3": "Vos réponses sont stockées localement dans votre navigateur et ne sont jamais envoyées à un serveur.",
-    "sidebar-aria-label": "Navigation de la chasse au trésor SEA",
-    "sidebar-trigger-aria-label": "Basculer la barre latérale",
+    "sidebar": {
+      "aria-label": "Navigation de la chasse au trésor SEA"
+    },
     "title": "Chasse au trésor SEA"
-  },
-  "text-answer": {
-    "input-aria-label": "Tapez votre réponse...",
-    "input-placeholder": "Tapez votre réponse..."
   }
 }

@@ -70,7 +70,7 @@ export function PostSecuritySidebar({
   return (
     <Sidebar
       variant="floating"
-      aria-label={t("sidebar-aria-label")}
+      aria-label={t("sidebar.aria-label")}
       {...properties}
     >
       <SidebarHeader>
@@ -82,7 +82,7 @@ export function PostSecuritySidebar({
                   <PlaneIcon aria-hidden="true" className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">{t("title")}</span>
+                  <span className="font-medium">{t("sidebar.title")}</span>
                 </div>
               </a>
             </SidebarMenuButton>

@@ -183,13 +183,19 @@
       "clue": "Head upstairs to the mezzanine in the North Satellite. Which restaurant is there?"
     }
   },
-  "image-answer": {
-    "choose-files-button": "Choose files",
-    "remove-image-aria": "Remove image {index, number}"
-  },
-  "language-switcher": {
-    "en": "English",
-    "fr": "Français"
+  "components": {
+    "image-answer": {
+      "choose-files-button": "Choose files",
+      "remove-image-aria": "Remove image {index, number}"
+    },
+    "language-switcher": {
+      "en": "English",
+      "fr": "Français"
+    },
+    "text-answer": {
+      "input-aria-label": "Type your answer...",
+      "input-placeholder": "Type your answer..."
+    }
   },
   "main-page": {
     "description": "Scavenger hunts for SEA airport",
@@ -214,15 +220,16 @@
       "trigger": "Clear answers"
     },
     "description": "Scavenger hunt for SEA airport",
+    "header": {
+      "trigger-aria-label": "Toggle sidebar"
+    },
     "introduction1": "Welcome to SEA! This scavenger hunt helps you explore the entire airport. How many items can you find?",
     "introduction2": "All answers and items can be found in public spaces. There is no need to go through any doors, and don't accidentally exit to the pre-security side of the airport when hunting for items!",
     "introduction3": "Your answers are stored locally in your browser and are never sent to a server.",
-    "sidebar-aria-label": "SEA scavenger hunt navigation",
-    "sidebar-trigger-aria-label": "Toggle sidebar",
+    "sidebar": {
+      "aria-label": "SEA scavenger hunt navigation",
+      "title": "SEA scavenger hunt"
+    },
     "title": "SEA scavenger hunt"
-  },
-  "text-answer": {
-    "input-aria-label": "Type your answer...",
-    "input-placeholder": "Type your answer..."
   }
 }
