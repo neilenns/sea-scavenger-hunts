@@ -35,6 +35,7 @@ export function PostSecuritySidebar({
 }: React.ComponentProps<typeof Sidebar>) {
   const [open, setOpen] = useState(false);
   const [hash, setHash] = useState<string>("");
+  const [isClearing, setIsClearing] = useState(false);
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
   const t = useTranslations("post-security-page");
@@ -52,6 +53,10 @@ export function PostSecuritySidebar({
   };
 
   async function handleClear() {
+    if (isClearing) return;
+
+    setIsClearing(true);
+
     try {
       await clearAllAnswers();
       setOpen(false);
@@ -64,6 +69,8 @@ export function PostSecuritySidebar({
       }
     } catch (error) {
       console.error("Failed to clear answers", error);
+    } finally {
+      setIsClearing(false);
     }
   }
 
@@ -92,10 +99,10 @@ export function PostSecuritySidebar({
       <SidebarContent>
         <SidebarGroup>
           <SidebarMenu className="gap-2">
-            {airportAreaNames.map(({ area, key }) => {
+            {airportAreaNames.map(({ key }) => {
               const anchorId = getAnchorId(key);
               return (
-                <SidebarMenuItem key={area}>
+                <SidebarMenuItem key={key}>
                   <SidebarMenuButton asChild>
                     <a
                       href={`#${anchorId}`}
@@ -132,7 +139,12 @@ export function PostSecuritySidebar({
               <Button variant="outline" onClick={() => setOpen(false)}>
                 {t(`clear-answers-dialog.cancel`)}
               </Button>
-              <Button variant="destructive" onClick={handleClear}>
+              <Button
+                variant="destructive"
+                onClick={handleClear}
+                disabled={isClearing}
+                aria-busy={isClearing}
+              >
                 {t(`clear-answers-dialog.clear`)}
               </Button>
             </DialogFooter>
