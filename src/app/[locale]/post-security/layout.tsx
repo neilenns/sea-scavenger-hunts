@@ -1,6 +1,6 @@
 import { routing } from "@/i18n/routing";
 import { WithChildren } from "@/types/with-children";
-import { hasLocale } from "next-intl";
+import { hasLocale, Locale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params: parameters,
 }: Readonly<{
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: Locale }>;
 }>) {
   const { locale } = await parameters;
   const t = await getTranslations({ locale, namespace: "post-security-page" });

@@ -1,5 +1,5 @@
 import { routing } from "@/i18n/routing";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
 import { ThemeProvider } from "@/components/theme-provider";
@@ -26,7 +26,7 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params: parameters,
 }: Readonly<{
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: Locale }>;
 }>) {
   const { locale } = await parameters;
   const t = await getTranslations({ locale, namespace: "main-page" });
