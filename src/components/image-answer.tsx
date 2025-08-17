@@ -1,9 +1,11 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
+import { Button } from "./ui/button";
 
 export interface ImageAnswerProperties {
   id: string;
@@ -64,16 +66,18 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
                 fill
                 className="object-cover"
               />
-              <button
+              <Button
+                variant="ghost"
+                size="icon"
                 type="button"
                 onClick={() => handleRemove(index)}
-                className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs opacity-0 group-hover:opacity-100 transition"
+                className="absolute flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs"
                 aria-label={t("image-answer.remove-image-aria", {
                   index: index + 1,
                 })}
               >
-                <span aria-hidden>×</span>
-              </button>
+                <TrashIcon />
+              </Button>
             </div>
           ))}
         </div>

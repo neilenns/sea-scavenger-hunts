@@ -192,6 +192,9 @@
       "en": "English",
       "fr": "Français"
     },
+    "markdown": {
+      "link-opens-in-new-tab": "(opens in a new tab)"
+    },
     "text-answer": {
       "input-aria-label": "Type your answer...",
       "input-placeholder": "Type your answer..."

@@ -22,11 +22,11 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { clearAllAnswers } from "@/hooks/clear-all-answers";
+import { useRouter } from "@/i18n/navigation";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState } from "react";
 

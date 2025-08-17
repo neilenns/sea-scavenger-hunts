@@ -195,6 +195,9 @@
     "text-answer": {
       "input-aria-label": "Tapez votre réponse...",
       "input-placeholder": "Tapez votre réponse..."
+    },
+    "markdown": {
+      "link-opens-in-new-tab": "(ouvre dans un nouvel onglet)"
     }
   },
   "main-page": {

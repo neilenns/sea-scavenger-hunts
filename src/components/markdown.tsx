@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -8,6 +9,8 @@ interface MarkdownProperties {
 }
 
 const Markdown = ({ children, className }: MarkdownProperties) => {
+  const t = useTranslations("components");
+
   return (
     <div className={className}>
       <ReactMarkdown
@@ -35,7 +38,9 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
                 {...(anchorProperties as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
               >
                 {children}
-                <span className="sr-only"> (opens in a new tab)</span>
+                <span className="sr-only">
+                  {t("markdown.link-opens-in-new-tab")}
+                </span>
               </a>
             ) : (
               <Link

@@ -5,10 +5,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { usePathname } from "@/i18n/navigation";
 import { FR, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+// These need to use next/navigation so the redirect to the new locale can happen.
+// eslint-disable-next-line no-restricted-imports
+import { useRouter } from "next/navigation";
 
 const languages = [
   { code: "en", flagComponent: US },
@@ -23,14 +26,12 @@ export default function LanguageSwitcher({
   className,
 }: LanguageSwitcherProperties) {
   const router = useRouter();
-  const pathname = usePathname();
   const t = useTranslations("components");
+  const locale = useLocale();
+  const pathname = usePathname();
 
-  // Extract current language from pathname
   const getCurrentLanguage = () => {
-    const segments = pathname.split("/");
-    const langCode = segments[1];
-    return languages.find((lang) => lang.code === langCode) || languages[0];
+    return languages.find((lang) => lang.code === locale) || languages[0];
   };
 
   const currentLanguage = getCurrentLanguage();
@@ -38,21 +39,15 @@ export default function LanguageSwitcher({
     `language-switcher.${currentLanguage.code}`,
   );
   const switchLanguage = (languageCode: string) => {
-    const segments = pathname.split("/");
+    // Since pathname comes from i18n/navigation, the current language code is
+    // already stripped from the front. Just add in the new language code.
 
-    // Replace the language segment (first segment after root)
-    if (segments[1] && languages.some((lang) => lang.code === segments[1])) {
-      segments[1] = languageCode;
-    } else {
-      // If no language in path, insert at beginning
-      segments.splice(1, 0, languageCode);
-    }
-
-    const newPath = segments.join("/");
+    const newPath = `/${languageCode}${pathname}`;
     const search =
       globalThis.window === undefined ? "" : globalThis.location.search;
     const hash =
       globalThis.window === undefined ? "" : globalThis.location.hash;
+
     router.push(`${newPath}${search}${hash}`);
   };
 
