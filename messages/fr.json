@@ -149,7 +149,7 @@
       "clue": "Prenez une photo de quelque chose avec la Space Needle dessus."
     },
     "uzxCpAxD0O": {
-      "answerDetails": "Les bureaux d'information sont : - Info A : en face de Swarovski dans le Concourse A - Info A3 : en face du Starbucks près de la porte A3 - Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A - Train A : dans la gare A - Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe - Info D : En face des toilettes mixtes dans le Concourse D - Train D : dans la gare D - Info N : dans le Satellite Nord",
+      "answerDetails": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord",
       "clue": "Prenez un selfie à chaque bureau d'information.",
       "hint": "Il y a huit bureaux d'information après la sécurité."
     },
@@ -184,20 +184,19 @@
     }
   },
   "components": {
+    "image-answer": {
+      "choose-files-button": "Choisir des fichiers",
+      "remove-image-aria": "Supprimer l'image {index, number}"
+    },
+    "language-switcher": {
+      "en": "English",
+      "fr": "Français"
+    },
     "text-answer": {
       "input-aria-label": "Tapez votre réponse...",
       "input-placeholder": "Tapez votre réponse..."
     }
   },
-  "image-answer": {
-    "choose-files-button": "Choisir des fichiers",
-    "remove-image-aria": "Supprimer l'image {index, number}"
-  },
-  "language-switcher": {
-    "en": "English",
-    "fr": "Français"
-  },
-
   "main-page": {
     "description": "Chasses au trésor à l'aéroport SEA",
     "title": "Chasses au trésor SEA"
@@ -221,14 +220,15 @@
       "trigger": "Effacer les réponses"
     },
     "description": "Chasse au trésor à l'aéroport SEA",
-    "header:": {
+    "header": {
       "trigger-aria-label": "Basculer la barre latérale"
     },
     "introduction1": "Bienvenue à SEA ! Cette chasse au trésor vous aide à explorer tout l'aéroport. Combien d'objets pouvez-vous trouver?",
     "introduction2": "Toutes les réponses et tous les objets peuvent être trouvés dans les espaces publics. Il n'est pas nécessaire de franchir des portes, et ne sortez pas accidentellement du côté pré-sécurité de l'aéroport en cherchant des objets !",
     "introduction3": "Vos réponses sont stockées localement dans votre navigateur et ne sont jamais envoyées à un serveur.",
     "sidebar": {
-      "aria-label": "Navigation de la chasse au trésor SEA"
+      "aria-label": "Navigation de la chasse au trésor SEA",
+      "title": "Chasse au trésor SEA"
     },
     "title": "Chasse au trésor SEA"
   }
