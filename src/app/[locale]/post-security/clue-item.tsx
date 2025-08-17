@@ -1,6 +1,6 @@
 "use client";
 import { ImageAnswer } from "@/components/image-answer";
-import Markdown from "@/components/markdown";
+import RichText from "@/components/rich-text";
 import { TextAnswer } from "@/components/text-answer";
 import {
   Accordion,
@@ -43,9 +43,9 @@ export function ClueItem({ clue }: ClueItemProperties) {
           </div>
         )}
         {translatedClues.has(`${clue.id}.hint`) && (
-          <Markdown className="text-muted-foreground mb-2">
-            {translatedClues(`${clue.id}.hint`)}
-          </Markdown>
+          <RichText className="text-muted-foreground mb-2">
+            {(tags) => translatedClues.rich(`${clue.id}.hint`, tags)}
+          </RichText>
         )}
         {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
         {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
@@ -58,12 +58,20 @@ export function ClueItem({ clue }: ClueItemProperties) {
               </AccordionTrigger>
               <AccordionContent className="pb-0 mt-2">
                 {translatedClues.has(`${clue.id}.answer`) && (
-                  <p>{translatedClues(`${clue.id}.answer`)}</p>
+                  <p>
+                    <RichText>
+                      {(tags) =>
+                        translatedClues.rich(`${clue.id}.answer`, tags)
+                      }
+                    </RichText>
+                  </p>
                 )}
                 {translatedClues.has(`${clue.id}.answerDetails`) && (
-                  <Markdown>
-                    {translatedClues(`${clue.id}.answerDetails`)}
-                  </Markdown>
+                  <RichText>
+                    {(tags) =>
+                      translatedClues.rich(`${clue.id}.answerDetails`, tags)
+                    }
+                  </RichText>
                 )}
               </AccordionContent>
             </AccordionItem>

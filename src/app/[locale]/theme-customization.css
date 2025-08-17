@@ -41,3 +41,11 @@ table tbody tr:nth-child(odd) {
   background-color: var(--color-table-nth-child-odd);
   color: var(--color-foreground);
 }
+
+ul {
+  @apply list-disc pl-6 my-2;
+}
+
+li {
+  @apply mb-1;
+}
