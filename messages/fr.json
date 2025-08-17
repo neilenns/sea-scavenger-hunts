@@ -141,7 +141,8 @@
     },
     "qtcTszICZ5": {
       "answer": "12",
-      "clue": "Prenez la ligne de train jaune. Combien d'extincteurs sont fixés au mur dans le tunnel ?"
+      "clue": "Prenez la ligne de train jaune. Combien d'extincteurs sont fixés au mur dans le tunnel ?",
+      "hint": "Comptez uniquement les extincteurs fixés au mur du tunnel; celui dans le train ne compte pas."
     },
     "sZLbWTNUXK": {
       "clue": "Prenez une photo d'un panneau écrit dans une langue autre que l'anglais."

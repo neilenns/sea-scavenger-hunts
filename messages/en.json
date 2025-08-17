@@ -141,7 +141,8 @@
     },
     "qtcTszICZ5": {
       "answer": "12",
-      "clue": "Ride the yellow line train. How many fire extinguishers are mounted to the wall in the tunnel?"
+      "clue": "Ride the yellow line train. How many fire extinguishers are mounted to the wall in the tunnel?",
+      "hint": "Count only extinguishers mounted to the tunnel wall; the one on the train does not count."
     },
     "sZLbWTNUXK": {
       "clue": "Take a photo of a sign written in a language other than English."
