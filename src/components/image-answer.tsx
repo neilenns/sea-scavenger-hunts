@@ -14,7 +14,6 @@ export interface ImageAnswerProperties {
 export function ImageAnswer({ id }: ImageAnswerProperties) {
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
-
   const t = useTranslations("components");
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
@@ -45,19 +44,20 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
         className="hidden"
       />
 
-      <button
+      <Button
         type="button"
+        variant="secondary"
+        size="sm"
         onClick={() => fileInputReference.current?.click()}
-        className="rounded bg-gray-100 px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-200"
       >
         {t("image-answer.choose-files-button")}
-      </button>
+      </Button>
 
       {files.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {files.map((file, index) => (
             <div
-              key={index}
+              key={`${file.name}-${file.lastModified}-${index}`}
               className="relative aspect-[4/3] w-24 group overflow-hidden rounded"
             >
               <Image

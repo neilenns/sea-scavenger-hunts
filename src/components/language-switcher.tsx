@@ -5,18 +5,20 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { usePathname } from "@/i18n/navigation";
-import { FR, US } from "country-flag-icons/react/3x2";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { FlagComponent, FR, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
+import type { Locale } from "next-intl";
 import { useLocale, useTranslations } from "next-intl";
-// These need to use next/navigation so the redirect to the new locale can happen.
-// eslint-disable-next-line no-restricted-imports
-import { useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import { startTransition, useCallback, useMemo } from "react";
 
 const languages = [
   { code: "en", flagComponent: US },
-  { code: "fr", flagComponent: FR }, // cspell: disable-line
-];
+  { code: "fr", flagComponent: FR },
+] as const satisfies ReadonlyArray<
+  Readonly<{ code: Locale; flagComponent: FlagComponent }>
+>;
 
 export interface LanguageSwitcherProperties {
   className?: string;
@@ -29,27 +31,31 @@ export default function LanguageSwitcher({
   const t = useTranslations("components");
   const locale = useLocale();
   const pathname = usePathname();
+  const parameters = useParams();
 
-  const getCurrentLanguage = () => {
-    return languages.find((lang) => lang.code === locale) || languages[0];
-  };
+  const currentLanguage = useMemo(
+    () => languages.find((lang) => lang.code === locale) || languages[0],
+    [locale],
+  );
 
-  const currentLanguage = getCurrentLanguage();
   const localizedLanguageString = t(
     `language-switcher.${currentLanguage.code}`,
   );
-  const switchLanguage = (languageCode: string) => {
-    // Since pathname comes from i18n/navigation, the current language code is
-    // already stripped from the front. Just add in the new language code.
 
-    const newPath = `/${languageCode}${pathname}`;
-    const search =
-      globalThis.window === undefined ? "" : globalThis.location.search;
-    const hash =
-      globalThis.window === undefined ? "" : globalThis.location.hash;
-
-    router.push(`${newPath}${search}${hash}`);
-  };
+  const switchLanguage = useCallback(
+    (nextLocale: Locale) => {
+      startTransition(() => {
+        router.replace(
+          // @ts-expect-error -- TypeScript will validate that only known `params`
+          // are used in combination with a given `pathname`. Since the two will
+          // always match for the current route, we can skip runtime checks.
+          { pathname, params: parameters },
+          { locale: nextLocale },
+        );
+      });
+    },
+    [pathname, router, parameters],
+  );
 
   return (
     <div className={className}>

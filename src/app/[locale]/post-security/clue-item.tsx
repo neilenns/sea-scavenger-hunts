@@ -20,20 +20,21 @@ export interface ClueItemProperties {
 
 export function ClueItem({ clue, namespace }: ClueItemProperties) {
   const t = useTranslations();
+  const baseKey = `${namespace}.clues.${clue.id}`;
 
   return (
     <Card className="p-0" aria-labelledby={`clue-${clue.id}`} role="group">
       <CardContent className="px-4 py-3 space-y-2">
         <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
-          {t(`${namespace}.clues.${clue.id}.clue`)}
+          {t(`${baseKey}.clue`)}
         </h3>
         {clue.clueType === ClueType.IMAGE && (
           <div className="relative mx-auto max-w-[400px] aspect-video">
             <Image
               alt={
-                t.has(`${namespace}.clues.${clue.id}.alternateText`)
-                  ? t(`${namespace}.clues.${clue.id}.alternateText`)
-                  : t(`${namespace}.clues.${clue.id}.clue`)
+                t.has(`${baseKey}.alternateText`)
+                  ? t(`${baseKey}.alternateText`)
+                  : t(`${baseKey}.clue`)
               }
               src={`/clue-images/${clue.id}.jpg`}
               fill
@@ -42,28 +43,23 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
             />
           </div>
         )}
-        {t.has(`${namespace}.clues.${clue.id}.hint`) && (
+        {t.has(`${baseKey}.hint`) && (
           <Markdown className="text-muted-foreground mb-2">
-            {t(`${namespace}.clues.${clue.id}.hint`)}
+            {t(`${baseKey}.hint`)}
           </Markdown>
         )}
         {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
         {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
-        {(t.has(`${namespace}.clues.${clue.id}.answer`) ||
-          t.has(`${namespace}.clues.${clue.id}.answerDetails`)) && (
+        {(t.has(`${baseKey}.answer`) || t.has(`${baseKey}.answerDetails`)) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
               <AccordionTrigger className="pb-0">
                 {t("components.clue-item.answer")}
               </AccordionTrigger>
               <AccordionContent className="pb-0 mt-2">
-                {t.has(`${namespace}.clues.${clue.id}.answer`) && (
-                  <p>{t(`${namespace}.clues.${clue.id}.answer`)}</p>
-                )}
-                {t.has(`${namespace}.clues.${clue.id}.answerDetails`) && (
-                  <Markdown>
-                    {t(`${namespace}.clues.${clue.id}.answerDetails`)}
-                  </Markdown>
+                {t.has(`${baseKey}.answer`) && <p>{t(`${baseKey}.answer`)}</p>}
+                {t.has(`${baseKey}.answerDetails`) && (
+                  <Markdown>{t(`${baseKey}.answerDetails`)}</Markdown>
                 )}
               </AccordionContent>
             </AccordionItem>

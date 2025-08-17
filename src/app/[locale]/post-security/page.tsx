@@ -8,6 +8,8 @@ import { ClueItem } from "./clue-item";
 import { Header } from "./header";
 import { PostSecuritySidebar } from "./sidebar";
 
+const NAMESPACE = "post-security-page" as const;
+
 export default function Page() {
   const t = useTranslations("post-security-page");
 
@@ -68,7 +70,7 @@ export default function Page() {
                       <ClueItem
                         key={clue.id}
                         clue={clue}
-                        namespace="post-security-page"
+                        namespace={NAMESPACE}
                       />
                     ))}
                   </div>

@@ -39,6 +39,7 @@ const Markdown = ({ children, className }: MarkdownProperties) => {
               >
                 {children}
                 <span className="sr-only">
+                  {" "}
                   {t("markdown.link-opens-in-new-tab")}
                 </span>
               </a>

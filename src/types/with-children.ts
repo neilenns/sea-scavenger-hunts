@@ -1,4 +1,4 @@
-import { Locale } from "next-intl";
+import type { Locale } from "next-intl";
 import type { ReactNode } from "react";
 
 export type WithChildren = Readonly<{

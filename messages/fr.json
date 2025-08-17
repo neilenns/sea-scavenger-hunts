@@ -1,8 +1,8 @@
 {
-  "clue-item": {
-    "answer": "Réponse"
-  },
   "components": {
+    "clue-item": {
+      "answer": "Réponse"
+    },
     "image-answer": {
       "choose-files-button": "Choisir des fichiers",
       "remove-image-aria": "Supprimer l'image {index, number}"

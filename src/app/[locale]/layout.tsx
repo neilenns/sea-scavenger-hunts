@@ -1,11 +1,11 @@
-import { routing } from "@/i18n/routing";
-import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
-
 import { ThemeProvider } from "@/components/theme-provider";
+import { routing } from "@/i18n/routing";
 import { WithChildren } from "@/types/with-children";
+import type { Locale } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
+import { notFound } from "next/navigation";
 import "./globals.css";
 
 const geistSans = Geist({
