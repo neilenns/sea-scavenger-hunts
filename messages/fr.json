@@ -51,8 +51,9 @@
       "hint": "Le flux d'aéroport est la direction vers laquelle les avions décollent. Par exemple, si les avions décollent vers le sud, l'aéroport est en flux sud."
     },
     "JTaK-wv-cm": {
-      "answer": "10 (à vérifier)",
-      "clue": "Combien de balles y a-t-il dans la sculpture ?"
+      "answer": "14",
+      "answerDetails": "Il y a 13 balles dans la section nord de la sculpture, et une balle dans la section sud.",
+      "clue": "Trouvez \"On: Matter, monkeys and the king\" de Trimpin. Combien de balles y a-t-il dans la sculpture ?"
     },
     "JjwwVsnaNJ": {
       "answerDetails": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises.",
@@ -137,6 +138,10 @@
     },
     "qsWmZtJQx9": {
       "clue": "Cherchez dans les écrans des portes et prenez une photo du numéro de vol le plus élevé que vous repérez."
+    },
+    "qtcTszICZ5": {
+      "answer": "12",
+      "clue": "Prenez la ligne de train jaune. Combien d'extincteurs sont fixés au mur dans le tunnel ?"
     },
     "sZLbWTNUXK": {
       "clue": "Prenez une photo d'un panneau écrit dans une langue autre que l'anglais."

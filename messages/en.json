@@ -51,8 +51,9 @@
       "hint": "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow."
     },
     "JTaK-wv-cm": {
-      "answer": "10 (to be verified)",
-      "clue": "How many balls are in the sculpture?"
+      "answer": "14",
+      "answerDetails": "There are 13 balls in the north section of the sculpture, and one ball in the south section.",
+      "clue": "Find \"On: Matter, monkeys and the king\" by Trimpin. How many balls are in the sculpture?"
     },
     "JjwwVsnaNJ": {
       "answerDetails": "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks.",
@@ -137,6 +138,10 @@
     },
     "qsWmZtJQx9": {
       "clue": "Search the gate screens and snap a photo of the highest flight number you spot."
+    },
+    "qtcTszICZ5": {
+      "answer": "12",
+      "clue": "Ride the yellow line train. How many fire extinguishers are mounted to the wall in the tunnel?"
     },
     "sZLbWTNUXK": {
       "clue": "Take a photo of a sign written in a language other than English."
