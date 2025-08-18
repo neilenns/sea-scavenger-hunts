@@ -1,14 +1,16 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { Clue } from "@/types/clue";
 import { useTranslations } from "next-intl";
 import { Input } from "./ui/input";
 
 export interface TextAnswerProperties {
-  id: string;
+  clue: Clue;
 }
 
-export function TextAnswer({ id }: TextAnswerProperties) {
+export function TextAnswer({ clue }: TextAnswerProperties) {
+  const { id } = clue;
   const [text, setText, loaded] = usePersistentAnswer<string>(id, "");
   const t = useTranslations("components");
 

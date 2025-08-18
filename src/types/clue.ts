@@ -40,5 +40,6 @@ export interface Clue {
   answerType: AnswerType;
   /** How clue content is rendered */
   clueType: ClueType;
+  expectedImageCount?: number;
   id: string;
 }

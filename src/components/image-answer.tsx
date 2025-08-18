@@ -1,6 +1,7 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { Clue } from "@/types/clue";
 import { TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -8,10 +9,11 @@ import { useRef } from "react";
 import { Button } from "./ui/button";
 
 export interface ImageAnswerProperties {
-  id: string;
+  clue: Clue;
 }
 
-export function ImageAnswer({ id }: ImageAnswerProperties) {
+export function ImageAnswer({ clue }: ImageAnswerProperties) {
+  const { id, expectedImageCount } = clue;
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
@@ -50,7 +52,9 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
         size="sm"
         onClick={() => fileInputReference.current?.click()}
       >
-        {t("image-answer.choose-files-button")}
+        {t("image-answer.choose-files-button", {
+          expectedImageCount: expectedImageCount ?? 1,
+        })}
       </Button>
 
       {files.length > 0 && (
