@@ -41,7 +41,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         id={id}
         type="file"
         accept="image/*"
-        multiple={(clue.expectedImageCount ?? 1) > 1}
+        multiple={(expectedImageCount ?? 1) > 1}
         onChange={handleFilesSelected}
         className="hidden"
       />
