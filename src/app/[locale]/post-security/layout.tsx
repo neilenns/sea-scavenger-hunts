@@ -1,5 +1,5 @@
 import { routing } from "@/i18n/routing";
-import { WithChildren } from "@/types/with-children";
+import { LayoutPropertiesWithLocale } from "@/types/layout-properties-with-locale";
 import type { Locale } from "next-intl";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -37,7 +37,7 @@ export async function generateMetadata({
 export default async function Layout({
   children,
   params: parameters,
-}: WithChildren) {
+}: LayoutPropertiesWithLocale) {
   const { locale } = await parameters;
 
   if (!hasLocale(routing.locales, locale)) {

@@ -11,7 +11,7 @@ import { GlobeIcon } from "lucide-react";
 import type { Locale } from "next-intl";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import { startTransition, useCallback, useMemo } from "react";
+import { useCallback, useMemo, useTransition } from "react";
 
 const languages = [
   { code: "en", flagComponent: US },
@@ -32,6 +32,7 @@ export default function LanguageSwitcher({
   const locale = useLocale();
   const pathname = usePathname();
   const parameters = useParams();
+  const [isPending, startTransition] = useTransition();
 
   const currentLanguage = useMemo(
     () => languages.find((lang) => lang.code === locale) || languages[0],
@@ -62,6 +63,7 @@ export default function LanguageSwitcher({
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
+            disabled={isPending}
             variant="outline"
             size="sm"
             className="gap-2"
@@ -96,7 +98,7 @@ export default function LanguageSwitcher({
             return (
               <DropdownMenuItem
                 key={language.code}
-                onClick={() => switchLanguage(language.code)}
+                onSelect={() => switchLanguage(language.code)}
                 role="menuitemradio"
                 aria-checked={selected}
                 className={`cursor-pointer ${selected ? "bg-accent text-accent-foreground" : ""}`}

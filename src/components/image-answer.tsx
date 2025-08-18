@@ -57,8 +57,8 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
         <div className="mt-3 flex flex-wrap gap-2">
           {files.map((file, index) => (
             <div
-              key={`${file.name}-${file.lastModified}-${index}`}
-              className="relative aspect-[4/3] w-24 group overflow-hidden rounded"
+              key={`${file.name}-${file.lastModified}`}
+              className="relative aspect-[4/3] w-24 overflow-hidden rounded"
             >
               <Image
                 src={URL.createObjectURL(file)}
@@ -71,7 +71,7 @@ export function ImageAnswer({ id }: ImageAnswerProperties) {
                 size="icon"
                 type="button"
                 onClick={() => handleRemove(index)}
-                className="absolute flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs"
+                className="absolute top-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs"
                 aria-label={t("image-answer.remove-image-aria", {
                   index: index + 1,
                 })}
