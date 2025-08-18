@@ -137,8 +137,9 @@
         "clue": "Combien de poissons portent des valises le long du sol du concourse ?"
       },
       "Y7qiTGjFDA": {
-        "answer": "5 (à vérifier)",
-        "clue": "Prenez le train bleu vers le satellite sud. Combien de langues sont affichées sur les écrans du train pendant le trajet ?"
+        "answer": "8",
+        "answerDetails": "Les langues sont :\n\n- Anglais\n- Arabe\n- Chinois\n- Coréen\n- Espagnol\n- Japonais\n- Russe\n- Vietnamien",
+        "clue": "Prenez le train bleu vers le Satellite Sud. Combien de langues sont affichées sur le panneau numérique \"Please hold on\" ?"
       },
       "Z8uD5RIdFk": {
         "clue": "Explorez les magasins. Prenez une photo de l'article le plus cher que vous puissiez trouver en vente."
