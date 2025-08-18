@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -43,15 +44,21 @@ export default function LanguageSwitcher({
     `language-switcher.${currentLanguage.code}`,
   );
 
-  const switchLanguage = useCallback(
-    (nextLocale: Locale) => {
+  const switchLocale = useCallback(
+    (nextLocale: string) => {
+      // Guard against unexpected values
+      if (!languages.some((l) => l.code === nextLocale)) {
+        console.warn("Unknown locale:", nextLocale);
+        return;
+      }
+
       startTransition(() => {
         router.replace(
           // @ts-expect-error -- TypeScript will validate that only known `params`
           // are used in combination with a given `pathname`. Since the two will
           // always match for the current route, we can skip runtime checks.
           { pathname, params: parameters },
-          { locale: nextLocale },
+          { locale: nextLocale as Locale },
         );
       });
     },
@@ -92,26 +99,23 @@ export default function LanguageSwitcher({
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="min-w-[150px]">
-          {languages.map((language) => {
-            const selected = currentLanguage.code === language.code;
-
-            return (
-              <DropdownMenuItem
-                key={language.code}
-                onSelect={() => switchLanguage(language.code)}
-                role="menuitemradio"
-                aria-checked={selected}
-                className={`cursor-pointer ${selected ? "bg-accent text-accent-foreground" : ""}`}
-              >
-                <language.flagComponent
-                  className="w-4 h-3 mr-2"
-                  aria-hidden="true"
-                  focusable="false"
-                />
-                {t(`language-switcher.${language.code}`)}
-              </DropdownMenuItem>
-            );
-          })}
+          <DropdownMenuRadioGroup value={locale} onValueChange={switchLocale}>
+            {languages.map((language) => {
+              return (
+                <DropdownMenuRadioItem
+                  value={language.code}
+                  key={language.code}
+                >
+                  <language.flagComponent
+                    className="w-4 h-3 mr-2"
+                    aria-hidden="true"
+                    focusable="false"
+                  />
+                  {t(`language-switcher.${language.code}`)}
+                </DropdownMenuRadioItem>
+              );
+            })}
+          </DropdownMenuRadioGroup>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
