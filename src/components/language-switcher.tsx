@@ -46,13 +46,19 @@ export default function LanguageSwitcher({
 
   const switchLocale = useCallback(
     (nextLocale: string) => {
+      // Guard against unexpected values
+      if (!languages.some((l) => l.code === nextLocale)) {
+        console.warn("Unknown locale:", nextLocale);
+        return;
+      }
+
       startTransition(() => {
         router.replace(
           // @ts-expect-error -- TypeScript will validate that only known `params`
           // are used in combination with a given `pathname`. Since the two will
           // always match for the current route, we can skip runtime checks.
           { pathname, params: parameters },
-          { locale: nextLocale },
+          { locale: nextLocale as Locale },
         );
       });
     },
@@ -95,13 +101,10 @@ export default function LanguageSwitcher({
         <DropdownMenuContent align="end" className="min-w-[150px]">
           <DropdownMenuRadioGroup value={locale} onValueChange={switchLocale}>
             {languages.map((language) => {
-              const selected = currentLanguage.code === language.code;
-
               return (
                 <DropdownMenuRadioItem
                   value={language.code}
                   key={language.code}
-                  className={`cursor-pointer ${selected ? "bg-accent text-accent-foreground" : ""}`}
                 >
                   <language.flagComponent
                     className="w-4 h-3 mr-2"
