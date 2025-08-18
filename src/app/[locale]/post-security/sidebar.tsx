@@ -22,7 +22,6 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { clearAllAnswers } from "@/hooks/clear-all-answers";
-import { useRouter } from "@/i18n/navigation";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
@@ -36,7 +35,6 @@ export function PostSecuritySidebar({
   const [open, setOpen] = useState(false);
   const [hash, setHash] = useState<string>("");
   const [isClearing, setIsClearing] = useState(false);
-  const router = useRouter();
   const { setOpenMobile } = useSidebar();
   const t = useTranslations("post-security-page");
 
@@ -61,12 +59,8 @@ export function PostSecuritySidebar({
       await clearAllAnswers();
       setOpen(false);
 
-      // Prefer soft refresh when available
-      if (router?.refresh) {
-        router.refresh();
-      } else {
-        globalThis.location.reload();
-      }
+      // Use full page reload to ensure all components remount and reload state
+      globalThis.location.reload();
     } catch (error) {
       console.error("Failed to clear answers", error);
     } finally {
