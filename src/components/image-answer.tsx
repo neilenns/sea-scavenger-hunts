@@ -5,7 +5,7 @@ import { Clue } from "@/types/clue";
 import { TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Button } from "./ui/button";
 
 export interface ImageAnswerProperties {
@@ -17,6 +17,18 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
+
+  // Create object URLs when files change
+  const objectUrls = useMemo(() => files.map((f) => URL.createObjectURL(f)), [files]);
+
+  // Cleanup when files change or component unmounts
+  useEffect(() => {
+    return () => {
+      for (const url of objectUrls) {
+        URL.revokeObjectURL(url);
+      }
+    };
+  }, [objectUrls]);
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) return;
@@ -65,13 +77,10 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
               className="relative aspect-[4/3] w-24 overflow-hidden rounded"
             >
               <Image
-                src={URL.createObjectURL(file)}
+                src={objectUrls[index]}
                 alt=""
                 fill
                 className="object-cover"
-                onLoad={(event) =>
-                  URL.revokeObjectURL((event.target as HTMLImageElement).src)
-                }
               />
               <Button
                 variant="ghost"
