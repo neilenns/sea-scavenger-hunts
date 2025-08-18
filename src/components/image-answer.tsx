@@ -41,7 +41,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         id={id}
         type="file"
         accept="image/*"
-        multiple
+        multiple={(clue.expectedImageCount ?? 1) > 1}
         onChange={handleFilesSelected}
         className="hidden"
       />
@@ -69,6 +69,9 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                 alt=""
                 fill
                 className="object-cover"
+                onLoad={(event) =>
+                  URL.revokeObjectURL((event.target as HTMLImageElement).src)
+                }
               />
               <Button
                 variant="ghost"
