@@ -4,7 +4,7 @@
       "answer": "Réponse"
     },
     "image-answer": {
-      "choose-files-button": "Choisir des fichiers",
+      "choose-files-button": "Choisir {expectedImageCount, plural, =1 {le fichier} other {des fichiers}}",
       "remove-image-aria": "Supprimer l'image {index, number}"
     },
     "language-switcher": {
@@ -69,7 +69,7 @@
         "hint": "Les [chiots SEA](https://www.portseattle.org/page/sea-pups) sont généralement à l'aéroport de 10h00 à 12h00 au terminal central."
       },
       "BL5xfCD1Pl": {
-        "clue": "Prenez une photo de trois queues d'avion différentes de compagnies non-américaines."
+        "clue": "Prenez des photos de trois queues d'avion différentes de compagnies non-américaines."
       },
       "CEDiAt5_TD": {
         "clue": "Prenez un selfie avec un panneau de porte pour un vol à destination de l'extérieur des États-Unis."

@@ -40,5 +40,7 @@ export interface Clue {
   answerType: AnswerType;
   /** How clue content is rendered */
   clueType: ClueType;
+  /** For IMAGE answers only. Number of images the user must provide (>= 1). */
+  expectedImageCount?: number;
   id: string;
 }

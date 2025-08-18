@@ -25,6 +25,7 @@ reviews:
           - Clues that ask for a photo or a selfie are marked with the IMAGE answerType.
           - Clues that have an answer specified are marked with the TEXT answerType.
           - Clues with the IMAGE clueType have a jpg file in public/clue-images folder with the same name as the clue's id.
+          - Clues with the IMAGE answerType have an expectedImageCount specified.
     - path: "**/*.tsx"
       instructions: |
         Review all TypeScript files and ensure that:

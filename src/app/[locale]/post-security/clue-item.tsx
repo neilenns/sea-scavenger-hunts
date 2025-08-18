@@ -48,8 +48,8 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
             {t(`${baseKey}.hint`)}
           </Markdown>
         )}
-        {clue.answerType === AnswerType.TEXT && <TextAnswer id={clue.id} />}
-        {clue.answerType === AnswerType.IMAGE && <ImageAnswer id={clue.id} />}
+        {clue.answerType === AnswerType.TEXT && <TextAnswer clue={clue} />}
+        {clue.answerType === AnswerType.IMAGE && <ImageAnswer clue={clue} />}
         {(t.has(`${baseKey}.answer`) || t.has(`${baseKey}.answerDetails`)) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
