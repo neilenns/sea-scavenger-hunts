@@ -137,8 +137,9 @@
         "clue": "How many fish are carrying suitcases along the floor of the concourse?"
       },
       "Y7qiTGjFDA": {
-        "answer": "5 (to be verified)",
-        "clue": "Ride the blue train to the south satellite. How many languages are shown on the train display screens during the ride?"
+        "answer": "8",
+        "answerDetails": "The languages are:\n\n- Arabic\n- Chinese\n- English\n- Japanese\n- Korean\n- Russian\n- Spanish\n- Vietnamese",
+        "clue": "Ride the blue train to the south satellite. How many languages are shown on the \"Please hold on\" digital sign?"
       },
       "Z8uD5RIdFk": {
         "clue": "Explore the shops. Take a photo of the single most expensive item you can find for sale."
