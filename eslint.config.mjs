@@ -36,6 +36,9 @@ const eslintConfig = [
         ...globals.serviceworker,
       },
     },
+    rules: {
+      "react/jsx-no-literals": "error",
+    },
   },
   {
     plugins: {
@@ -46,6 +49,28 @@ const eslintConfig = [
       ...pluginReactHooks.configs.recommended.rules,
       // React scope no longer necessary with new JSX transform.
       "react/react-in-jsx-scope": "off",
+    },
+  },
+  {
+    rules: {
+      // Consistently import navigation APIs from `@/i18n/navigation`
+      "no-restricted-imports": [
+        "error",
+        {
+          name: "next/link",
+          message: "Please import from `@/i18n/navigation` instead.",
+        },
+        {
+          name: "next/navigation",
+          importNames: [
+            "redirect",
+            "permanentRedirect",
+            "useRouter",
+            "usePathname",
+          ],
+          message: "Please import from `@/i18n/navigation` instead.",
+        },
+      ],
     },
   },
 ];

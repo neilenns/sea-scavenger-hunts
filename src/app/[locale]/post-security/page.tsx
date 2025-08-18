@@ -8,6 +8,8 @@ import { ClueItem } from "./clue-item";
 import { Header } from "./header";
 import { PostSecuritySidebar } from "./sidebar";
 
+const NAMESPACE = "post-security-page" as const;
+
 export default function Page() {
   const t = useTranslations("post-security-page");
 
@@ -65,7 +67,11 @@ export default function Page() {
                       </h2>
                     </a>
                     {areaClues.map((clue) => (
-                      <ClueItem key={clue.id} clue={clue} />
+                      <ClueItem
+                        key={clue.id}
+                        clue={clue}
+                        namespace={NAMESPACE}
+                      />
                     ))}
                   </div>
                 );

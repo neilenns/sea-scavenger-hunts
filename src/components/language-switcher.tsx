@@ -5,15 +5,20 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { FR, US } from "country-flag-icons/react/3x2";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { FlagComponent, FR, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import type { Locale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useCallback, useMemo, useTransition } from "react";
 
 const languages = [
   { code: "en", flagComponent: US },
-  { code: "fr", flagComponent: FR }, // cspell: disable-line
-];
+  { code: "fr", flagComponent: FR },
+] as const satisfies ReadonlyArray<
+  Readonly<{ code: Locale; flagComponent: FlagComponent }>
+>;
 
 export interface LanguageSwitcherProperties {
   className?: string;
@@ -23,44 +28,42 @@ export default function LanguageSwitcher({
   className,
 }: LanguageSwitcherProperties) {
   const router = useRouter();
-  const pathname = usePathname();
   const t = useTranslations("components");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const parameters = useParams();
+  const [isPending, startTransition] = useTransition();
 
-  // Extract current language from pathname
-  const getCurrentLanguage = () => {
-    const segments = pathname.split("/");
-    const langCode = segments[1];
-    return languages.find((lang) => lang.code === langCode) || languages[0];
-  };
+  const currentLanguage = useMemo(
+    () => languages.find((lang) => lang.code === locale) || languages[0],
+    [locale],
+  );
 
-  const currentLanguage = getCurrentLanguage();
   const localizedLanguageString = t(
     `language-switcher.${currentLanguage.code}`,
   );
-  const switchLanguage = (languageCode: string) => {
-    const segments = pathname.split("/");
 
-    // Replace the language segment (first segment after root)
-    if (segments[1] && languages.some((lang) => lang.code === segments[1])) {
-      segments[1] = languageCode;
-    } else {
-      // If no language in path, insert at beginning
-      segments.splice(1, 0, languageCode);
-    }
-
-    const newPath = segments.join("/");
-    const search =
-      globalThis.window === undefined ? "" : globalThis.location.search;
-    const hash =
-      globalThis.window === undefined ? "" : globalThis.location.hash;
-    router.push(`${newPath}${search}${hash}`);
-  };
+  const switchLanguage = useCallback(
+    (nextLocale: Locale) => {
+      startTransition(() => {
+        router.replace(
+          // @ts-expect-error -- TypeScript will validate that only known `params`
+          // are used in combination with a given `pathname`. Since the two will
+          // always match for the current route, we can skip runtime checks.
+          { pathname, params: parameters },
+          { locale: nextLocale },
+        );
+      });
+    },
+    [pathname, router, parameters],
+  );
 
   return (
     <div className={className}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
+            disabled={isPending}
             variant="outline"
             size="sm"
             className="gap-2"
@@ -95,7 +98,7 @@ export default function LanguageSwitcher({
             return (
               <DropdownMenuItem
                 key={language.code}
-                onClick={() => switchLanguage(language.code)}
+                onSelect={() => switchLanguage(language.code)}
                 role="menuitemradio"
                 aria-checked={selected}
                 className={`cursor-pointer ${selected ? "bg-accent text-accent-foreground" : ""}`}
