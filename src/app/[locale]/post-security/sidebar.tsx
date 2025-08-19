@@ -131,7 +131,7 @@ export function PostSecuritySidebar({
             </Button>
           </DialogTrigger>
           <DialogContent className={cn(isRTL && "text-right")}>
-            <DialogHeader className={cn(isRTL && "text-right")}>
+            <DialogHeader className={cn(isRTL && "text-right sm:text-right")}>
               <DialogTitle>{t(`clear-answers-dialog.title`)}</DialogTitle>
               <DialogDescription>
                 {t(`clear-answers-dialog.description`)}
