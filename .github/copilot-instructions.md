@@ -7,6 +7,7 @@ Always reference these instructions first and fallback to search or bash command
 ## Working Effectively
 
 ### Prerequisites and Setup
+
 - **CRITICAL**: Install Node.js 22.18.0 (specified in `.nvmrc`):
   ```bash
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -17,6 +18,7 @@ Always reference these instructions first and fallback to search or bash command
 - Install dependencies: `pnpm install --frozen-lockfile` -- takes 36 seconds. Set timeout to 90+ seconds.
 
 ### Build and Development Commands
+
 - **Development server**: `pnpm run dev` -- starts in 2.7 seconds on http://localhost:3000
 - **Production build**: `pnpm run build` -- takes 22 seconds. NEVER CANCEL. Set timeout to 60+ minutes.
   - **CRITICAL BUILD ISSUE**: Build fails with Google Fonts network access. This is expected in restricted environments.
@@ -28,6 +30,7 @@ Always reference these instructions first and fallback to search or bash command
 - **Cloudflare type generation**: `pnpm run cf-typegen` -- takes 1.3 seconds
 
 ### Cloudflare Deployment Commands
+
 - **Preview deployment**: `pnpm run cf-preview` -- builds and previews on Cloudflare
 - **Deploy**: `pnpm run cf-deploy` -- requires DEPLOY_ENV environment variable
 - **Cache population**: `pnpm run cf-populate` -- populates Cloudflare cache
@@ -35,6 +38,7 @@ Always reference these instructions first and fallback to search or bash command
 ## Validation
 
 ### Essential Testing Scenarios
+
 Always manually validate changes by running through these complete scenarios:
 
 1. **Basic functionality test**:
@@ -56,12 +60,14 @@ Always manually validate changes by running through these complete scenarios:
    - Confirm translations load properly
 
 ### Build Validation
+
 - **CRITICAL**: Always run `pnpm run lint` before committing - CI will fail otherwise
 - Test both development and production builds
 - Verify Cloudflare build succeeds for deployment readiness
-- Run type generation to ensure Cloudflare types are current: `pnpm run cf-typegen`
+- There is no need to re-generate Cloudflare types on each build
 
 ### Known Issues and Workarounds
+
 - **Google Fonts Build Failure**: Production builds fail when Google Fonts cannot be accessed. This is normal in restricted network environments.
   - **Solution**: Use system fonts temporarily for testing, or ensure network access to fonts.googleapis.com
 - **No Tests**: Project currently has no test scripts - focus on manual validation
@@ -70,7 +76,9 @@ Always manually validate changes by running through these complete scenarios:
 ## Common Tasks
 
 ### Development Workflow
+
 1. **Starting development**:
+
    ```bash
    nvm use                    # Ensure correct Node.js version
    pnpm install              # Install dependencies if needed
@@ -78,9 +86,9 @@ Always manually validate changes by running through these complete scenarios:
    ```
 
 2. **Before committing changes**:
+
    ```bash
    pnpm run lint              # Required - CI will fail without this
-   pnpm run cf-typegen        # Update Cloudflare types if needed
    ```
 
 3. **Testing builds**:
@@ -90,6 +98,7 @@ Always manually validate changes by running through these complete scenarios:
    ```
 
 ### Key Project Structure
+
 ```
 src/
 ├── app/[locale]/              # Next.js App Router with i18n
@@ -110,6 +119,7 @@ src/
 ```
 
 ### Important Configuration Files
+
 - `package.json` - Dependencies and scripts (pnpm workspace)
 - `next.config.ts` - Next.js configuration with next-intl
 - `open-next.config.ts` - OpenNext Cloudflare configuration
@@ -119,6 +129,7 @@ src/
 - `.nvmrc` - Node.js version specification (22.18.0)
 
 ### Frequent File Locations
+
 - **Clue definitions**: `src/data/post-security-clues.ts`
 - **Translations**: `messages/en.json`, `messages/fr.json`
 - **Theme configuration**: `src/components/theme-provider.tsx`
@@ -127,6 +138,7 @@ src/
 - **Layout and fonts**: `src/app/[locale]/layout.tsx`
 
 ### Deployment Information
+
 - **Development**: Deploys to `sea-hunts-dev.neilenns.com`
 - **Production**: Deploys to `sea-hunts.neilenns.com`
 - **Platform**: Cloudflare Workers with static assets
@@ -135,6 +147,7 @@ src/
 ## Architecture Notes
 
 ### Technology Stack
+
 - **Framework**: Next.js 15 with App Router
 - **Runtime**: React 19
 - **Styling**: TailwindCSS 4 with shadcn/ui components
@@ -144,6 +157,7 @@ src/
 - **Development Environment**: VS Code Dev Containers
 
 ### Key Features
+
 - **Server-Side Generation**: Static generation for optimal performance
 - **Internationalization**: English and French support with URL-based routing
 - **Responsive Design**: Mobile-first design for airport usage
