@@ -1,309 +1,287 @@
-import { AirportArea, AnswerType, Clue, ClueType } from "@/types/clue";
+import { AirportArea, Clue, ClueType } from "@/types/clue";
+import { AnswerType } from "@/types/answer";
 
 export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "XU2Q6uk5Sj", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_B,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "Fq6cpEvGKt", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_B,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "BL5xfCD1Pl", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 3,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 3 },
+    type: ClueType.TEXT,
   },
   {
     id: "KFNxBoixx9", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_B,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "JTaK-wv-cm", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "GpyOC1fxZv", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "WOflQcqqRa", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "wIuAhUYSUJ", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "Mr8NTBLVuw", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "Y7qiTGjFDA", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "CEDiAt5_TD", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "mdihls1FXP", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "qsWmZtJQx9", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "vVzEujhDHt", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "fId26KufqS", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "vVonLvfgvX", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "Z8uD5RIdFk", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "U2Ml_N2Ao1", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "uaPC_HvMqd", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "1XWgzKECE6", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "xH4xrNHYJe", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "pB53_yVOPQ", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 10,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 10 },
+    type: ClueType.TEXT,
   },
   {
     id: "96FePKs7zD", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "ShfXCzAYKC", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "4B8BuOoy-A", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "cvI9vHSRuC", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "PWYzT5xEM_", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "FwkTyDghkR", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "VGDb3ekZZs", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "yTNP29jtdB", // cspell: disable-line
     airportArea: AirportArea.NORTH_SATELLITE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "-buCfuZ_Js", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "JjwwVsnaNJ", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "ewJw9uhuxK", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "ndC0lIJES6", // cspell: disable-line
     airportArea: AirportArea.NORTH_SATELLITE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "v86d2mm7UT", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "6IjATuH8h-", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_B,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "nGRX7LLH2E", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "glwn2opFlc", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_C,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "uzxCpAxD0O", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 8,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 8 },
+    type: ClueType.TEXT,
   },
   {
     id: "Ajg7X3_CWe", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "tYEDPlu30G", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "sZLbWTNUXK", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "-GLJeZ-L-K", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "xNr6O90eQa", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
   {
     id: "MSjgrbHme1", // cspell: disable-line
-    clueType: ClueType.IMAGE,
-    expectedImageCount: 1,
+    type: ClueType.IMAGE,
     airportArea: AirportArea.NORTH_SATELLITE,
-    answerType: AnswerType.IMAGE,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
   },
   {
     id: "a8vW4xzkkW", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
-    answerType: AnswerType.IMAGE,
-    expectedImageCount: 1,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
+    type: ClueType.TEXT,
   },
   {
     id: "qtcTszICZ5", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
-    answerType: AnswerType.TEXT,
-    clueType: ClueType.TEXT,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
   },
 ];

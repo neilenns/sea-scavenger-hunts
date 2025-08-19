@@ -1,3 +1,5 @@
+import { Answer } from "./answer";
+
 export enum AirportArea {
   AIRPORT_WIDE,
   CENTRAL_TERMINAL,
@@ -9,15 +11,29 @@ export enum AirportArea {
   SOUTH_SATELLITE,
 }
 
-export enum AnswerType {
-  TEXT = "text",
-  IMAGE = "image",
-}
-
 export enum ClueType {
   TEXT = "text",
   IMAGE = "image",
 }
+
+// Base interface for common clue properties
+export interface ClueBase {
+  airportArea: AirportArea;
+  /** Answer configuration */
+  answer: Answer;
+  id: string;
+}
+
+// Discriminated union types for Clue content
+export interface TextClue extends ClueBase {
+  type: ClueType.TEXT;
+}
+
+export interface ImageClue extends ClueBase {
+  type: ClueType.IMAGE;
+}
+
+export type Clue = TextClue | ImageClue;
 
 // The order of the elements in this array also defines the order of the groups
 // on the page. key is the string used to look up the i18n display name.
@@ -34,13 +50,11 @@ export const airportAreaNames = [
   Readonly<{ area: AirportArea; key: string }>
 >;
 
-export interface Clue {
-  airportArea: AirportArea;
-  /** Expected answer input type */
-  answerType: AnswerType;
-  /** How clue content is rendered */
-  clueType: ClueType;
-  /** For IMAGE answers only. Number of images the user must provide (>= 1). */
-  expectedImageCount?: number;
-  id: string;
+// Type guard functions for Clue
+export function isTextClue(clue: Clue): clue is TextClue {
+  return clue.type === ClueType.TEXT;
+}
+
+export function isImageClue(clue: Clue): clue is ImageClue {
+  return clue.type === ClueType.IMAGE;
 }

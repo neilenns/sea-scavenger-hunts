@@ -2,6 +2,7 @@
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { Clue } from "@/types/clue";
+import { isImageAnswer } from "@/types/answer";
 import { TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -13,7 +14,13 @@ export interface ImageAnswerProperties {
 }
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
-  const { id, expectedImageCount } = clue;
+  const { id } = clue;
+  
+  if (!isImageAnswer(clue.answer)) {
+    throw new Error("ImageAnswer component expects an image answer");
+  }
+  
+  const { expectedImageCount } = clue.answer;
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
@@ -53,7 +60,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         id={id}
         type="file"
         accept="image/*"
-        multiple={(expectedImageCount ?? 1) > 1}
+        multiple={expectedImageCount > 1}
         onChange={handleFilesSelected}
         className="hidden"
       />
@@ -65,7 +72,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         onClick={() => fileInputReference.current?.click()}
       >
         {t("image-answer.choose-files-button", {
-          expectedImageCount: expectedImageCount ?? 1,
+          expectedImageCount: expectedImageCount,
         })}
       </Button>
 
