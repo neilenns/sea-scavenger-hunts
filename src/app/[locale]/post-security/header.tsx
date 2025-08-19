@@ -9,7 +9,7 @@ import { useLocale, useTranslations } from "next-intl";
 export function Header() {
   const locale = useLocale();
   const t = useTranslations("post-security-page");
-  
+
   // RTL languages
   const isRTL = isRTLLocale(locale);
 
@@ -33,9 +33,7 @@ export function Header() {
     </h1>
   );
 
-  const languageSwitcher = (
-    <LanguageSwitcher className="ml-auto" />
-  );
+  const languageSwitcher = <LanguageSwitcher className="ml-auto" />;
 
   return (
     <header className="sticky top-0 z-50 flex h-12 shrink-0 items-center gap-2 px-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
