@@ -1,8 +1,8 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
-import { Clue } from "@/types/clue";
 import { isImageAnswer } from "@/types/answer";
+import { Clue } from "@/types/clue";
 import { TrashIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -15,11 +15,11 @@ export interface ImageAnswerProperties {
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { id } = clue;
-  
+
   if (!isImageAnswer(clue.answer)) {
     throw new Error("ImageAnswer component expects an image answer");
   }
-  
+
   const { expectedImageCount } = clue.answer;
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
@@ -29,8 +29,14 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   // RTL languages
   const isRTL = locale === "ar";
 
-  // Create object URLs when files change
-  const objectUrls = useMemo(() => files.map((f) => URL.createObjectURL(f)), [files]);
+  // Create object URLs when files change. Defensive: stored value from
+  // IndexedDB may be a FileList-like object or plain object (older data),
+  // so ensure we only call `map` on real arrays.
+  const objectUrls = useMemo(
+    () =>
+      Array.isArray(files) ? files.map((f) => URL.createObjectURL(f)) : [],
+    [files],
+  );
 
   // Cleanup when files change or component unmounts
   useEffect(() => {
@@ -80,8 +86,10 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         })}
       </Button>
 
-      {files.length > 0 && (
-        <div className={`mt-3 flex flex-wrap gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
+      {Array.isArray(files) && files.length > 0 && (
+        <div
+          className={`mt-3 flex flex-wrap gap-2 ${isRTL ? "flex-row-reverse" : ""}`}
+        >
           {files.map((file, index) => (
             <div
               key={`${file.name}-${file.lastModified}`}
@@ -98,7 +106,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                 size="icon"
                 type="button"
                 onClick={() => handleRemove(index)}
-                className={`absolute top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs ${isRTL ? 'left-1' : 'right-1'}`}
+                className={`absolute top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs ${isRTL ? "left-1" : "right-1"}`}
                 aria-label={t("image-answer.remove-image-aria", {
                   index: index + 1,
                 })}
