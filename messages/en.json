@@ -133,8 +133,9 @@
         "hint": "LiveATC [broadcasts audio from SEA East Tower](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
       },
       "XU2Q6uk5Sj": {
-        "answer": "4 (to be verified)",
-        "clue": "How many fish are carrying suitcases along the floor of the concourse?"
+        "answer": "Three fish are carrying suitcases, and eight planes have fins.",
+        "answerDetails": "The fish are located:\n\n- Across from Gate B3\n- At the bottom of the ramp near the nursing pod\n- At the top of the B train station escalators.\n\nThe planes are located:\n\n- Near Gate B3 (three planes)\n- Near Gate B6\n- Near Gate B7/B7A\n- Near the seats at the bottom of the ramp (three planes)",
+        "clue": "Find \"Flying Fish\" by Judith and Daniel Caldwell. How many fish are carrying suitcases? How many airplanes have fins?"
       },
       "Y7qiTGjFDA": {
         "answer": "8",
