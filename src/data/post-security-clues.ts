@@ -1,5 +1,5 @@
-import { AirportArea, Clue, ClueType } from "@/types/clue";
 import { AnswerType } from "@/types/answer";
+import { AirportArea, Clue, ClueType } from "@/types/clue";
 
 export const postSecurityClues: ReadonlyArray<Clue> = [
   {
@@ -281,6 +281,36 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "qtcTszICZ5", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+  },
+  {
+    id: "Sd9BH5N5gY", // cspell: disable-line
+    airportArea: AirportArea.CENTRAL_TERMINAL,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+  },
+  {
+    id: "nOMs1a7gGN", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+  },
+  {
+    id: "zCMksb5cxu", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+  },
+  {
+    id: "jdadKFgQo7", // cspell: disable-line
+    airportArea: AirportArea.CENTRAL_TERMINAL,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+  },
+  {
+    id: "vV3adEqeuE", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_A,
     answer: { type: AnswerType.TEXT },
     type: ClueType.TEXT,
   },
