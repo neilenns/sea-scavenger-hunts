@@ -133,8 +133,9 @@
         "hint": "LiveATC [diffuse l'audio de la Tour Est de SEA](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
       },
       "XU2Q6uk5Sj": {
-        "answer": "4 (à vérifier)",
-        "clue": "Combien de poissons portent des valises le long du sol du concourse ?"
+        "answer": "Trois poissons portent des valises, et huit avions ont des ailerons.",
+        "answerDetails": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)",
+        "clue": "Trouvez \"Flying Fish\" de Judith et Daniel Caldwell. Combien de poissons portent des valises ? Combien d'avions ont des ailerons ?"
       },
       "Y7qiTGjFDA": {
         "answer": "8",
