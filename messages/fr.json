@@ -53,9 +53,10 @@
       },
       "1XWgzKECE6": {
         "answer": {
-          "answer": "5 (à vérifier)"
+          "answer": "4",
+          "details": "Les garnitures sont :\n\n- Boba\n- Boba éclatant\n- Gelée\n- Coulis"
         },
-        "clue": "Trouvez le magasin de boba. Combien d'ajouts différents pouvez-vous choisir ?"
+        "clue": "Trouvez le magasin de boba. Combien de garnitures différentes pouvez-vous choisir ?"
       },
       "4B8BuOoy-A": {
         "answer": {
@@ -109,10 +110,10 @@
         "clue": "Trouvez \"On: Matter, monkeys and the king\" de Trimpin. Combien de balles y a-t-il dans la sculpture ?"
       },
       "JjwwVsnaNJ": {
-        "clue": "Prenez une photo d'un sandwich japonais.",
         "answer": {
           "details": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises."
-        }
+        },
+        "clue": "Prenez une photo d'un sandwich japonais."
       },
       "KFNxBoixx9": {
         "answer": {
@@ -127,7 +128,7 @@
       },
       "Mr8NTBLVuw": {
         "answer": {
-          "answer": "6 (à vérifier)"
+          "answer": "10"
         },
         "clue": "Visitez les toilettes mixtes. Combien de robinets y a-t-il au lavabo ?"
       },
@@ -136,6 +137,12 @@
           "answer": "Bleu, jaune et vert."
         },
         "clue": "Faites un tour dans le métro souterrain de SEA. Quelles sont les trois couleurs des différentes lignes de train ?"
+      },
+      "Sd9BH5N5gY": {
+        "answer": {
+          "answer": "Sur le mur du fond de Koi Shi Sushi."
+        },
+        "clue": "Où se trouve ce motif de carreaux ?"
       },
       "ShfXCzAYKC": {
         "answer": {
@@ -196,24 +203,33 @@
         },
         "clue": "Quel restaurant sert un plat appelé hash déconstruit ?"
       },
+      "jdadKFgQo7": {
+        "clue": "Trouvez OSCARsort et demandez-lui de vous aider à trier quelque chose dans le bon bac."
+      },
       "mdihls1FXP": {
         "clue": "Trouvez une porte avec un vol vers une ville dans l'État de Washington et prenez un selfie avec le panneau."
       },
       "nGRX7LLH2E": {
-        "clue": "Prenez un selfie avec le chien en néon.",
         "answer": {
           "details": "Le chien se trouve chez Hachi-Ko."
-        }
+        },
+        "clue": "Prenez un selfie avec le chien en néon."
+      },
+      "nOMs1a7gGN": {
+        "answer": {
+          "answer": "À l'entrée des toilettes près de Poke to The Max."
+        },
+        "clue": "Où se trouve ce motif de carreaux ?"
       },
       "ndC0lIJES6": {
         "clue": "Prenez une photo d'une fleur d'hibiscus."
       },
       "pB53_yVOPQ": {
-        "clue": "Prenez un selfie devant l'entrée de chaque salon d'aéroport.",
-        "hint": "Il y a onze salons à SEA, avec dix entrées.",
         "answer": {
           "details": "Les salons sont :\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Terminal Central)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine au-dessus de N13-N18)\n* The Club (au-dessus de S10)\n* British Airways (au-dessus de S10)."
-        }
+        },
+        "clue": "Prenez un selfie devant l'entrée de chaque salon d'aéroport.",
+        "hint": "Il y a onze salons à SEA, avec dix entrées."
       },
       "qsWmZtJQx9": {
         "clue": "Cherchez dans les écrans des portes et prenez une photo du numéro de vol le plus élevé que vous repérez."
@@ -238,17 +254,23 @@
         "clue": "Prenez une photo de quelque chose avec la Space Needle dessus."
       },
       "uzxCpAxD0O": {
-        "clue": "Prenez un selfie à chaque bureau d'information.",
-        "hint": "Il y a huit bureaux d'information après la sécurité.",
         "answer": {
           "details": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord"
-        }
+        },
+        "clue": "Prenez un selfie à chaque bureau d'information.",
+        "hint": "Il y a huit bureaux d'information après la sécurité."
       },
       "v86d2mm7UT": {
         "answer": {
           "answer": "10 (à vérifier)"
         },
         "clue": "Vérifiez les panneaux des portes dans l'aéroport. Combien de portes ont une lettre après le numéro ?"
+      },
+      "vV3adEqeuE": {
+        "answer": {
+          "answer": "Chez Floret, près de la porte A1."
+        },
+        "clue": "Où pouvez-vous prendre un toast à l'avocat pour le petit-déjeuner ?"
       },
       "vVonLvfgvX": {
         "clue": "Prenez un selfie avec un distributeur automatique vendant autre chose que de la nourriture et des boissons."
@@ -284,6 +306,13 @@
           "answer": "PF Chang's"
         },
         "clue": "Montez à l'étage vers la mezzanine dans le Satellite Nord. Quel restaurant s'y trouve ?"
+      },
+      "zCMksb5cxu": {
+        "answer": {
+          "answer": "\"50 Sunsets\" de Joey Veltkamp",
+          "details": "L'œuvre d'art est accrochée au mur à l'extérieur des toilettes mixtes."
+        },
+        "clue": "Quelle œuvre d'art a ce motif ?"
       }
     },
     "description": "Chasse au trésor à l'aéroport SEA",
