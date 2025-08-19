@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing } from "@/i18n/routing";
+import { isRTLLocale } from "@/lib/rtl";
 import { LayoutPropertiesWithLocale } from "@/types/layout-properties-with-locale";
 import type { Locale } from "next-intl";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -67,7 +68,7 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   // RTL languages
-  const isRTL = locale === "ar";
+  const isRTL = isRTLLocale(locale);
 
   return (
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"} suppressHydrationWarning>

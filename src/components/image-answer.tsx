@@ -1,6 +1,8 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { isRTLLocale } from "@/lib/rtl";
+import { cn } from "@/lib/utils";
 import { isImageAnswer } from "@/types/answer";
 import { Clue } from "@/types/clue";
 import { TrashIcon } from "lucide-react";
@@ -27,7 +29,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const t = useTranslations("components");
 
   // RTL languages
-  const isRTL = locale === "ar";
+  const isRTL = isRTLLocale(locale);
 
   // Create object URLs when files change. Defensive: stored value from
   // IndexedDB may be a FileList-like object or plain object (older data),
@@ -88,7 +90,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
 
       {Array.isArray(files) && files.length > 0 && (
         <div
-          className={`mt-3 flex flex-wrap gap-2 ${isRTL ? "flex-row-reverse" : ""}`}
+          className={cn("mt-3 flex flex-wrap gap-2", isRTL && "flex-row-reverse")}
         >
           {files.map((file, index) => (
             <div
@@ -106,7 +108,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                 size="icon"
                 type="button"
                 onClick={() => handleRemove(index)}
-                className={`absolute top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs ${isRTL ? "left-1" : "right-1"}`}
+                className={cn("absolute top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs", isRTL ? "left-1" : "right-1")}
                 aria-label={t("image-answer.remove-image-aria", {
                   index: index + 1,
                 })}

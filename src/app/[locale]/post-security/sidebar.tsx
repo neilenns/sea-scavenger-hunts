@@ -23,6 +23,8 @@ import {
 } from "@/components/ui/sidebar";
 import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
+import { isRTLLocale } from "@/lib/rtl";
+import { cn } from "@/lib/utils";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -40,7 +42,7 @@ export function PostSecuritySidebar({
   const t = useTranslations("post-security-page");
 
   // RTL languages
-  const isRTL = locale === "ar";
+  const isRTL = isRTLLocale(locale);
   const sidebarSide = isRTL ? "right" : "left";
 
   useEffect(() => {
@@ -128,14 +130,14 @@ export function PostSecuritySidebar({
               {t(`clear-answers-dialog.trigger`)}
             </Button>
           </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
+          <DialogContent className={cn(isRTL && "text-right")}>
+            <DialogHeader className={cn(isRTL && "text-right")}>
               <DialogTitle>{t(`clear-answers-dialog.title`)}</DialogTitle>
               <DialogDescription>
                 {t(`clear-answers-dialog.description`)}
               </DialogDescription>
             </DialogHeader>
-            <DialogFooter className={`flex justify-end gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
+            <DialogFooter className={cn("flex justify-end gap-2", isRTL && "flex-row-reverse")}>
               <Button variant="outline" onClick={() => setOpen(false)}>
                 {t(`clear-answers-dialog.cancel`)}
               </Button>
