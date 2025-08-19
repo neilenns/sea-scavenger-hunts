@@ -170,3 +170,50 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* RTL Support */
+[dir="rtl"] {
+  font-family: var(--font-noto-sans-arabic), var(--font-geist-sans), sans-serif;
+}
+
+/* RTL-specific overrides */
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: unset;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: unset;
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Dialog content alignment for RTL */
+[dir="rtl"] [role="dialog"] {
+  text-align: right;
+}
+
+[dir="rtl"] [role="dialog"] .flex.gap-2 {
+  flex-direction: row-reverse;
+}

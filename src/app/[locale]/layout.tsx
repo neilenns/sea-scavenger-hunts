@@ -4,7 +4,7 @@ import { LayoutPropertiesWithLocale } from "@/types/layout-properties-with-local
 import type { Locale } from "next-intl";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 import "./globals.css";
 
@@ -16,6 +16,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const notoSansArabic = Noto_Sans_Arabic({
+  variable: "--font-noto-sans-arabic",
+  subsets: ["arabic"],
 });
 
 // eslint-disable-next-line unicorn/prevent-abbreviations
@@ -61,10 +66,13 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale);
 
+  // RTL languages
+  const isRTL = locale === "ar";
+
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} dir={isRTL ? "rtl" : "ltr"} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSansArabic.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <ThemeProvider

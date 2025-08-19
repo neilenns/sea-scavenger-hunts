@@ -25,7 +25,7 @@ import { clearAllAnswers } from "@/hooks/clear-all-answers";
 import { getAnchorId } from "@/lib/anchors";
 import { airportAreaNames } from "@/types/clue";
 import { PlaneIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 import { useEffect, useState } from "react";
 
@@ -36,7 +36,12 @@ export function PostSecuritySidebar({
   const [hash, setHash] = useState<string>("");
   const [isClearing, setIsClearing] = useState(false);
   const { setOpenMobile } = useSidebar();
+  const locale = useLocale();
   const t = useTranslations("post-security-page");
+
+  // RTL languages
+  const isRTL = locale === "ar";
+  const sidebarSide = isRTL ? "right" : "left";
 
   useEffect(() => {
     const update = () => setHash(globalThis.location?.hash ?? "");
@@ -70,6 +75,7 @@ export function PostSecuritySidebar({
 
   return (
     <Sidebar
+      side={sidebarSide}
       variant="floating"
       aria-label={t("sidebar.aria-label")}
       {...properties}
@@ -129,7 +135,7 @@ export function PostSecuritySidebar({
                 {t(`clear-answers-dialog.description`)}
               </DialogDescription>
             </DialogHeader>
-            <DialogFooter className="flex justify-end gap-2">
+            <DialogFooter className={`flex justify-end gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
               <Button variant="outline" onClick={() => setOpen(false)}>
                 {t(`clear-answers-dialog.cancel`)}
               </Button>

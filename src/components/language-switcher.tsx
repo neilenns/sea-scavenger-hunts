@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { FlagComponent, FR, US } from "country-flag-icons/react/3x2";
+import { FlagComponent, FR, SA, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
 import type { Locale } from "next-intl";
 import { useLocale, useTranslations } from "next-intl";
@@ -17,6 +17,7 @@ import { useCallback, useMemo, useTransition } from "react";
 const languages = [
   { code: "en", flagComponent: US },
   { code: "fr", flagComponent: FR },
+  { code: "ar", flagComponent: SA },
 ] as const satisfies ReadonlyArray<
   Readonly<{ code: Locale; flagComponent: FlagComponent }>
 >;

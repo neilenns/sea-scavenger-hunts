@@ -4,7 +4,7 @@ import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { Clue } from "@/types/clue";
 import { isImageAnswer } from "@/types/answer";
 import { TrashIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useMemo, useRef } from "react";
 import { Button } from "./ui/button";
@@ -23,7 +23,11 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { expectedImageCount } = clue.answer;
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
   const fileInputReference = useRef<HTMLInputElement>(null);
+  const locale = useLocale();
   const t = useTranslations("components");
+
+  // RTL languages
+  const isRTL = locale === "ar";
 
   // Create object URLs when files change
   const objectUrls = useMemo(() => files.map((f) => URL.createObjectURL(f)), [files]);
@@ -77,7 +81,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
       </Button>
 
       {files.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className={`mt-3 flex flex-wrap gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
           {files.map((file, index) => (
             <div
               key={`${file.name}-${file.lastModified}`}
@@ -94,7 +98,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                 size="icon"
                 type="button"
                 onClick={() => handleRemove(index)}
-                className="absolute top-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs"
+                className={`absolute top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-white text-xs ${isRTL ? 'left-1' : 'right-1'}`}
                 aria-label={t("image-answer.remove-image-aria", {
                   index: index + 1,
                 })}
