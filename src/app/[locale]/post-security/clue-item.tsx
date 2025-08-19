@@ -9,7 +9,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Clue, isImageAnswer, isImageClue, isTextAnswer } from "@/types/clue";
+import { Clue, isImageClue } from "@/types/clue";
+import { isImageAnswer, isTextAnswer } from "@/types/answer";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -28,7 +29,7 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
         <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
           {t(`${baseKey}.clue`)}
         </h3>
-        {isImageClue(clue.content) && (
+        {isImageClue(clue) && (
           <div className="relative mx-auto max-w-[400px] aspect-video">
             <Image
               alt={
@@ -50,7 +51,7 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
         )}
         {isTextAnswer(clue.answer) && <TextAnswer clue={clue} />}
         {isImageAnswer(clue.answer) && <ImageAnswer clue={clue} />}
-        {(t.has(`${baseKey}.answer.answer`) || t.has(`${baseKey}.answer.answerDetails`)) && (
+        {(t.has(`${baseKey}.answer.answer`) || t.has(`${baseKey}.answer.details`)) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
               <AccordionTrigger className="pb-0">
@@ -58,8 +59,8 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
               </AccordionTrigger>
               <AccordionContent className="pb-0 mt-2">
                 {t.has(`${baseKey}.answer.answer`) && <p>{t(`${baseKey}.answer.answer`)}</p>}
-                {t.has(`${baseKey}.answer.answerDetails`) && (
-                  <Markdown>{t(`${baseKey}.answer.answerDetails`)}</Markdown>
+                {t.has(`${baseKey}.answer.details`) && (
+                  <Markdown>{t(`${baseKey}.answer.details`)}</Markdown>
                 )}
               </AccordionContent>
             </AccordionItem>

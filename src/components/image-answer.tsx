@@ -1,7 +1,8 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
-import { Clue, isImageAnswer } from "@/types/clue";
+import { Clue } from "@/types/clue";
+import { isImageAnswer } from "@/types/answer";
 import { TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";

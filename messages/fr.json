@@ -60,7 +60,7 @@
       "4B8BuOoy-A": {
         "answer": {
           "answer": "26",
-          "answerDetails": "La porte D26 se trouve en bas, en face de la porte D5."
+          "details": "La porte D26 se trouve en bas, en face de la porte D5."
         },
         "clue": "Descendez et éloignez-vous de la foule. Quel est le numéro de porte D le plus élevé que vous voyez ?"
       },
@@ -89,14 +89,14 @@
       "FwkTyDghkR": {
         "answer": {
           "answer": "20 (à vérifier)",
-          "answerDetails": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" de Peter Shelton est suspendu au-dessus du Concourse A près du Seattle Beer Union."
+          "details": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" de Peter Shelton est suspendu au-dessus du Concourse A près du Seattle Beer Union."
         },
         "clue": "Regardez en l'air près du Seattle Beer Union. Combien de sculptures de nuages flottent au-dessus de vous ?"
       },
       "GpyOC1fxZv": {
         "answer": {
           "answer": "Flux nord ou flux sud",
-          "answerDetails": "Si les avions décollent de droite à gauche, l'aéroport est en flux sud. Si les avions décollent de gauche à droite, l'aéroport est en flux nord."
+          "details": "Si les avions décollent de droite à gauche, l'aéroport est en flux sud. Si les avions décollent de gauche à droite, l'aéroport est en flux nord."
         },
         "clue": "Observez quelques avions décoller. Basé sur la direction de décollage, dans quel flux l'aéroport est-il aujourd'hui ?",
         "hint": "Le flux d'aéroport est la direction vers laquelle les avions décollent. Par exemple, si les avions décollent vers le sud, l'aéroport est en flux sud."
@@ -104,20 +104,20 @@
       "JTaK-wv-cm": {
         "answer": {
           "answer": "14",
-          "answerDetails": "Il y a 13 balles dans la section nord de la sculpture, et une balle dans la section sud."
+          "details": "Il y a 13 balles dans la section nord de la sculpture, et une balle dans la section sud."
         },
         "clue": "Trouvez \"On: Matter, monkeys and the king\" de Trimpin. Combien de balles y a-t-il dans la sculpture ?"
       },
       "JjwwVsnaNJ": {
         "clue": "Prenez une photo d'un sandwich japonais.",
         "answer": {
-          "answerDetails": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises."
+          "details": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises."
         }
       },
       "KFNxBoixx9": {
         "answer": {
           "answer": "21",
-          "answerDetails": "La porte B21 est accessible en utilisant l'escalator ou l'ascenseur au bout du Concourse B, près de la porte B15."
+          "details": "La porte B21 est accessible en utilisant l'escalator ou l'ascenseur au bout du Concourse B, près de la porte B15."
         },
         "clue": "Après la porte B15, il y a un escalator vers une zone de portes cachée. Quel est le numéro de porte B le plus élevé là-bas ?"
       },
@@ -140,7 +140,7 @@
       "ShfXCzAYKC": {
         "answer": {
           "answer": "5 (à vérifier)",
-          "answerDetails": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" de James Schoppert est une sculpture en bois peint de 3 pieds de haut."
+          "details": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" de James Schoppert est une sculpture en bois peint de 3 pieds de haut."
         },
         "clue": "Trouvez la sculpture en bois peint \"Modern Mask\". Combien de visages vous regardent ?"
       },
@@ -150,7 +150,7 @@
       "VGDb3ekZZs": {
         "answer": {
           "answer": "Marcher",
-          "answerDetails": "Il faut neuf minutes à pied, et 11 minutes en train. Les temps sont affichés en bas de la carte sur l'écran d'information sur le palier entre les portes A et la gare."
+          "details": "Il faut neuf minutes à pied, et 11 minutes en train. Les temps sont affichés en bas de la carte sur l'écran d'information sur le palier entre les portes A et la gare."
         },
         "clue": "Vérifiez l'affichage des temps de trajet entre le Concourse A et la gare. Est-ce plus rapide de marcher ou de prendre le train pour les portes C ?"
       },
@@ -161,14 +161,14 @@
       "XU2Q6uk5Sj": {
         "answer": {
           "answer": "Trois poissons portent des valises, et huit avions ont des ailerons.",
-          "answerDetails": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)"
+          "details": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)"
         },
         "clue": "Trouvez \"Flying Fish\" de Judith et Daniel Caldwell. Combien de poissons portent des valises ? Combien d'avions ont des ailerons ?"
       },
       "Y7qiTGjFDA": {
         "answer": {
           "answer": "8",
-          "answerDetails": "Les langues sont :\n\n- Anglais\n- Arabe\n- Chinois\n- Coréen\n- Espagnol\n- Japonais\n- Russe\n- Vietnamien"
+          "details": "Les langues sont :\n\n- Anglais\n- Arabe\n- Chinois\n- Coréen\n- Espagnol\n- Japonais\n- Russe\n- Vietnamien"
         },
         "clue": "Prenez le train bleu vers le Satellite Sud. Combien de langues sont affichées sur le panneau numérique \"Please hold on\" ?"
       },
@@ -202,7 +202,7 @@
       "nGRX7LLH2E": {
         "clue": "Prenez un selfie avec le chien en néon.",
         "answer": {
-          "answerDetails": "Le chien se trouve chez Hachi-Ko."
+          "details": "Le chien se trouve chez Hachi-Ko."
         }
       },
       "ndC0lIJES6": {
@@ -212,7 +212,7 @@
         "clue": "Prenez un selfie devant l'entrée de chaque salon d'aéroport.",
         "hint": "Il y a onze salons à SEA, avec dix entrées.",
         "answer": {
-          "answerDetails": "Les salons sont :\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Terminal Central)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine au-dessus de N13-N18)\n* The Club (au-dessus de S10)\n* British Airways (au-dessus de S10)."
+          "details": "Les salons sont :\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Terminal Central)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine au-dessus de N13-N18)\n* The Club (au-dessus de S10)\n* British Airways (au-dessus de S10)."
         }
       },
       "qsWmZtJQx9": {
@@ -241,7 +241,7 @@
         "clue": "Prenez un selfie à chaque bureau d'information.",
         "hint": "Il y a huit bureaux d'information après la sécurité.",
         "answer": {
-          "answerDetails": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord"
+          "details": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord"
         }
       },
       "v86d2mm7UT": {
@@ -268,14 +268,14 @@
       "xH4xrNHYJe": {
         "answer": {
           "answer": "Un bateau.",
-          "answerDetails": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" de Larry Kirkland est un bateau de 32 pieds de long fait d'aluminium et de verre. L'ombre est constituée d'environ soixante-dix éléments en bronze."
+          "details": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" de Larry Kirkland est un bateau de 32 pieds de long fait d'aluminium et de verre. L'ombre est constituée d'environ soixante-dix éléments en bronze."
         },
         "clue": "Trouvez l'ombre dans le sol en terrazzo. Quel objet projette l'ombre ?"
       },
       "xNr6O90eQa": {
         "answer": {
           "answer": "Susan",
-          "answerDetails": "Les bénévoles de l'aéroport sont des ambassadeurs pour l'aéroport et la région de Puget Sound. [En savoir plus](https://www.portseattle.org/Volunteer) sur le programme."
+          "details": "Les bénévoles de l'aéroport sont des ambassadeurs pour l'aéroport et la région de Puget Sound. [En savoir plus](https://www.portseattle.org/Volunteer) sur le programme."
         },
         "clue": "Écoutez les annonces de l'aéroport. Quel est le nom du bénévole ?"
       },
