@@ -50,16 +50,16 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
         )}
         {isTextAnswer(clue.answer) && <TextAnswer clue={clue} />}
         {isImageAnswer(clue.answer) && <ImageAnswer clue={clue} />}
-        {(t.has(`${baseKey}.answer`) || t.has(`${baseKey}.answerDetails`)) && (
+        {(t.has(`${baseKey}.answer.answer`) || t.has(`${baseKey}.answer.answerDetails`)) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
               <AccordionTrigger className="pb-0">
                 {t("components.clue-item.answer")}
               </AccordionTrigger>
               <AccordionContent className="pb-0 mt-2">
-                {t.has(`${baseKey}.answer`) && <p>{t(`${baseKey}.answer`)}</p>}
-                {t.has(`${baseKey}.answerDetails`) && (
-                  <Markdown>{t(`${baseKey}.answerDetails`)}</Markdown>
+                {t.has(`${baseKey}.answer.answer`) && <p>{t(`${baseKey}.answer.answer`)}</p>}
+                {t.has(`${baseKey}.answer.answerDetails`) && (
+                  <Markdown>{t(`${baseKey}.answer.answerDetails`)}</Markdown>
                 )}
               </AccordionContent>
             </AccordionItem>

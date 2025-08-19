@@ -46,16 +46,22 @@
         "clue": "Find the biggest drink cup for sale and take a photo next to it."
       },
       "-buCfuZ_Js": {
-        "answer": "Sub Pop, near Concourse C.",
+        "answer": {
+          "answer": "Sub Pop, near Concourse C."
+        },
         "clue": "You've got a postcard to mail. Where in the Central Terminal can you buy postage stamps?"
       },
       "1XWgzKECE6": {
-        "answer": "5 (to be verified)",
+        "answer": {
+          "answer": "5 (to be verified)"
+        },
         "clue": "Find the boba shop. How many different add-ins can you choose from?"
       },
       "4B8BuOoy-A": {
-        "answer": "26",
-        "answerDetails": "Gate D26 is located downstairs, across from Gate D5.",
+        "answer": {
+          "answer": "26",
+          "answerDetails": "Gate D26 is located downstairs, across from Gate D5."
+        },
         "clue": "Head downstairs and away from the crowds. What's the highest D gate number you see?"
       },
       "6IjATuH8h-": {
@@ -75,32 +81,44 @@
         "clue": "Take a selfie with a gate sign for a flight heading outside of the United States."
       },
       "Fq6cpEvGKt": {
-        "answer": "3 (to be verified)",
+        "answer": {
+          "answer": "3 (to be verified)"
+        },
         "clue": "How many airplanes have fins?"
       },
       "FwkTyDghkR": {
-        "answer": "20 (to be verified)",
-        "answerDetails": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" by Peter Shelton hangs above Concourse A near Seattle Beer Union.",
+        "answer": {
+          "answer": "20 (to be verified)",
+          "answerDetails": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" by Peter Shelton hangs above Concourse A near Seattle Beer Union."
+        },
         "clue": "Look up near Seattle Beer Union. How many cloud sculptures are floating above you?"
       },
       "GpyOC1fxZv": {
-        "answer": "North flow or south flow",
-        "answerDetails": "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow.",
+        "answer": {
+          "answer": "North flow or south flow",
+          "answerDetails": "If planes are taking off from right to left, the airport is in south flow. If planes are taking off from left to right, the airport is in north flow."
+        },
         "clue": "Watch a few planes take off. Based on the takeoff direction, what flow is the airport in today?",
         "hint": "Airport flow is the direction airplanes take off toward. For example, if planes take off toward the south, the airport is in south flow."
       },
       "JTaK-wv-cm": {
-        "answer": "14",
-        "answerDetails": "There are 13 balls in the north section of the sculpture, and one ball in the south section.",
+        "answer": {
+          "answer": "14",
+          "answerDetails": "There are 13 balls in the north section of the sculpture, and one ball in the south section."
+        },
         "clue": "Find \"On: Matter, monkeys and the king\" by Trimpin. How many balls are in the sculpture?"
       },
       "JjwwVsnaNJ": {
-        "answerDetails": "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks.",
-        "clue": "Take a photo of a Japanese sandwich."
+        "clue": "Take a photo of a Japanese sandwich.",
+        "answer": {
+          "answerDetails": "The vending machines near the escalators in the South Satellite sell a variety of Japanese food and drinks."
+        }
       },
       "KFNxBoixx9": {
-        "answer": "21",
-        "answerDetails": "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near Gate B15.",
+        "answer": {
+          "answer": "21",
+          "answerDetails": "Gate B21 is accessed using the escalator or elevator at the end of Concourse B, near Gate B15."
+        },
         "clue": "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?"
       },
       "MSjgrbHme1": {
@@ -108,24 +126,32 @@
         "clue": "Find someone wearing Buc-ee's clothing and take a photo of the logo."
       },
       "Mr8NTBLVuw": {
-        "answer": "6 (to be verified)",
+        "answer": {
+          "answer": "6 (to be verified)"
+        },
         "clue": "Visit the all-gender restroom. How many faucets are at the sink?"
       },
       "PWYzT5xEM_": {
-        "answer": "Blue, yellow, and green.",
+        "answer": {
+          "answer": "Blue, yellow, and green."
+        },
         "clue": "Take a ride on the SEA underground. What are the three colors of the different train lines?"
       },
       "ShfXCzAYKC": {
-        "answer": "5 (to be verified)",
-        "answerDetails": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" by James Schoppert is a 3' tall painted wood sculpture.",
+        "answer": {
+          "answer": "5 (to be verified)",
+          "answerDetails": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" by James Schoppert is a 3' tall painted wood sculpture."
+        },
         "clue": "Find the painted wood sculpture \"Modern Mask.\" How many faces stare back at you?"
       },
       "U2Ml_N2Ao1": {
         "clue": "Take a photo of an album cover with the letter S on it."
       },
       "VGDb3ekZZs": {
-        "answer": "Walk",
-        "answerDetails": "It takes nine minutes to walk, and 11 minutes to take the train. The times are shown at the bottom of the map on the information display on the landing between A gates and the train station.",
+        "answer": {
+          "answer": "Walk",
+          "answerDetails": "It takes nine minutes to walk, and 11 minutes to take the train. The times are shown at the bottom of the map on the information display on the landing between A gates and the train station."
+        },
         "clue": "Check the travel time display between Concourse A and the train station. Is it faster to walk or take the train to C gates?"
       },
       "WOflQcqqRa": {
@@ -133,13 +159,17 @@
         "hint": "LiveATC [broadcasts audio from SEA East Tower](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
       },
       "XU2Q6uk5Sj": {
-        "answer": "Three fish are carrying suitcases, and eight planes have fins.",
-        "answerDetails": "The fish are located:\n\n- Across from Gate B3\n- At the bottom of the ramp near the nursing pod\n- At the top of the B train station escalators.\n\nThe planes are located:\n\n- Near Gate B3 (three planes)\n- Near Gate B6\n- Near Gate B7/B7A\n- Near the seats at the bottom of the ramp (three planes)",
+        "answer": {
+          "answer": "Three fish are carrying suitcases, and eight planes have fins.",
+          "answerDetails": "The fish are located:\n\n- Across from Gate B3\n- At the bottom of the ramp near the nursing pod\n- At the top of the B train station escalators.\n\nThe planes are located:\n\n- Near Gate B3 (three planes)\n- Near Gate B6\n- Near Gate B7/B7A\n- Near the seats at the bottom of the ramp (three planes)"
+        },
         "clue": "Find \"Flying Fish\" by Judith and Daniel Caldwell. How many fish are carrying suitcases? How many airplanes have fins?"
       },
       "Y7qiTGjFDA": {
-        "answer": "8",
-        "answerDetails": "The languages are:\n\n- Arabic\n- Chinese\n- English\n- Japanese\n- Korean\n- Russian\n- Spanish\n- Vietnamese",
+        "answer": {
+          "answer": "8",
+          "answerDetails": "The languages are:\n\n- Arabic\n- Chinese\n- English\n- Japanese\n- Korean\n- Russian\n- Spanish\n- Vietnamese"
+        },
         "clue": "Ride the blue train to the South Satellite. How many languages are shown on the \"Please hold on\" digital sign?"
       },
       "Z8uD5RIdFk": {
@@ -155,33 +185,43 @@
         "clue": "Take a selfie with a live plant."
       },
       "fId26KufqS": {
-        "answer": "Cordell works at the Luck Shines shoe shine near gate D2.",
+        "answer": {
+          "answer": "Cordell works at the Luck Shines shoe shine near gate D2."
+        },
         "clue": "Where does Cordell \"The Transformer\" Truluck work?"
       },
       "glwn2opFlc": {
-        "answer": "Skillet, near gate C10.",
+        "answer": {
+          "answer": "Skillet, near gate C10."
+        },
         "clue": "Which restaurant serves a dish called deconstructed hash?"
       },
       "mdihls1FXP": {
         "clue": "Find a gate with a flight to a city inside Washington State and take a selfie with the sign."
       },
       "nGRX7LLH2E": {
-        "answerDetails": "The dog is located at Hachi-Ko.",
-        "clue": "Take a selfie with the neon dog."
+        "clue": "Take a selfie with the neon dog.",
+        "answer": {
+          "answerDetails": "The dog is located at Hachi-Ko."
+        }
       },
       "ndC0lIJES6": {
         "clue": "Take a photo of a hibiscus flower."
       },
       "pB53_yVOPQ": {
-        "answerDetails": "The lounges are:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Central Terminal)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine above N13-N18)\n* The Club (above S10)\n* British Airways (above S10).",
         "clue": "Take a selfie outside the entrance of each airport lounge.",
-        "hint": "There are eleven lounges at SEA, with ten entrances."
+        "hint": "There are eleven lounges at SEA, with ten entrances.",
+        "answer": {
+          "answerDetails": "The lounges are:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Central Terminal)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine above N13-N18)\n* The Club (above S10)\n* British Airways (above S10)."
+        }
       },
       "qsWmZtJQx9": {
         "clue": "Search the gate screens and snap a photo of the highest flight number you spot."
       },
       "qtcTszICZ5": {
-        "answer": "12",
+        "answer": {
+          "answer": "12"
+        },
         "clue": "Ride the yellow line train. How many fire extinguishers are mounted to the wall in the tunnel?",
         "hint": "Count only extinguishers mounted to the tunnel wall; the one on the train does not count."
       },
@@ -189,44 +229,60 @@
         "clue": "Take a photo of a sign written in a language other than English."
       },
       "tYEDPlu30G": {
-        "answer": "Japan Airlines (JAL) and Qatar Airways",
+        "answer": {
+          "answer": "Japan Airlines (JAL) and Qatar Airways"
+        },
         "clue": "Which airlines grant business class passengers access to both The Club and British Airways Terraces lounges?"
       },
       "uaPC_HvMqd": {
         "clue": "Take a photo of something with the Space Needle on it."
       },
       "uzxCpAxD0O": {
-        "answerDetails": "The information desks are:\n\n- A info: across from Swarovski in Concourse A\n- A3 info: across from Starbucks by Gate A3\n- Checkpoint 1: inside Checkpoint 1 on the landing between Concourse A and the A train station\n- A train: in the A train station\n- Central info: in the central terminal near Dilettante Chocolates & Mocha Cafe\n- D info: Across from the all-gender restrooms in Concourse D\n- D train: in the D train station\n- N info: in the North Satellite",
         "clue": "Take a selfie at every information desk.",
-        "hint": "There are eight information desks post-security."
+        "hint": "There are eight information desks post-security.",
+        "answer": {
+          "answerDetails": "The information desks are:\n\n- A info: across from Swarovski in Concourse A\n- A3 info: across from Starbucks by Gate A3\n- Checkpoint 1: inside Checkpoint 1 on the landing between Concourse A and the A train station\n- A train: in the A train station\n- Central info: in the central terminal near Dilettante Chocolates & Mocha Cafe\n- D info: Across from the all-gender restrooms in Concourse D\n- D train: in the D train station\n- N info: in the North Satellite"
+        }
       },
       "v86d2mm7UT": {
-        "answer": "10 (to be verified)",
+        "answer": {
+          "answer": "10 (to be verified)"
+        },
         "clue": "Check the gate signs around the airport. How many gates have a letter after the number?"
       },
       "vVonLvfgvX": {
         "clue": "Take a selfie with a vending machine selling something other than food and drink."
       },
       "vVzEujhDHt": {
-        "answer": "At the Washington Lotto desk near gate C10.",
+        "answer": {
+          "answer": "At the Washington Lotto desk near gate C10."
+        },
         "clue": "If you hit the jackpot, where in Concourse C would you cash your Washington Lotto ticket?"
       },
       "wIuAhUYSUJ": {
-        "answer": "+1-800-TBD-9999 (to be verified)",
+        "answer": {
+          "answer": "+1-800-TBD-9999 (to be verified)"
+        },
         "clue": "Find the CBP office in Concourse A. What's the phone number posted outside?"
       },
       "xH4xrNHYJe": {
-        "answer": "A boat.",
-        "answerDetails": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" by Larry Kirkland is a 32' long boat made out of aluminum and glass. The shadow is made from approximately seventy bronze elements.",
+        "answer": {
+          "answer": "A boat.",
+          "answerDetails": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" by Larry Kirkland is a 32' long boat made out of aluminum and glass. The shadow is made from approximately seventy bronze elements."
+        },
         "clue": "Find the shadow in the terrazzo floor. What object casts the shadow?"
       },
       "xNr6O90eQa": {
-        "answer": "Susan",
-        "answerDetails": "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program.",
+        "answer": {
+          "answer": "Susan",
+          "answerDetails": "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program."
+        },
         "clue": "Listen to the airport announcements. What is the name of the volunteer?"
       },
       "yTNP29jtdB": {
-        "answer": "PF Chang's",
+        "answer": {
+          "answer": "PF Chang's"
+        },
         "clue": "Head upstairs to the mezzanine in the North Satellite. Which restaurant is there?"
       }
     },
