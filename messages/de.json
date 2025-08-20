@@ -8,9 +8,10 @@
       "remove-image-aria": "Bild {index, number} entfernen"
     },
     "language-switcher": {
+      "de": "Deutsch",
       "en": "English",
-      "fr": "Français",
-      "de": "Deutsch"
+      "es": "Español",
+      "fr": "Français"
     },
     "markdown": {
       "link-opens-in-new-tab": "(öffnet in neuem Tab)"
