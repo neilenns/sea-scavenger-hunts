@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { FlagComponent, FR, US } from "country-flag-icons/react/3x2";
+import { DE, ES, FlagComponent, FR, US } from "country-flag-icons/react/3x2";
 import { GlobeIcon } from "lucide-react";
 import type { Locale } from "next-intl";
 import { useLocale, useTranslations } from "next-intl";
@@ -17,6 +17,8 @@ import { useCallback, useMemo, useTransition } from "react";
 const languages = [
   { code: "en", flagComponent: US },
   { code: "fr", flagComponent: FR },
+  { code: "de", flagComponent: DE },
+  { code: "es", flagComponent: ES },
 ] as const satisfies ReadonlyArray<
   Readonly<{ code: Locale; flagComponent: FlagComponent }>
 >;
@@ -71,6 +73,7 @@ export default function LanguageSwitcher({
         <DropdownMenuTrigger asChild>
           <Button
             disabled={isPending}
+            aria-busy={isPending}
             variant="outline"
             size="sm"
             className="gap-2"

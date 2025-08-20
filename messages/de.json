@@ -1,0 +1,333 @@
+{
+  "components": {
+    "clue-item": {
+      "answer": "Antwort"
+    },
+    "image-answer": {
+      "choose-files-button": "{expectedImageCount, plural, =1 {Datei auswählen} other {Dateien auswählen}}",
+      "remove-image-aria": "Bild {index, number} entfernen"
+    },
+    "language-switcher": {
+      "de": "Deutsch",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français"
+    },
+    "markdown": {
+      "link-opens-in-new-tab": "(öffnet in neuem Tab)"
+    },
+    "text-answer": {
+      "input-aria-label": "Geben Sie Ihre Antwort ein...",
+      "input-placeholder": "Geben Sie Ihre Antwort ein..."
+    }
+  },
+  "main-page": {
+    "description": "Schnitzeljagden für den SEA-Flughafen",
+    "title": "SEA-Schnitzeljagden"
+  },
+  "post-security-page": {
+    "areas": {
+      "airport-wide": "Flughafenweit",
+      "central-terminal": "Zentrales Terminal",
+      "concourse-a": "Flugsteig A",
+      "concourse-b": "Flugsteig B",
+      "concourse-c": "Flugsteig C",
+      "concourse-d": "Flugsteig D",
+      "north-satellite": "Nord-Satellit",
+      "south-satellite": "Süd-Satellit"
+    },
+    "clear-answers-dialog": {
+      "cancel": "Abbrechen",
+      "clear": "Löschen",
+      "description": "Dies wird alle gespeicherten Antworten löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "title": "Alle Antworten löschen?",
+      "trigger": "Antworten löschen"
+    },
+    "clues": {
+      "-GLJeZ-L-K": {
+        "clue": "Finden Sie den größten Getränkebecher zum Verkauf und machen Sie ein Foto daneben."
+      },
+      "-buCfuZ_Js": {
+        "answer": {
+          "answer": "Sub Pop, in der Nähe von Flugsteig C."
+        },
+        "clue": "Sie haben eine Postkarte zu verschicken. Wo im zentralen Terminal können Sie Briefmarken kaufen?"
+      },
+      "1XWgzKECE6": {
+        "answer": {
+          "answer": "4",
+          "details": "Die Toppings sind:\n\n- Boba\n- Popping Boba\n- Gelee\n- Sirup"
+        },
+        "clue": "Finden Sie den Boba-Shop. Wie viele verschiedene Toppings können Sie auswählen?"
+      },
+      "4B8BuOoy-A": {
+        "answer": {
+          "answer": "26",
+          "details": "Gate D26 befindet sich unten, gegenüber von Gate D5."
+        },
+        "clue": "Gehen Sie nach unten und weg von den Menschenmengen. Was ist die höchste D-Gate-Nummer, die Sie sehen?"
+      },
+      "6IjATuH8h-": {
+        "clue": "Machen Sie ein Foto von einem Flugzeug, das unter der Skybridge für internationale Ankünfte hindurchfährt."
+      },
+      "96FePKs7zD": {
+        "clue": "Machen Sie ein Selfie mit Jett dem SEA-Otter."
+      },
+      "Ajg7X3_CWe": {
+        "clue": "Machen Sie ein Selfie mit einem SEA-Welpen.",
+        "hint": "[SEA-Welpen](https://www.portseattle.org/page/sea-pups) sind normalerweise von 10:00 bis 12:00 Uhr im zentralen Terminal am Flughafen."
+      },
+      "BL5xfCD1Pl": {
+        "clue": "Machen Sie Fotos von drei verschiedenen Flugzeugschwänzen von Nicht-US-Fluggesellschaften."
+      },
+      "CEDiAt5_TD": {
+        "clue": "Machen Sie ein Selfie mit einem Gate-Schild für einen Flug außerhalb der Vereinigten Staaten."
+      },
+      "Fq6cpEvGKt": {
+        "answer": {
+          "answer": "3 (zu überprüfen)"
+        },
+        "clue": "Wie viele Flugzeuge haben Flossen?"
+      },
+      "FwkTyDghkR": {
+        "answer": {
+          "answer": "20 (zu überprüfen)",
+          "details": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" von Peter Shelton hängt über Flugsteig A in der Nähe der Seattle Beer Union."
+        },
+        "clue": "Schauen Sie nach oben in der Nähe der Seattle Beer Union. Wie viele Wolkenskulpturen schweben über Ihnen?"
+      },
+      "GpyOC1fxZv": {
+        "answer": {
+          "answer": "Nordbetrieb oder Südbetrieb",
+          "details": "Wenn Flugzeuge von rechts nach links starten, ist der Flughafen im Südbetrieb. Wenn Flugzeuge von links nach rechts starten, ist der Flughafen im Nordbetrieb."
+        },
+        "clue": "Beobachten Sie einige startende Flugzeuge. Basierend auf der Startrichtung, in welchem Fluss befindet sich der Flughafen heute?",
+        "hint": "Flughafenfluss ist die Richtung, in die Flugzeuge starten. Wenn zum Beispiel Flugzeuge nach Süden starten, befindet sich der Flughafen im Südfluss."
+      },
+      "JTaK-wv-cm": {
+        "answer": {
+          "answer": "14",
+          "details": "Es gibt 13 Kugeln im nördlichen Teil der Skulptur und eine Kugel im südlichen Teil."
+        },
+        "clue": "Finden Sie \"On: Matter, monkeys and the king\" von Trimpin. Wie viele Kugeln sind in der Skulptur?"
+      },
+      "JjwwVsnaNJ": {
+        "answer": {
+          "details": "Die Verkaufsautomaten in der Nähe der Rolltreppen im Süd-Satelliten verkaufen verschiedene japanische Speisen und Getränke."
+        },
+        "clue": "Machen Sie ein Foto von einem japanischen Sandwich."
+      },
+      "KFNxBoixx9": {
+        "answer": {
+          "answer": "21",
+          "details": "Gate B21 ist über die Rolltreppe oder den Aufzug am Ende von Flugsteig B, in der Nähe von Gate B15, erreichbar."
+        },
+        "clue": "Hinter Gate B15 gibt es eine Rolltreppe zu einem versteckten Gate-Bereich. Was ist die höchste B-Gate-Nummer dort?"
+      },
+      "MSjgrbHme1": {
+        "alternateText": "Buc-ee's Logo auf Kleidung.",
+        "clue": "Finden Sie jemanden mit Buc-ee's Kleidung und machen Sie ein Foto vom Logo."
+      },
+      "Mr8NTBLVuw": {
+        "answer": {
+          "answer": "10"
+        },
+        "clue": "Besuchen Sie die geschlechtsneutrale Toilette. Wie viele Wasserhähne sind am Waschbecken?"
+      },
+      "PWYzT5xEM_": {
+        "answer": {
+          "answer": "Blau, gelb und grün."
+        },
+        "clue": "Fahren Sie mit der SEA-U-Bahn. Was sind die drei Farben der verschiedenen Zuglinien?"
+      },
+      "Sd9BH5N5gY": {
+        "answer": {
+          "answer": "An der Rückwand von Koi Shi Sushi."
+        },
+        "clue": "Wo befindet sich dieses Fliesenmuster?"
+      },
+      "ShfXCzAYKC": {
+        "answer": {
+          "answer": "5 (zu überprüfen)",
+          "details": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" von James Schoppert ist eine 3 Fuß hohe bemalte Holzskulptur."
+        },
+        "clue": "Finden Sie die bemalte Holzskulptur \"Modern Mask\". Wie viele Gesichter starren Sie an?"
+      },
+      "U2Ml_N2Ao1": {
+        "clue": "Machen Sie ein Foto von einem Albumcover mit dem Buchstaben S darauf."
+      },
+      "VGDb3ekZZs": {
+        "answer": {
+          "answer": "Zu Fuß gehen",
+          "details": "Es dauert neun Minuten zu Fuß und 11 Minuten mit dem Zug. Die Zeiten werden unten auf der Karte auf der Informationsanzeige auf dem Zwischenpodest zwischen A-Gates und der Bahnstation angezeigt."
+        },
+        "clue": "Prüfen Sie die Reisezeitanzeige zwischen Flugsteig A und der Bahnstation. Ist es schneller zu Fuß zu gehen oder den Zug zu den C-Gates zu nehmen?"
+      },
+      "WOflQcqqRa": {
+        "clue": "Hören Sie SEA Tower zu und machen Sie ein Foto von einem Flugzeug, das Sie zum Start freigegeben hören.",
+        "hint": "LiveATC [überträgt Audio vom SEA East Tower](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
+      },
+      "XU2Q6uk5Sj": {
+        "answer": {
+          "answer": "Drei Fische tragen Koffer, und acht Flugzeuge haben Flossen.",
+          "details": "Die Fische befinden sich:\n\n- Gegenüber von Gate B3\n- Am unteren Ende der Rampe in der Nähe des Stillbereichs\n- Am oberen Ende der Rolltreppen der B-Bahnstation.\n\nDie Flugzeuge befinden sich:\n\n- In der Nähe von Gate B3 (drei Flugzeuge)\n- In der Nähe von Gate B6\n- In der Nähe von Gate B7/B7A\n- In der Nähe der Sitzplätze am unteren Ende der Rampe (drei Flugzeuge)"
+        },
+        "clue": "Finden Sie \"Flying Fish\" von Judith und Daniel Caldwell. Wie viele Fische tragen Koffer? Wie viele Flugzeuge haben Flossen?"
+      },
+      "Y7qiTGjFDA": {
+        "answer": {
+          "answer": "8",
+          "details": "Die Sprachen sind:\n\n- Arabisch\n- Chinesisch\n- Englisch\n- Japanisch\n- Koreanisch\n- Russisch\n- Spanisch\n- Vietnamesisch"
+        },
+        "clue": "Fahren Sie mit dem blauen Zug zum Süd-Satelliten. Wie viele Sprachen werden auf dem digitalen \"Bitte festhalten\" Schild angezeigt?"
+      },
+      "Z8uD5RIdFk": {
+        "clue": "Erkunden Sie die Geschäfte. Machen Sie ein Foto vom teuersten Artikel, den Sie zum Verkauf finden können."
+      },
+      "a8vW4xzkkW": {
+        "clue": "Finden Sie den Wasserflaschenfüller mit der höchsten Anzahl gesparter Flaschen und machen Sie ein Foto von der Flaschenzählung."
+      },
+      "cvI9vHSRuC": {
+        "clue": "Machen Sie ein Selfie mit einem automatischen Defibrillator."
+      },
+      "ewJw9uhuxK": {
+        "clue": "Machen Sie ein Selfie mit einer lebenden Pflanze."
+      },
+      "fId26KufqS": {
+        "answer": {
+          "answer": "Cordell arbeitet bei Luck Shines Schuhputzerei in der Nähe von Gate D2."
+        },
+        "clue": "Wo arbeitet Cordell \"The Transformer\" Truluck?"
+      },
+      "glwn2opFlc": {
+        "answer": {
+          "answer": "Skillet, in der Nähe von Gate C10."
+        },
+        "clue": "Welches Restaurant serviert ein Gericht namens dekonstruiertes Hash?"
+      },
+      "jdadKFgQo7": {
+        "clue": "Finden Sie OSCARsort und bitten Sie es, Ihnen beim Sortieren von etwas in den richtigen Behälter zu helfen."
+      },
+      "mdihls1FXP": {
+        "clue": "Finden Sie ein Gate mit einem Flug zu einer Stadt in Washington State und machen Sie ein Selfie mit dem Schild."
+      },
+      "nGRX7LLH2E": {
+        "answer": {
+          "details": "Der Hund befindet sich bei Hachi-Ko."
+        },
+        "clue": "Machen Sie ein Selfie mit dem Neonhund."
+      },
+      "nOMs1a7gGN": {
+        "answer": {
+          "answer": "Am Eingang zu den Toiletten bei Poke to The Max."
+        },
+        "clue": "Wo befindet sich dieses Fliesenmuster?"
+      },
+      "ndC0lIJES6": {
+        "clue": "Machen Sie ein Foto von einer Hibiskusblüte."
+      },
+      "pB53_yVOPQ": {
+        "answer": {
+          "details": "Die Lounges sind:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Zentrales Terminal)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (Mezzanin über N13-N18)\n* The Club (über S10)\n* British Airways (über S10)."
+        },
+        "clue": "Machen Sie ein Selfie vor dem Eingang jeder Flughafen-Lounge.",
+        "hint": "Es gibt elf Lounges am SEA mit zehn Eingängen."
+      },
+      "qsWmZtJQx9": {
+        "clue": "Durchsuchen Sie die Gate-Bildschirme und machen Sie ein Foto von der höchsten Flugnummer, die Sie entdecken."
+      },
+      "qtcTszICZ5": {
+        "answer": {
+          "answer": "12"
+        },
+        "clue": "Fahren Sie mit der gelben Linie. Wie viele Feuerlöscher sind an der Tunnelwand montiert?",
+        "hint": "Zählen Sie nur Feuerlöscher, die an der Tunnelwand montiert sind; der im Zug zählt nicht."
+      },
+      "sZLbWTNUXK": {
+        "clue": "Machen Sie ein Foto von einem Schild in einer anderen Sprache als Englisch."
+      },
+      "tYEDPlu30G": {
+        "answer": {
+          "answer": "Japan Airlines (JAL) und Qatar Airways"
+        },
+        "clue": "Welche Fluggesellschaften gewähren Business-Class-Passagieren Zugang zu sowohl The Club als auch British Airways Terraces Lounges?"
+      },
+      "uaPC_HvMqd": {
+        "clue": "Machen Sie ein Foto von etwas mit der Space Needle darauf."
+      },
+      "uzxCpAxD0O": {
+        "answer": {
+          "details": "Die Informationsschalter sind:\n\n- A Info: gegenüber von Swarovski in Flugsteig A\n- A3 Info: gegenüber von Starbucks bei Gate A3\n- Checkpoint 1: innerhalb von Checkpoint 1 auf dem Zwischenpodest zwischen Flugsteig A und der A-Bahnstation\n- A-Bahn: in der A-Bahnstation\n- Zentrale Info: im zentralen Terminal in der Nähe von Dilettante Chocolates & Mocha Cafe\n- D Info: Gegenüber von den geschlechtsneutralen Toiletten in Flugsteig D\n- D-Bahn: in der D-Bahnstation\n- N Info: im Nord-Satelliten"
+        },
+        "clue": "Machen Sie ein Selfie an jedem Informationsschalter.",
+        "hint": "Es gibt acht Informationsschalter nach der Sicherheitskontrolle."
+      },
+      "v86d2mm7UT": {
+        "answer": {
+          "answer": "10 (zu überprüfen)"
+        },
+        "clue": "Prüfen Sie die Gate-Schilder im Flughafen. Wie viele Gates haben einen Buchstaben nach der Nummer?"
+      },
+      "vV3adEqeuE": {
+        "answer": {
+          "answer": "Bei Floret, in der Nähe von Gate A1."
+        },
+        "clue": "Wo können Sie Avocado-Toast zum Frühstück bekommen?"
+      },
+      "vVonLvfgvX": {
+        "clue": "Machen Sie ein Selfie mit einem Verkaufsautomaten, der etwas anderes als Essen und Getränke verkauft."
+      },
+      "vVzEujhDHt": {
+        "answer": {
+          "answer": "Am Washington Lotto Schalter in der Nähe von Gate C10."
+        },
+        "clue": "Wenn Sie den Jackpot knacken, wo in Flugsteig C würden Sie Ihr Washington Lotto Ticket einlösen?"
+      },
+      "wIuAhUYSUJ": {
+        "answer": {
+          "answer": "+1-800-TBD-9999 (zu überprüfen)"
+        },
+        "clue": "Finden Sie das CBP-Büro in Flugsteig A. Welche Telefonnummer steht draußen angeschlagen?"
+      },
+      "xH4xrNHYJe": {
+        "answer": {
+          "answer": "Ein Boot.",
+          "details": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" von Larry Kirkland ist ein 32 Fuß langes Boot aus Aluminium und Glas. Der Schatten besteht aus etwa siebzig Bronzeelementen."
+        },
+        "clue": "Finden Sie den Schatten im Terrazzo-Boden. Welches Objekt wirft den Schatten?"
+      },
+      "xNr6O90eQa": {
+        "answer": {
+          "answer": "Susan",
+          "details": "Flughafen-Freiwillige sind Botschafter sowohl für den Flughafen als auch für die Puget Sound Region. [Erfahren Sie mehr](https://www.portseattle.org/Volunteer) über das Programm."
+        },
+        "clue": "Hören Sie den Flughafendurchsagen zu. Wie heißt die Freiwillige?"
+      },
+      "yTNP29jtdB": {
+        "answer": {
+          "answer": "PF Chang's"
+        },
+        "clue": "Gehen Sie nach oben zum Mezzanin im Nord-Satelliten. Welches Restaurant ist dort?"
+      },
+      "zCMksb5cxu": {
+        "answer": {
+          "answer": "\"50 Sunsets\" von Joey Veltkamp",
+          "details": "Das Kunstwerk hängt an der Wand außerhalb der geschlechtsneutralen Toiletten."
+        },
+        "clue": "Welches Kunstwerk hat dieses Muster?"
+      }
+    },
+    "description": "Schnitzeljagd für den SEA-Flughafen",
+    "header": {
+      "trigger-aria-label": "Seitenleiste umschalten"
+    },
+    "introduction1": "Willkommen bei SEA! Diese Schnitzeljagd hilft Ihnen, den gesamten Flughafen zu erkunden. Wie viele Gegenstände können Sie finden?",
+    "introduction2": "Alle Antworten und Gegenstände können in öffentlichen Bereichen gefunden werden. Sie müssen durch keine Türen gehen und verlassen Sie nicht versehentlich die Seite des Flughafens vor der Sicherheitskontrolle bei der Suche nach Gegenständen!",
+    "introduction3": "Ihre Antworten werden lokal in Ihrem Browser gespeichert und werden niemals an einen Server gesendet.",
+    "sidebar": {
+      "aria-label": "SEA-Schnitzeljagd Navigation",
+      "title": "SEA-Schnitzeljagd"
+    },
+    "title": "SEA-Schnitzeljagd"
+  }
+}

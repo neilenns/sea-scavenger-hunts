@@ -8,7 +8,9 @@
       "remove-image-aria": "Supprimer l'image {index, number}"
     },
     "language-switcher": {
+      "de": "Deutsch",
       "en": "English",
+      "es": "Español",
       "fr": "Français"
     },
     "markdown": {
