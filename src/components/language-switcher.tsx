@@ -73,6 +73,7 @@ export default function LanguageSwitcher({
         <DropdownMenuTrigger asChild>
           <Button
             disabled={isPending}
+            aria-busy={isPending}
             variant="outline"
             size="sm"
             className="gap-2"

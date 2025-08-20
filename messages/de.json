@@ -98,8 +98,8 @@
       },
       "GpyOC1fxZv": {
         "answer": {
-          "answer": "Nordfluss oder Südfluss",
-          "details": "Wenn Flugzeuge von rechts nach links starten, ist der Flughafen im Südfluss. Wenn Flugzeuge von links nach rechts starten, ist der Flughafen im Nordfluss."
+          "answer": "Nordbetrieb oder Südbetrieb",
+          "details": "Wenn Flugzeuge von rechts nach links starten, ist der Flughafen im Südbetrieb. Wenn Flugzeuge von links nach rechts starten, ist der Flughafen im Nordbetrieb."
         },
         "clue": "Beobachten Sie einige startende Flugzeuge. Basierend auf der Startrichtung, in welchem Fluss befindet sich der Flughafen heute?",
         "hint": "Flughafenfluss ist die Richtung, in die Flugzeuge starten. Wenn zum Beispiel Flugzeuge nach Süden starten, befindet sich der Flughafen im Südfluss."
