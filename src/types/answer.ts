@@ -1,6 +1,7 @@
 export enum AnswerType {
   TEXT = "text",
   IMAGE = "image",
+  NONE = "none",
 }
 
 // Discriminated union types for Answer
@@ -14,7 +15,11 @@ export interface ImageAnswer {
   expectedImageCount: number;
 }
 
-export type Answer = TextAnswer | ImageAnswer;
+export interface NoneAnswer {
+  type: AnswerType.NONE;
+}
+
+export type Answer = TextAnswer | ImageAnswer | NoneAnswer;
 
 // Type guard functions for Answer
 export function isTextAnswer(answer: Answer): answer is TextAnswer {
@@ -23,4 +28,8 @@ export function isTextAnswer(answer: Answer): answer is TextAnswer {
 
 export function isImageAnswer(answer: Answer): answer is ImageAnswer {
   return answer.type === AnswerType.IMAGE;
+}
+
+export function isNoneAnswer(answer: Answer): answer is NoneAnswer {
+  return answer.type === AnswerType.NONE;
 }
