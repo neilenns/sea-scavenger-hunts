@@ -1,0 +1,13 @@
+{
+  "inputs": [],
+  "servers": {
+    "cloudflare": {
+      "type": "sse",
+      "url": "https://bindings.mcp.cloudflare.com/sse"
+    },
+    "shadcn": {
+      "type": "http",
+      "url": "https://www.shadcn.io/api/mcp"
+    }
+  }
+}
