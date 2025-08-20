@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clue, isImageClue } from "@/types/clue";
-import { isImageAnswer, isTextAnswer } from "@/types/answer";
+import { isImageAnswer, isNoneAnswer, isTextAnswer } from "@/types/answer";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -51,7 +51,7 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
         )}
         {isTextAnswer(clue.answer) && <TextAnswer clue={clue} />}
         {isImageAnswer(clue.answer) && <ImageAnswer clue={clue} />}
-        {(t.has(`${baseKey}.answer.answer`) || t.has(`${baseKey}.answer.details`)) && (
+        {!isNoneAnswer(clue.answer) && (t.has(`${baseKey}.answer.answer`) || t.has(`${baseKey}.answer.details`)) && (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="answer">
               <AccordionTrigger className="pb-0">

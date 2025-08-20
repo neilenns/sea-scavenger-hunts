@@ -305,7 +305,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "jdadKFgQo7", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
-    answer: { type: AnswerType.TEXT },
+    answer: { type: AnswerType.NONE },
     type: ClueType.TEXT,
   },
   {
