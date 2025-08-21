@@ -14,10 +14,6 @@
       "matchPackageNames": ["@types/{/,}**"]
     },
     {
-      "allowedVersions": "15.3.3",
-      "matchPackageNames": ["next"]
-    },
-    {
       "automerge": true,
       "groupName": "linting",
       "groupSlug": "eslint-plugin",
