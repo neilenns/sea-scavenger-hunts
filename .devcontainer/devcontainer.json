@@ -5,13 +5,14 @@
     "vscode": {
       "extensions": [
         "Jacano.vscode-pnpm",
-        "lokalise.i18n-ally"
+        "lokalise.i18n-ally",
+        "vk-l.nanoid-generator"
       ]
     }
   },
   "dockerComposeFile": "docker-compose.yaml",
-  "service": "app",
   "forwardPorts": [3000],
   "name": "SEA resource guides development",
+  "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }
