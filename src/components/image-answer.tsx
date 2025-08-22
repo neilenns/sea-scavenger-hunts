@@ -132,7 +132,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                   index: index + 1,
                 })}
               >
-                <TrashIcon />
+                <TrashIcon aria-hidden />
               </Button>
             </div>
           ))}
