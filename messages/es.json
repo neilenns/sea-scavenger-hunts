@@ -5,7 +5,8 @@
     },
     "image-answer": {
       "choose-files-button": "Elegir {expectedImageCount, plural, =1 {archivo} other {archivos}}",
-      "remove-image-aria": "Eliminar imagen {index, number}"
+      "remove-image-aria": "Eliminar imagen {index, number}",
+      "take-photo-button": "Tomar una foto"
     },
     "language-switcher": {
       "de": "Deutsch",
