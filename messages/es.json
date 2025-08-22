@@ -125,6 +125,12 @@
         },
         "clue": "Más allá de la puerta B15, hay una escalera mecánica a un área de puertas escondida. ¿Cuál es la puerta B con el número más alto ahí?"
       },
+      "KGJ0DPoG4R": {
+        "answer": {
+          "answer": "Un conejo."
+        },
+        "clue": "¿Qué animal se está comiendo este trozo de pastel?"
+      },
       "MSjgrbHme1": {
         "alternateText": "Logo de Buc-ee's en ropa.",
         "clue": "Encuentre a alguien usando ropa de Buc-ee's y tome una foto del logo."
@@ -163,6 +169,15 @@
           "details": "Toma nueve minutos caminar, y 11 minutos tomar el tren. Los tiempos se muestran en la parte inferior del mapa en la pantalla de información en el rellano entre las puertas A y la estación de tren."
         },
         "clue": "Revise la pantalla de tiempo de viaje entre el Vestíbulo A y la estación de tren. ¿Es más rápido caminar o tomar el tren a las puertas C?"
+      },
+      "VcADSD4gkY": {
+        "answer": {
+          "answer": "Las Seattle Storm de la WNBA."
+        },
+        "clue": "Josie trabaja en la tienda Fireworks. ¿Cuál es el equipo deportivo favorito de Josie?"
+      },
+      "W8xP5ZKtnC": {
+        "clue": "Chester es el nombre de la cara en la cola de los aviones de Alaska Airlines. Mira por la ventana en la puerta D5. ¿Cuántas caras de Chester puedes ver?"
       },
       "WOflQcqqRa": {
         "clue": "Escuche la Torre SEA y tome una foto de un avión que escuchó autorizado para el despegue.",

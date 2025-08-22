@@ -125,6 +125,13 @@
         },
         "clue": "Past Gate B15, there's an escalator to a tucked-away gate area. What's the highest-numbered B gate there?"
       },
+      "KGJ0DPoG4R": {
+        "alternateText": "Crop of a photo of a painting, showing a slice of red velvet cake in a gold picture frame.",
+        "answer": {
+          "answer": "A rabbit."
+        },
+        "clue": "What animal is eating this slice of cake?"
+      },
       "MSjgrbHme1": {
         "alternateText": "Buc-ee's logo on clothing.",
         "clue": "Find someone wearing Buc-ee's clothing and take a photo of the logo."
@@ -163,6 +170,16 @@
           "details": "It takes nine minutes to walk, and 11 minutes to take the train. The times are shown at the bottom of the map on the information display on the landing between A gates and the train station."
         },
         "clue": "Check the travel time display between Concourse A and the train station. Is it faster to walk or take the train to C gates?"
+      },
+      "VcADSD4gkY": {
+        "answer": {
+          "answer": "The WNBA Seattle Storm."
+        },
+        "clue": "Josie works at the Fireworks store. What is Josie's favorite sports team?"
+      },
+      "W8xP5ZKtnC": {
+        "alternateText": "Photo of eight airplane tails with Chester's face.",
+        "clue": "Chester is the name of the face on the tail of Alaska Airlines airplanes. Look out the window at gate D5. How many Chester faces can you see?"
       },
       "WOflQcqqRa": {
         "clue": "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",

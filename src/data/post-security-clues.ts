@@ -314,4 +314,22 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     answer: { type: AnswerType.TEXT },
     type: ClueType.TEXT,
   },
+  {
+    id: "VcADSD4gkY", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+  },
+  {
+    id: "W8xP5ZKtnC", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+  },
+  {
+    id: "KGJ0DPoG4R", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+  },
 ];
