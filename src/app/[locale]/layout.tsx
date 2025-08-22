@@ -1,8 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing } from "@/i18n/routing";
-import { LayoutPropertiesWithLocale } from "@/types/layout-properties-with-locale";
-import type { Locale } from "next-intl";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -25,10 +23,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params: parameters,
-}: Readonly<{
-  params: Promise<{ locale: Locale }>;
-}>) {
-  const { locale } = await parameters;
+}: LayoutProps<"/[locale]">) {
+  const { locale } = (await parameters) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "main-page" });
 
   return {
@@ -50,9 +46,9 @@ export async function generateMetadata({
 export default async function RootLayout({
   children,
   params: parameters,
-}: LayoutPropertiesWithLocale) {
+}: LayoutProps<"/[locale]">) {
   // Ensure that the incoming `locale` is valid
-  const { locale } = await parameters;
+  const { locale } = (await parameters) as { locale: Locale };
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();

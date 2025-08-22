@@ -1,5 +1,4 @@
 import { routing } from "@/i18n/routing";
-import { LayoutPropertiesWithLocale } from "@/types/layout-properties-with-locale";
 import type { Locale } from "next-intl";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -12,10 +11,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params: parameters,
-}: Readonly<{
-  params: Promise<{ locale: Locale }>;
-}>) {
-  const { locale } = await parameters;
+}: LayoutProps<"/[locale]/post-security">) {
+  const { locale } = (await parameters) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "post-security-page" });
 
   return {
@@ -37,8 +34,8 @@ export async function generateMetadata({
 export default async function Layout({
   children,
   params: parameters,
-}: LayoutPropertiesWithLocale) {
-  const { locale } = await parameters;
+}: LayoutProps<"/[locale]/post-security">) {
+  const { locale } = (await parameters) as { locale: Locale };
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
