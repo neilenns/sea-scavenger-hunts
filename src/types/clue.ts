@@ -22,6 +22,8 @@ export interface ClueBase {
   /** Answer configuration */
   answer: Answer;
   id: string;
+  /** Sort order within the airport area. Lower numbers appear first. */
+  sortOrder: number;
 }
 
 // Discriminated union types for Clue content

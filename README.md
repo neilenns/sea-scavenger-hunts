@@ -99,10 +99,17 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
      airportArea: AirportArea.CONCOURSE_A, // Choose appropriate area
      answer: { type: AnswerType.TEXT }, // or AnswerType.IMAGE with expectedImageCount
      type: ClueType.TEXT, // or ClueType.IMAGE if you want to show an image with the clue
+     sortOrder: 10, // Order within the airport area (lower numbers appear first)
    },
    ```
 
-3. **Airport Areas available**:
+3. **Sort Order**: The `sortOrder` property determines the order clues appear within each airport area:
+   - Use increments of 10 (10, 20, 30, etc.) for easy insertion of new clues
+   - To insert between existing clues, use values like 15 (between 10 and 20)
+   - Lower numbers appear first in the list
+   - Each airport area is sorted independently
+
+4. **Airport Areas available**:
    - `AirportArea.AIRPORT_WIDE` - Clues that can be found anywhere
    - `AirportArea.CENTRAL_TERMINAL` - Main terminal area
    - `AirportArea.CONCOURSE_A` through `AirportArea.CONCOURSE_D` - Specific concourses
