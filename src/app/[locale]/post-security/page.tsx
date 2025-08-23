@@ -29,6 +29,15 @@ export default function Page() {
     grouped[clue.airportArea].push(clue);
   }
 
+  // Sort clues within each area by sortOrder
+  for (const area of Object.keys(grouped) as Array<keyof typeof grouped>) {
+    grouped[area].sort((a, b) => {
+      const aSortOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
+      const bSortOrder = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
+      return aSortOrder - bSortOrder;
+    });
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       <SidebarProvider>
