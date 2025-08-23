@@ -97,6 +97,24 @@ Always manually validate changes by running through these complete scenarios:
    pnpm run ci                # Test Cloudflare deployment build
    ```
 
+### Documentation Maintenance
+
+**ALWAYS** update the README.md when making changes that affect:
+
+1. **Setup and Installation**: New dependencies, Node.js version changes, or setup steps
+2. **Development Commands**: New scripts, modified build processes, or changed development workflow
+3. **Project Features**: New functionality, removed features, or significant behavior changes
+4. **Technology Stack**: Framework updates, new libraries, or architecture changes
+5. **Deployment Process**: Changes to deployment configuration or environment requirements
+6. **Adding New Content**: New clue areas, language support, or major feature additions
+
+**README Update Guidelines**:
+- Keep examples and command outputs current and accurate
+- Update version numbers when dependencies change significantly
+- Verify all documented commands work as described
+- Include any new environment variables or configuration requirements
+- Update screenshots if UI changes significantly impact user experience
+
 ### Key Project Structure
 
 ```
