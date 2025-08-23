@@ -5,7 +5,7 @@ SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger hu
 ## 🌟 Features
 
 - **Interactive Scavenger Hunts**: Explore different areas of SEA Airport with engaging clues and challenges
-- **Multi-language Support**: Available in English and French (with Spanish and German support planned)
+- **Multi-language Support**: Available in English, French, Spanish, and German
 - **Mobile-First Design**: Optimized for phones and tablets for use while traveling
 - **Offline Capable**: Answers are saved locally in the browser
 - **Accessible**: ARIA labels and keyboard navigation support
@@ -23,26 +23,24 @@ The recommended way to develop this project is using VS Code with Dev Containers
 
 ### Setup Instructions
 
-1. **Clone the repository** in VS Code:
-   ```bash
-   git clone https://github.com/neilenns/sea-scavenger-hunts.git
-   ```
+1. **Clone the repository in a dev container**:
+   - Open VS Code
+   - Use Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+   - Select "Dev Containers: Clone Repository in Container Volume..."
+   - Enter: `https://github.com/neilenns/sea-scavenger-hunts.git`
 
-2. **Open in VS Code** and when prompted, click "Reopen in Container" or use the Command Palette (`Ctrl+Shift+P`):
-   ```
-   Dev Containers: Reopen in Container
-   ```
-
-3. **Wait for setup**: The dev container will automatically:
+2. **Wait for setup**: The dev container will automatically:
    - Install Node.js 22.18.0
    - Set up pnpm package manager
    - Install all dependencies
    - Configure development tools
 
-4. **Start developing**: Once the container is ready, you can start the development server:
+3. **Start developing**: Once the container is ready, you can start the development server:
    ```bash
    pnpm run dev
    ```
+
+4. **Debug your code**: Press `F5` to start debugging with breakpoints and step-through debugging.
 
 The app will be available at http://localhost:3000 and will automatically redirect to `/en` for the English version.
 
@@ -97,7 +95,7 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
 2. **Add your new clue** to the `postSecurityClues` array:
    ```typescript
    {
-     id: "unique-clue-id", // Generate a unique ID (10 characters recommended)
+     id: "unique-clue-id", // Generate using nanoid VSCode plugin (installed in dev container)
      airportArea: AirportArea.CONCOURSE_A, // Choose appropriate area
      answer: { type: AnswerType.TEXT }, // or AnswerType.IMAGE with expectedImageCount
      type: ClueType.TEXT, // or ClueType.IMAGE if you want to show an image with the clue
@@ -170,7 +168,13 @@ If using `ClueType.IMAGE`, add your image:
 
 ### Clue ID Generation
 
-Generate unique clue IDs using online tools or:
+Generate unique clue IDs using the nanoid VSCode plugin (automatically installed in the dev container):
+
+1. **Place your cursor** where you need a new ID
+2. **Use Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+3. **Select "Nanoid: Generate"** to insert a unique ID
+
+Alternatively, generate IDs manually:
 ```bash
 # Using Node.js (in dev container or locally)
 node -e "console.log(require('crypto').randomBytes(5).toString('base64url'))"
@@ -276,4 +280,4 @@ Currently, the project relies on manual testing. Before committing changes:
 
 ## 📄 License
 
-This project is private and proprietary to Neil Enns.
+This project is licensed under the MIT License.
