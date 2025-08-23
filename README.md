@@ -174,12 +174,6 @@ Generate unique clue IDs using the nanoid VSCode plugin (automatically installed
 2. **Use Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 3. **Select "Nanoid: Generate"** to insert a unique ID
 
-Alternatively, generate IDs manually:
-```bash
-# Using Node.js (in dev container or locally)
-node -e "console.log(require('crypto').randomBytes(5).toString('base64url'))"
-```
-
 ## 🏗️ Project Structure
 
 ```
