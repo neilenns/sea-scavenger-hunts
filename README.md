@@ -272,6 +272,14 @@ Currently, the project relies on manual testing. Before committing changes:
 - Add translations for all supported languages when adding new text
 - Follow existing code patterns and styling
 
+## 📱 Screenshots
+
+### Homepage (Mobile)
+![Homepage showing "SEA scavenger hunts" title](https://github.com/user-attachments/assets/85aa99d9-4c43-43d7-a1f0-bc00810f111e)
+
+### Main Scavenger Hunt Interface (Mobile)
+![Main scavenger hunt interface with sidebar navigation and clues organized by airport areas](https://github.com/user-attachments/assets/d42d744f-5e0b-47b6-8571-4fde690c7a71)
+
 ## 📄 License
 
 This project is licensed under the MIT License.
