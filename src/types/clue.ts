@@ -23,7 +23,7 @@ export interface ClueBase {
   answer: Answer;
   id: string;
   /** Sort order within the airport area. Lower numbers appear first. */
-  sortOrder?: number;
+  sortOrder: number;
 }
 
 // Discriminated union types for Clue content
