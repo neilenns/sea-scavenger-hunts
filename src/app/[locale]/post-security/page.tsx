@@ -30,11 +30,11 @@ export default function Page() {
   }
 
   // Sort clues within each area by sortOrder
-  for (const area of Object.keys(grouped) as Array<keyof typeof grouped>) {
+  for (const area of Object.keys(grouped) as unknown as Array<
+    keyof typeof grouped
+  >) {
     grouped[area].sort((a, b) => {
-      const aSortOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
-      const bSortOrder = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
-      return aSortOrder - bSortOrder;
+      return a.sortOrder - b.sortOrder;
     });
   }
 
