@@ -73,6 +73,16 @@ const eslintConfig = [
       ],
     },
   },
+  // Test files get more relaxed rules
+  {
+    files: ["**/__tests__/**/*", "**/*.test.*", "**/*.spec.*"],
+    rules: {
+      "react/jsx-no-literals": "off",
+      "@typescript-eslint/no-require-imports": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/prefer-global-this": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

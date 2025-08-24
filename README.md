@@ -218,6 +218,7 @@ sea-scavenger-hunts/
 - **Language**: TypeScript
 - **Styling**: TailwindCSS 4 with shadcn/ui components
 - **Internationalization**: next-intl
+- **Testing**: Jest with @testing-library/react
 - **Deployment**: OpenNext for Cloudflare Workers
 - **Package Manager**: pnpm 10.14.0
 - **Development Environment**: VS Code Dev Containers
@@ -244,36 +245,93 @@ pnpm run cf-populate
 
 ## 🧪 Testing
 
-Currently, the project relies on manual testing. Before committing changes:
+This project uses **Jest** with **@testing-library/react** for unit testing React components and application logic.
 
-1. **Run linting** (required):
+### Running Tests
+
+1. **Run all tests**:
    ```bash
-   pnpm run lint
+   pnpm run test
    ```
 
-2. **Test functionality manually**:
-   - Start dev server: `pnpm run dev`
-   - Navigate to http://localhost:3000/en/post-security
-   - Verify clue navigation, answers, language switching, and themes
-
-3. **Test builds**:
+2. **Run tests in watch mode** (for development):
    ```bash
-   pnpm run build  # Test standard Next.js build
-   pnpm run ci     # Test Cloudflare deployment build
+   pnpm run test:watch
    ```
+
+3. **Run tests with coverage report**:
+   ```bash
+   pnpm run test:coverage
+   ```
+
+4. **Run specific test file**:
+   ```bash
+   pnpm test src/components/__tests__/text-answer.test.tsx
+   ```
+
+### Testing Setup
+
+- **Framework**: Jest 30+ with jsdom test environment
+- **Testing Library**: @testing-library/react for component testing
+- **Mocking**: Comprehensive mocks for Next.js, next-intl, and UI libraries
+- **Coverage**: Excludes shadcn/ui components and auto-generated files
+
+### Writing Tests
+
+Tests are located in `__tests__` directories alongside source files:
+
+```
+src/
+├── components/
+│   ├── __tests__/
+│   │   ├── theme-provider.test.tsx
+│   │   ├── text-answer.test.tsx
+│   │   └── markdown.test.tsx
+│   └── component-file.tsx
+└── app/[locale]/post-security/
+    ├── __tests__/
+    │   └── clue-item.test.tsx
+    └── component-file.tsx
+```
+
+### Key Testing Patterns
+
+- **Component Testing**: Test component rendering, user interactions, and prop handling
+- **Hook Mocking**: Mock complex hooks like `usePersistentAnswer` and `useIsMobile`
+- **Internationalization**: Tests work with mocked translation functions
+- **User Interactions**: Use `@testing-library/user-event` for realistic interactions
+
+### Manual Testing
+
+Before committing changes, also run manual testing:
+
+1. **Start dev server**: `pnpm run dev`
+2. **Navigate to http://localhost:3000/en/post-security**
+3. **Verify clue navigation, answers, language switching, and themes**
+
+### Build Testing
+
+```bash
+pnpm run build  # Test standard Next.js build
+pnpm run ci     # Test Cloudflare deployment build
+```
 
 ## 🤝 Contributing
 
 1. **Clone the repository** and set up the dev container (see setup instructions above)
 2. **Create a feature branch** from `main`
 3. **Make your changes** following the minimal-change principle
-4. **Run linting**: `pnpm run lint` (CI will fail without this)
-5. **Test manually** using the development server
-6. **Create a pull request** with a clear description of changes
+4. **Write tests** for new functionality or components
+5. **Run tests**: `pnpm run test` (all tests must pass)
+6. **Run linting**: `pnpm run lint` (CI will fail without this)
+7. **Test manually** using the development server
+8. **Create a pull request** with a clear description of changes
 
 ### Key Guidelines
 
 - Make minimal, surgical changes to existing files
+- Write unit tests for new components and functionality
+- Ensure all tests pass before submitting PR
 - Always run linting before committing
 - Test your changes manually in the browser
 - Add translations for all supported languages when adding new text

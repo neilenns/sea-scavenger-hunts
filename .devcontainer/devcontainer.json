@@ -6,7 +6,9 @@
       "extensions": [
         "Jacano.vscode-pnpm",
         "lokalise.i18n-ally",
-        "vk-l.nanoid-generator"
+        "vk-l.nanoid-generator",
+        "Orta.vscode-jest",
+        "firsttris.vscode-jest-runner"
       ]
     }
   },
