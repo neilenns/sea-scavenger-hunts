@@ -36,11 +36,24 @@ jest.mock("@/i18n/navigation", () => ({
 
 // Mock next-intl hooks
 jest.mock("next-intl", () => ({
-  useTranslations: (namespace) => (key) => {
-    if (namespace) {
-      return `${namespace}.${key}`;
-    }
-    return key;
+  useTranslations: (namespace) => {
+    const t = (key, values) => {
+      let result = namespace ? `${namespace}.${key}` : key;
+      
+      // Handle interpolation
+      if (values) {
+        Object.keys(values).forEach((valueKey) => {
+          result = result.replace(`{${valueKey}}`, values[valueKey]);
+        });
+      }
+      
+      return result;
+    };
+    
+    // Add has method for checking if translation exists
+    t.has = (key) => true;
+    
+    return t;
   },
   useLocale: () => "en",
 }));
@@ -62,7 +75,7 @@ jest.mock("react-markdown", () => {
             } else if (index % 3 === 2) { // Skip href part
               return null;
             }
-            return part;
+            return part || "";
           })}
         </div>
       );
@@ -119,4 +132,33 @@ jest.mock("country-flag-icons/react/3x2", () => ({
   FR: ({ className, ...props }) => <svg className={className} role="img" aria-hidden="true" {...props} />,
   DE: ({ className, ...props }) => <svg className={className} role="img" aria-hidden="true" {...props} />,
   ES: ({ className, ...props }) => <svg className={className} role="img" aria-hidden="true" {...props} />,
+}));
+
+// Mock lucide-react icons
+jest.mock("lucide-react", () => ({
+  GlobeIcon: ({ className, ...props }) => <svg className={className} {...props} />,
+  CameraIcon: ({ className, ...props }) => <svg className={className} {...props} />,
+  FileIcon: ({ className, ...props }) => <svg className={className} {...props} />,
+  TrashIcon: ({ className, ...props }) => <svg className={className} {...props} />,
+}));
+
+// Mock shadcn/ui components
+jest.mock("@/components/ui/button", () => ({
+  Button: ({ children, ...props }) => <button {...props}>{children}</button>,
+}));
+
+jest.mock("@/components/ui/input", () => ({
+  Input: (props) => <input {...props} />,
+}));
+
+jest.mock("@/components/ui/card", () => ({
+  Card: ({ children, ...props }) => <div {...props}>{children}</div>,
+  CardContent: ({ children, ...props }) => <div {...props}>{children}</div>,
+}));
+
+jest.mock("@/components/ui/accordion", () => ({
+  Accordion: ({ children, ...props }) => <div {...props}>{children}</div>,
+  AccordionContent: ({ children, ...props }) => <div {...props}>{children}</div>,
+  AccordionItem: ({ children, ...props }) => <div {...props}>{children}</div>,
+  AccordionTrigger: ({ children, ...props }) => <button {...props}>{children}</button>,
 }));
