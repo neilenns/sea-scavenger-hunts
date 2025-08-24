@@ -109,6 +109,7 @@ Always manually validate changes by running through these complete scenarios:
 6. **Adding New Content**: New clue areas, language support, or major feature additions
 
 **README Update Guidelines**:
+
 - Keep examples and command outputs current and accurate
 - Update version numbers when dependencies change significantly
 - Verify all documented commands work as described
@@ -177,7 +178,7 @@ src/
 ### Key Features
 
 - **Server-Side Generation**: Static generation for optimal performance
-- **Internationalization**: English and French support with URL-based routing
+- **Internationalization**: English, French, German, and Spanish support with URL-based routing
 - **Responsive Design**: Mobile-first design for airport usage
 - **Local Storage**: Answers saved in browser, no server storage
 - **Theme Support**: Light, dark, and system theme modes
