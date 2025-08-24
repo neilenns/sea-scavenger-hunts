@@ -3,6 +3,12 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   typedRoutes: true,
+  experimental: {
+    // Configure Jest to work with Next.js
+    testConfig: {
+      swcMinify: true,
+    },
+  },
 };
 const withNextIntl = createNextIntlPlugin();
 
