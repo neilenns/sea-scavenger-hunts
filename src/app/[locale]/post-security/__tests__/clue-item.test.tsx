@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import "@testing-library/jest-dom";
 import { ClueItem } from "@/app/[locale]/post-security/clue-item";
 import { Clue, AirportArea, ClueType } from "@/types/clue";
 import { AnswerType } from "@/types/answer";

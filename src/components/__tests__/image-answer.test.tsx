@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import "@testing-library/jest-dom";
 import { ImageAnswer } from "@/components/image-answer";
 import { Clue, AirportArea, ClueType } from "@/types/clue";
 import { AnswerType } from "@/types/answer";
