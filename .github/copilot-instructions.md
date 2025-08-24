@@ -1,6 +1,6 @@
 # SEA Scavenger Hunts
 
-SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger hunts at Seattle-Tacoma International Airport (SEA). The app features internationalization (English/French), deploys to Cloudflare via OpenNext, and provides a mobile-first experience for airport visitors.
+SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger hunts at Seattle-Tacoma International Airport (SEA). The app features full internationalization with multiple language support (defined in `src/i18n/routing.ts`), deploys to Cloudflare via OpenNext, and provides a mobile-first experience for airport visitors.
 
 Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.
 
@@ -50,12 +50,12 @@ Always manually validate changes by running through these complete scenarios:
 2. **Scavenger hunt functionality**:
    - Verify sidebar navigation between airport areas (Airport-wide, Concourses A-D, North/South Satellite, Central Terminal)
    - Test clue accordion expansion/collapse
-   - Verify language switching between English/French
+   - Verify language switching between all supported languages (check `src/i18n/routing.ts` for current list)
    - Test theme switching (light/dark/system)
    - Confirm answer storage works (stored locally in browser)
 
 3. **Multi-language support**:
-   - Test both `/en/` and `/fr/` routes
+   - Test all supported language routes (check `src/i18n/routing.ts` for current locales)
    - Verify language switcher functionality
    - Confirm translations load properly
 
@@ -135,12 +135,19 @@ src/
 │   ├── clue.ts             # Core clue and airport area types
 │   └── cloudflare-env.d.ts # Auto-generated Cloudflare types
 └── middleware.ts            # Next.js middleware for i18n routing
+messages/                    # Translation files (see src/i18n/routing.ts for supported locales)
+├── en.json                 # English translations
+├── fr.json                 # French translations
+├── de.json                 # German translations
+├── es.json                 # Spanish translations
+└── ...                     # Additional language files
 ```
 
 ### Important Configuration Files
 
 - `package.json` - Dependencies and scripts (pnpm workspace)
 - `next.config.ts` - Next.js configuration with next-intl
+- `src/i18n/routing.ts` - Language configuration and supported locales (source of truth for languages)
 - `open-next.config.ts` - OpenNext Cloudflare configuration
 - `wrangler.jsonc` - Cloudflare Workers configuration
 - `eslint.config.mjs` - ESLint configuration (flat config)
@@ -150,7 +157,7 @@ src/
 ### Frequent File Locations
 
 - **Clue definitions**: `src/data/post-security-clues.ts`
-- **Translations**: `messages/en.json`, `messages/fr.json`
+- **Translations**: All files in `messages/` directory (see `src/i18n/routing.ts` for supported locales)
 - **Theme configuration**: `src/components/theme-provider.tsx`
 - **Airport area definitions**: `src/types/clue.ts`
 - **Main scavenger hunt page**: `src/app/[locale]/post-security/page.tsx`
@@ -178,7 +185,7 @@ src/
 ### Key Features
 
 - **Server-Side Generation**: Static generation for optimal performance
-- **Internationalization**: English, French, German, and Spanish support with URL-based routing
+- **Internationalization**: Full multi-language support with URL-based routing (see `src/i18n/routing.ts` for supported languages)
 - **Responsive Design**: Mobile-first design for airport usage
 - **Local Storage**: Answers saved in browser, no server storage
 - **Theme Support**: Light, dark, and system theme modes
