@@ -26,8 +26,10 @@ Always reference these instructions first and fallback to search or bash command
 - **CI build**: `pnpm run ci` -- takes 32 seconds. NEVER CANCEL. Set timeout to 60+ minutes.
   - Calls `opennextjs-cloudflare build --env=dev` to build for Cloudflare deployment.
 - **Production server**: `pnpm run start` -- starts in 442ms
-- **Linting**: `pnpm run lint` -- takes 3.5 seconds
-- **Code formatting**: `pnpm run format` -- formats all files, `pnpm run format:check` -- checks formatting
+- **CRITICAL**: Always run `pnpm run lint` before committing - CI will fail otherwise
+- **CRITICAL**: Always run `pnpm run format` on touched files before committing - ensures consistent code formatting
+- **CRITICAL**: Always run `pnpm run lint:md` on markdown files before committing - ensures markdown follows linting rules
+- **Markdown linting**: `pnpm run lint:md` -- validates README.md and other markdown files
 - **Cloudflare type generation**: `pnpm run cf-typegen` -- takes 1.3 seconds
 
 ### Cloudflare Deployment Commands
@@ -64,6 +66,7 @@ Always manually validate changes by running through these complete scenarios:
 
 - **CRITICAL**: Always run `pnpm run lint` before committing - CI will fail otherwise
 - **CRITICAL**: Always run `pnpm run format` on touched files before committing - ensures consistent code formatting
+- **CRITICAL**: Always run `pnpm run lint:md` on markdown files before committing - ensures markdown follows linting rules
 - Test both development and production builds
 - Verify Cloudflare build succeeds for deployment readiness
 - There is no need to re-generate Cloudflare types on each build
@@ -102,6 +105,7 @@ When making any code changes:
    ```bash
    pnpm run lint              # Required - CI will fail without this
    pnpm run format            # Required - ensures consistent formatting
+   pnpm run lint:md           # Required for markdown files - ensures proper formatting
    ```
 
 3. **Testing builds**:
@@ -164,6 +168,7 @@ messages/                    # Translation files (see src/i18n/routing.ts for su
 - `open-next.config.ts` - OpenNext Cloudflare configuration
 - `wrangler.jsonc` - Cloudflare Workers configuration
 - `eslint.config.mjs` - ESLint configuration (flat config)
+- `.markdownlint.json` - Markdownlint configuration for README and markdown files
 - `tsconfig.json` - TypeScript configuration
 - `.nvmrc` - Node.js version specification (22.18.0)
 
