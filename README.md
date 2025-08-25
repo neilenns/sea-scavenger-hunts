@@ -298,7 +298,7 @@ Currently, the project relies on manual testing. Before committing changes:
 2. **Create a feature branch** from `main`
 3. **Make your changes** following the minimal-change principle
 4. **Run linting and formatting**: `pnpm run lint && pnpm run format &&
-   pnpm run lint:md` (CI will fail without this)
+pnpm run lint:md` (CI will fail without this)
 5. **Test manually** using the development server
 6. **Create a pull request** with a clear description of changes
 
