@@ -146,13 +146,13 @@ If using `ClueType.IMAGE`, add your image:
 
 1. **Add the image file**:
    ```
-   public/clue-images/{clue-id}.jpg
+   public/clue-images/{clue-id}.webp
    ```
 
 2. **Image requirements**:
-   - Format: JPG
+   - Format: WebP (for optimal web performance)
    - Filename: Must match your clue ID exactly
-   - Size: Optimized for web (recommended max 800px wide)
+   - Size: Optimized for web (max 800px wide)
    - Aspect ratio: 16:9 works best for the display
 
 ### Step 4: Test Your Changes
