@@ -17,7 +17,7 @@ export interface ImageAnswerProperties {
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { id } = clue;
-  const { getObjectUrl, revokeObjectUrl, getFileKey } = useImageUrl();
+  const { getObjectUrl, getFileKey } = useImageUrl();
 
   if (!isImageAnswer(clue.answer)) {
     throw new Error("ImageAnswer component expects an image answer");
@@ -70,8 +70,6 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   function handleRemove(imageIndex: number) {
     const fileToRemove = files[imageIndex];
     if (fileToRemove) {
-      // Revoke the object URL for the removed file
-      revokeObjectUrl(fileToRemove);
       setFiles((previous) =>
         previous.filter((_, index) => index !== imageIndex),
       );

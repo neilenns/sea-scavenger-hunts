@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useContext, useCallback, useRef, ReactNode, useEffect } from "react";
+import {
+  createContext,
+  ReactNode,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+} from "react";
 
 interface ImageUrlContextValue {
   getObjectUrl: (file: File) => string;
@@ -9,7 +16,9 @@ interface ImageUrlContextValue {
   getFileKey: (file: File) => string;
 }
 
-const ImageUrlContext = createContext<ImageUrlContextValue | undefined>(undefined);
+const ImageUrlContext = createContext<ImageUrlContextValue | undefined>(
+  undefined,
+);
 
 interface ImageUrlProviderProperties {
   children: ReactNode;
@@ -22,37 +31,45 @@ interface ImageUrlProviderProperties {
 export function ImageUrlProvider({ children }: ImageUrlProviderProperties) {
   // Use a Map to store file -> object URL mappings
   // The key is generated from file name and lastModified to identify unique files
-  const urlCacheReference = useRef(new Map<string, { file: File; url: string }>());
+  const urlCacheReference = useRef(
+    new Map<string, { file: File; url: string }>(),
+  );
 
   const getFileKey = useCallback((file: File): string => {
     return `${file.name}-${file.lastModified}-${file.size}`;
   }, []);
 
-  const getObjectUrl = useCallback((file: File): string => {
-    const key = getFileKey(file);
-    const cache = urlCacheReference.current;
-    
-    // Return existing URL if we already have one for this file
-    if (cache.has(key)) {
-      return cache.get(key)!.url;
-    }
-    
-    // Create new URL and cache it
-    const url = URL.createObjectURL(file);
-    cache.set(key, { file, url });
-    return url;
-  }, [getFileKey]);
+  const getObjectUrl = useCallback(
+    (file: File): string => {
+      const key = getFileKey(file);
+      const cache = urlCacheReference.current;
 
-  const revokeObjectUrl = useCallback((file: File): void => {
-    const key = getFileKey(file);
-    const cache = urlCacheReference.current;
-    const entry = cache.get(key);
-    
-    if (entry) {
-      URL.revokeObjectURL(entry.url);
-      cache.delete(key);
-    }
-  }, [getFileKey]);
+      // Return existing URL if we already have one for this file
+      if (cache.has(key)) {
+        return cache.get(key)!.url;
+      }
+
+      // Create new URL and cache it
+      const url = URL.createObjectURL(file);
+      cache.set(key, { file, url });
+      return url;
+    },
+    [getFileKey],
+  );
+
+  const revokeObjectUrl = useCallback(
+    (file: File): void => {
+      const key = getFileKey(file);
+      const cache = urlCacheReference.current;
+      const entry = cache.get(key);
+
+      if (entry) {
+        URL.revokeObjectURL(entry.url);
+        cache.delete(key);
+      }
+    },
+    [getFileKey],
+  );
 
   const revokeAllUrls = useCallback((): void => {
     const cache = urlCacheReference.current;
