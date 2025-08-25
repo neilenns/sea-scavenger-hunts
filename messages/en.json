@@ -5,7 +5,8 @@
     },
     "image-answer": {
       "choose-files-button": "Choose {expectedImageCount, plural, =1 {file} other {files}}",
-      "remove-image-aria": "Remove image {index, number}"
+      "remove-image-aria": "Remove image {index, number}",
+      "take-photo-button": "Take a photo"
     },
     "language-switcher": {
       "de": "Deutsch",
@@ -207,12 +208,6 @@
         },
         "clue": "Where does Cordell \"The Transformer\" Truluck work?"
       },
-      "fyptkfnu62": {
-        "answer": {
-          "details": "Grilled cheese sandwiches are available at:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
-        },
-        "clue": "Find two restaurants where you can buy a grilled cheese sandwich."
-      },
       "glwn2opFlc": {
         "answer": {
           "answer": "Skillet, near gate C10."
@@ -240,19 +235,38 @@
       "ndC0lIJES6": {
         "clue": "Take a photo of a hibiscus flower."
       },
+      "fyptkfnu62": {
+        "answer": {
+          "details": "Grilled cheese sandwiches are available at:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
+        },
+        "clue": "Find two restaurants where you can buy a grilled cheese sandwich."
+      },
+      "x7mtgkrj6s": {
+        "answer": {
+          "answer": "Bronze",
+          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) is seven feet tall, and is a part of Butterfield's bronze cast collection of works and represents a standing horse."
+        },
+        "clue": "Find the \"Blackleaf\" statue by Deborah Butterfield. What is it made of?"
+      },
+      "pngb9scdvn": {
+        "answer": {
+          "answer": "At Lil' Woody's restaurant."
+        },
+        "clue": "Where can you find this tile pattern?",
+        "alternateText": "A decorative tile pattern with geometric designs"
+      },
+      "tqvatszvgw": {
+        "answer": {
+          "answer": "At SEA Pop Culture, Pike and Pine, and chalo&co"
+        },
+        "clue": "Where can you buy a stuffed animal?"
+      },
       "pB53_yVOPQ": {
         "answer": {
           "details": "The lounges are:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Central Terminal)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine above N13-N18)\n* The Club (above S10)\n* British Airways (above S10)."
         },
         "clue": "Take a photo outside the entrance of each airport lounge.",
         "hint": "There are eleven lounges at SEA, with ten entrances."
-      },
-      "pngb9scdvn": {
-        "alternateText": "A decorative tile pattern with geometric designs",
-        "answer": {
-          "answer": "At Lil' Woody's restaurant."
-        },
-        "clue": "Where can you find this tile pattern?"
       },
       "qsWmZtJQx9": {
         "clue": "Search the gate screens and snap a photo of the highest flight number you spot."
@@ -272,12 +286,6 @@
           "answer": "Japan Airlines (JAL) and Qatar Airways"
         },
         "clue": "Which airlines grant business class passengers access to both The Club and British Airways Terraces lounges?"
-      },
-      "tqvatszvgw": {
-        "answer": {
-          "answer": "At SEA Pop Culture, Pike and Pine, and chalo&co"
-        },
-        "clue": "Where can you buy a stuffed animal?"
       },
       "uaPC_HvMqd": {
         "clue": "Take a photo of something with the Space Needle on it."
@@ -315,13 +323,6 @@
           "answer": "+1-800-TBD-9999 (to be verified)"
         },
         "clue": "Find the CBP office in Concourse A. What's the phone number posted outside?"
-      },
-      "x7mtgkrj6s": {
-        "answer": {
-          "answer": "Bronze",
-          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) is seven feet tall, and is a part of Butterfield's bronze cast collection of works and represents a standing horse."
-        },
-        "clue": "Find the \"Blackleaf\" statue by Deborah Butterfield. What is it made of?"
       },
       "xH4xrNHYJe": {
         "answer": {
