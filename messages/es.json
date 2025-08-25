@@ -5,7 +5,8 @@
     },
     "image-answer": {
       "choose-files-button": "Elegir {expectedImageCount, plural, =1 {archivo} other {archivos}}",
-      "remove-image-aria": "Eliminar imagen {index, number}"
+      "remove-image-aria": "Eliminar imagen {index, number}",
+      "take-photo-button": "Tomar una foto"
     },
     "language-switcher": {
       "de": "Deutsch",
@@ -205,12 +206,6 @@
         },
         "clue": "¿Dónde trabaja Cordell \"The Transformer\" Truluck?"
       },
-      "fyptkfnu62": {
-        "answer": {
-          "details": "Los sándwiches de queso a la plancha están disponibles en:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
-        },
-        "clue": "Encuentre dos restaurantes donde pueda comprar un sándwich de queso a la plancha."
-      },
       "glwn2opFlc": {
         "answer": {
           "answer": "Skillet, cerca de la puerta C10."
@@ -238,19 +233,38 @@
       "ndC0lIJES6": {
         "clue": "Tome una foto de una flor de hibisco."
       },
+      "fyptkfnu62": {
+        "answer": {
+          "details": "Los sándwiches de queso a la plancha están disponibles en:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
+        },
+        "clue": "Encuentre dos restaurantes donde pueda comprar un sándwich de queso a la plancha."
+      },
+      "x7mtgkrj6s": {
+        "answer": {
+          "answer": "Bronce",
+          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) mide siete pies de altura y es parte de la colección de obras de bronce fundido de Butterfield y representa un caballo de pie."
+        },
+        "clue": "Encuentre la estatua \"Blackleaf\" de Deborah Butterfield. ¿De qué está hecha?"
+      },
+      "pngb9scdvn": {
+        "answer": {
+          "answer": "En el restaurante Lil' Woody's."
+        },
+        "clue": "¿Dónde puede encontrar este patrón de azulejos?",
+        "alternateText": "Un patrón de azulejos decorativo con diseños geométricos"
+      },
+      "tqvatszvgw": {
+        "answer": {
+          "answer": "En SEA Pop Culture, Pike and Pine, y chalo&co"
+        },
+        "clue": "¿Dónde puede comprar un animal de peluche?"
+      },
       "pB53_yVOPQ": {
         "answer": {
           "details": "Las salas VIP son:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Terminal Central)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (entreplanta sobre N13-N18)\n* The Club (sobre S10)\n* British Airways (sobre S10)."
         },
         "clue": "Tome una foto fuera de la entrada de cada sala VIP del aeropuerto.",
         "hint": "Hay once salas VIP en SEA, con diez entradas."
-      },
-      "pngb9scdvn": {
-        "alternateText": "Un patrón de azulejos decorativo con diseños geométricos",
-        "answer": {
-          "answer": "En el restaurante Lil' Woody's."
-        },
-        "clue": "¿Dónde puede encontrar este patrón de azulejos?"
       },
       "qsWmZtJQx9": {
         "clue": "Busque en las pantallas de las puertas y tome una foto del número de vuelo más alto que encuentre."
@@ -270,12 +284,6 @@
           "answer": "Japan Airlines (JAL) y Qatar Airways"
         },
         "clue": "¿Qué aerolíneas otorgan acceso a los pasajeros de clase ejecutiva tanto a The Club como a las salas British Airways Terraces?"
-      },
-      "tqvatszvgw": {
-        "answer": {
-          "answer": "En SEA Pop Culture, Pike and Pine, y chalo&co"
-        },
-        "clue": "¿Dónde puede comprar un animal de peluche?"
       },
       "uaPC_HvMqd": {
         "clue": "Tome una foto de algo que tenga la Space Needle en él."
@@ -313,13 +321,6 @@
           "answer": "+1-800-TBD-9999 (por verificar)"
         },
         "clue": "Encuentre la oficina de CBP en el Vestíbulo A. ¿Cuál es el número de teléfono publicado afuera?"
-      },
-      "x7mtgkrj6s": {
-        "answer": {
-          "answer": "Bronce",
-          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) mide siete pies de altura y es parte de la colección de obras de bronce fundido de Butterfield y representa un caballo de pie."
-        },
-        "clue": "Encuentre la estatua \"Blackleaf\" de Deborah Butterfield. ¿De qué está hecha?"
       },
       "xH4xrNHYJe": {
         "answer": {
