@@ -37,7 +37,7 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
                   ? t(`${baseKey}.alternateText`)
                   : t(`${baseKey}.clue`)
               }
-              src={`/clue-images/${clue.id}.jpg`}
+              src={`/clue-images/${clue.id}.webp`}
               fill
               sizes="(max-width: 420px) 100vw, 400px"
               className="object-contain"
