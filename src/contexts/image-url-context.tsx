@@ -1,11 +1,12 @@
 "use client";
 
-import { createContext, useContext, useCallback, useRef, ReactNode } from "react";
+import { createContext, useContext, useCallback, useRef, ReactNode, useEffect } from "react";
 
 interface ImageUrlContextValue {
   getObjectUrl: (file: File) => string;
   revokeObjectUrl: (file: File) => void;
   revokeAllUrls: () => void;
+  getFileKey: (file: File) => string;
 }
 
 const ImageUrlContext = createContext<ImageUrlContextValue | undefined>(undefined);
@@ -65,7 +66,15 @@ export function ImageUrlProvider({ children }: ImageUrlProviderProperties) {
     getObjectUrl,
     revokeObjectUrl,
     revokeAllUrls,
+    getFileKey,
   };
+
+  // Cleanup all URLs when the provider unmounts to prevent memory leaks
+  useEffect(() => {
+    return () => {
+      revokeAllUrls();
+    };
+  }, [revokeAllUrls]);
 
   return (
     <ImageUrlContext.Provider value={contextValue}>

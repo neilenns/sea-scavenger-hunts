@@ -8,7 +8,7 @@ import { Clue } from "@/types/clue";
 import { CameraIcon, FileIcon, TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useMemo, useRef } from "react";
+import { useMemo, useRef } from "react";
 import { Button } from "./ui/button";
 
 export interface ImageAnswerProperties {
@@ -17,7 +17,7 @@ export interface ImageAnswerProperties {
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { id } = clue;
-  const { getObjectUrl, revokeObjectUrl } = useImageUrl();
+  const { getObjectUrl, revokeObjectUrl, getFileKey } = useImageUrl();
 
   if (!isImageAnswer(clue.answer)) {
     throw new Error("ImageAnswer component expects an image answer");
@@ -35,13 +35,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     [files, getObjectUrl],
   );
 
-  // Cleanup when files are removed from this specific component
-  useEffect(() => {
-    return () => {
-      // Only revoke URLs for files that are being removed
-      // The context will handle global cleanup
-    };
-  }, []);
+
 
   // Helper function to check if a file already exists
   const isFileAlreadyAdded = (newFile: File, existingFiles: File[]): boolean => {
@@ -68,7 +62,8 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
       setFiles((previous) => [...previous, ...uniqueNewFiles]);
     }
     
-    event.target.value = ""; // allow re-adding same file
+    // Clear the input value to allow re-selecting the same file if needed
+    event.target.value = "";
   }
 
   function handleRemove(imageIndex: number) {
@@ -136,7 +131,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         <div className="mt-3 flex flex-wrap gap-2">
           {files.map((file, index) => (
             <div
-              key={`${file.name}-${file.lastModified}`}
+              key={getFileKey(file)}
               className="relative aspect-[4/3] w-24 overflow-hidden rounded"
             >
               <Image
