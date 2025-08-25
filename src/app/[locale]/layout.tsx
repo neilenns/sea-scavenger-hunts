@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider";
+import { MobileProvider } from "@/hooks/use-mobile-context";
 import { routing } from "@/i18n/routing";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -69,7 +70,9 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <MobileProvider>
+              {children}
+            </MobileProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

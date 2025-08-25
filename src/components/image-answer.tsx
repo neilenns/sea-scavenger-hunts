@@ -1,6 +1,6 @@
 "use client";
 
-import { useIsMobile } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/use-mobile-context";
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { isImageAnswer } from "@/types/answer";
 import { Clue } from "@/types/clue";
