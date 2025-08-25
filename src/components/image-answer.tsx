@@ -1,5 +1,6 @@
 "use client";
 
+import { useImageUrl } from "@/contexts/image-url-context";
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { Responsive } from "@/lib/media";
 import { isImageAnswer } from "@/types/answer";
@@ -16,6 +17,7 @@ export interface ImageAnswerProperties {
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { id } = clue;
+  const { getObjectUrl, revokeObjectUrl } = useImageUrl();
 
   if (!isImageAnswer(clue.answer)) {
     throw new Error("ImageAnswer component expects an image answer");
@@ -27,20 +29,29 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const galleryInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
 
-  // Create object URLs when files change
+  // Create object URLs using the shared context
   const objectUrls = useMemo(
-    () => files.map((f) => URL.createObjectURL(f)),
-    [files],
+    () => files.map((file) => getObjectUrl(file)),
+    [files, getObjectUrl],
   );
 
-  // Cleanup when files change or component unmounts
+  // Cleanup when files are removed from this specific component
   useEffect(() => {
     return () => {
-      for (const url of objectUrls) {
-        URL.revokeObjectURL(url);
-      }
+      // Only revoke URLs for files that are being removed
+      // The context will handle global cleanup
     };
-  }, [objectUrls]);
+  }, []);
+
+  // Helper function to check if a file already exists
+  const isFileAlreadyAdded = (newFile: File, existingFiles: File[]): boolean => {
+    return existingFiles.some(
+      (existingFile) =>
+        existingFile.name === newFile.name &&
+        existingFile.lastModified === newFile.lastModified &&
+        existingFile.size === newFile.size
+    );
+  };
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) return;
@@ -48,12 +59,25 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     // eslint-disable-next-line unicorn/prefer-spread
     const newFiles = Array.from(event.target.files); // type is File[]
 
-    setFiles((previous) => [...previous, ...newFiles]);
+    // Filter out files that are already added to prevent duplicates
+    const uniqueNewFiles = newFiles.filter(
+      (newFile) => !isFileAlreadyAdded(newFile, files)
+    );
+
+    if (uniqueNewFiles.length > 0) {
+      setFiles((previous) => [...previous, ...uniqueNewFiles]);
+    }
+    
     event.target.value = ""; // allow re-adding same file
   }
 
   function handleRemove(imageIndex: number) {
-    setFiles((previous) => previous.filter((_, index) => index !== imageIndex));
+    const fileToRemove = files[imageIndex];
+    if (fileToRemove) {
+      // Revoke the object URL for the removed file
+      revokeObjectUrl(fileToRemove);
+      setFiles((previous) => previous.filter((_, index) => index !== imageIndex));
+    }
   }
 
   if (!loaded) return;
@@ -119,6 +143,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
                 src={objectUrls[index]}
                 alt=""
                 fill
+                sizes="96px"
                 className="object-cover"
               />
               <Button
