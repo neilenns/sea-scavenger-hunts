@@ -22,7 +22,6 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
 
   const { expectedImageCount } = clue.answer;
   const [files, setFiles, loaded] = usePersistentAnswer<File[]>(id, []);
-  const cameraInputReference = useRef<HTMLInputElement>(null);
   const galleryInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
 
