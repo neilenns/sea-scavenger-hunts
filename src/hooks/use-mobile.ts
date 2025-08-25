@@ -3,17 +3,23 @@ import * as React from "react"
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+  // Start with 'false' (desktop) as the default since most traffic is likely desktop
+  // and the desktop layout is more complex/fully-featured
+  const [isMobile, setIsMobile] = React.useState<boolean>(false)
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
     const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+      setIsMobile(mql.matches)
     }
+    
+    // Set initial value immediately
+    setIsMobile(mql.matches)
+    
+    // Listen for changes
     mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
     return () => mql.removeEventListener("change", onChange)
   }, [])
 
-  return !!isMobile
+  return isMobile
 }
