@@ -27,6 +27,7 @@ Always reference these instructions first and fallback to search or bash command
   - Calls `opennextjs-cloudflare build --env=dev` to build for Cloudflare deployment.
 - **Production server**: `pnpm run start` -- starts in 442ms
 - **Linting**: `pnpm run lint` -- takes 3.5 seconds
+- **Code formatting**: `pnpm run format` -- formats all files, `pnpm run format:check` -- checks formatting
 - **Cloudflare type generation**: `pnpm run cf-typegen` -- takes 1.3 seconds
 
 ### Cloudflare Deployment Commands
@@ -62,9 +63,20 @@ Always manually validate changes by running through these complete scenarios:
 ### Build Validation
 
 - **CRITICAL**: Always run `pnpm run lint` before committing - CI will fail otherwise
+- **CRITICAL**: Always run `pnpm run format` on touched files before committing - ensures consistent code formatting
 - Test both development and production builds
 - Verify Cloudflare build succeeds for deployment readiness
 - There is no need to re-generate Cloudflare types on each build
+
+### Code Formatting for Copilot
+
+When making any code changes:
+
+1. **ALWAYS** run `pnpm run format` after modifying files to ensure consistent formatting
+2. Use `pnpm run format:check` to verify formatting before committing
+3. The project uses prettier with specific plugins for import organization and multi-line arrays
+4. All code must be formatted according to `.prettierrc.cjs` configuration
+5. **DO NOT commit** unformatted code - it breaks consistency and makes reviews harder
 
 ### Known Issues and Workarounds
 
@@ -89,6 +101,7 @@ Always manually validate changes by running through these complete scenarios:
 
    ```bash
    pnpm run lint              # Required - CI will fail without this
+   pnpm run format            # Required - ensures consistent formatting
    ```
 
 3. **Testing builds**:
