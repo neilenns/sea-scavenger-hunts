@@ -1,10 +1,9 @@
 "use client";
 
-import { useIsMobile } from "@/hooks/use-mobile";
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { isImageAnswer } from "@/types/answer";
 import { Clue } from "@/types/clue";
-import { CameraIcon, FileIcon, TrashIcon } from "lucide-react";
+import { FileIcon, TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useMemo, useRef } from "react";
@@ -26,7 +25,6 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const cameraInputReference = useRef<HTMLInputElement>(null);
   const galleryInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
-  const isMobile = useIsMobile();
 
   // Create object URLs when files change
   const objectUrls = useMemo(
@@ -61,17 +59,6 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
 
   return (
     <div className="mt-2">
-      {/* Camera-only input (single image, hints to open camera) */}
-      <input
-        ref={cameraInputReference}
-        id={`${id}-camera`}
-        type="file"
-        accept="image/*"
-        onChange={handleFilesSelected}
-        capture="environment"
-        className="hidden"
-      />
-
       {/* Gallery input (can allow multiple selection) */}
       <input
         ref={galleryInputReference}
@@ -83,31 +70,17 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         className="hidden"
       />
 
-      <div className="flex items-center gap-2">
-        {isMobile && (
-          <Button
-            type="button"
-            variant="secondary"
-            size="sm"
-            onClick={() => cameraInputReference.current?.click()}
-          >
-            <CameraIcon className="mr-2 h-4 w-4" aria-hidden />
-            {t("image-answer.take-photo-button")}
-          </Button>
-        )}
-
-        <Button
-          type="button"
-          variant="secondary"
-          size="sm"
-          onClick={() => galleryInputReference.current?.click()}
-        >
-          <FileIcon className="mr-2 h-4 w-4" aria-hidden />
-          {t("image-answer.choose-files-button", {
-            expectedImageCount: expectedImageCount,
-          })}
-        </Button>
-      </div>
+      <Button
+        type="button"
+        variant="secondary"
+        size="sm"
+        onClick={() => galleryInputReference.current?.click()}
+      >
+        <FileIcon className="mr-2 h-4 w-4" aria-hidden />
+        {t("image-answer.choose-files-button", {
+          expectedImageCount: expectedImageCount,
+        })}
+      </Button>
 
       {files.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
