@@ -206,6 +206,12 @@
         },
         "clue": "Wo arbeitet Cordell \"The Transformer\" Truluck?"
       },
+      "fyptkfnu62": {
+        "answer": {
+          "details": "Gegrillte Käse-Sandwiches sind verfügbar bei:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
+        },
+        "clue": "Finden Sie zwei Restaurants, wo Sie ein gegrilltes Käse-Sandwich kaufen können."
+      },
       "glwn2opFlc": {
         "answer": {
           "answer": "Skillet, in der Nähe von Gate C10."
@@ -233,38 +239,19 @@
       "ndC0lIJES6": {
         "clue": "Machen Sie ein Foto von einer Hibiskusblüte."
       },
-      "fyptkfnu62": {
-        "answer": {
-          "details": "Gegrillte Käse-Sandwiches sind verfügbar bei:\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
-        },
-        "clue": "Finden Sie zwei Restaurants, wo Sie ein gegrilltes Käse-Sandwich kaufen können."
-      },
-      "x7mtgkrj6s": {
-        "answer": {
-          "answer": "Bronze",
-          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) ist sieben Fuß hoch und ist Teil von Butterfields Sammlung von Bronzeguss-Werken und stellt ein stehendes Pferd dar."
-        },
-        "clue": "Finden Sie die \"Blackleaf\"-Statue von Deborah Butterfield. Woraus ist sie gemacht?"
-      },
-      "pngb9scdvn": {
-        "answer": {
-          "answer": "Im Restaurant Lil' Woody's."
-        },
-        "clue": "Wo können Sie dieses Fliesenmuster finden?",
-        "alternateText": "Ein dekoratives Fliesenmuster mit geometrischen Designs"
-      },
-      "tqvatszvgw": {
-        "answer": {
-          "answer": "Bei SEA Pop Culture, Pike and Pine und chalo&co"
-        },
-        "clue": "Wo können Sie ein Stofftier kaufen?"
-      },
       "pB53_yVOPQ": {
         "answer": {
           "details": "Die Lounges sind:\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Zentrales Terminal)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (Mezzanin über N13-N18)\n* The Club (über S10)\n* British Airways (über S10)."
         },
         "clue": "Machen Sie ein Foto vor dem Eingang jeder Flughafen-Lounge.",
         "hint": "Es gibt elf Lounges am SEA mit zehn Eingängen."
+      },
+      "pngb9scdvn": {
+        "alternateText": "Ein dekoratives Fliesenmuster mit geometrischen Designs",
+        "answer": {
+          "answer": "Im Restaurant Lil' Woody's."
+        },
+        "clue": "Wo können Sie dieses Fliesenmuster finden?"
       },
       "qsWmZtJQx9": {
         "clue": "Durchsuchen Sie die Gate-Bildschirme und machen Sie ein Foto von der höchsten Flugnummer, die Sie entdecken."
@@ -284,6 +271,12 @@
           "answer": "Japan Airlines (JAL) und Qatar Airways"
         },
         "clue": "Welche Fluggesellschaften gewähren Business-Class-Passagieren Zugang zu sowohl The Club als auch British Airways Terraces Lounges?"
+      },
+      "tqvatszvgw": {
+        "answer": {
+          "answer": "Bei SEA Pop Culture, Pike and Pine und chalo&co"
+        },
+        "clue": "Wo können Sie ein Stofftier kaufen?"
       },
       "uaPC_HvMqd": {
         "clue": "Machen Sie ein Foto von etwas mit der Space Needle darauf."
@@ -321,6 +314,13 @@
           "answer": "+1-800-TBD-9999 (zu überprüfen)"
         },
         "clue": "Finden Sie das CBP-Büro in Flugsteig A. Welche Telefonnummer steht draußen angeschlagen?"
+      },
+      "x7mtgkrj6s": {
+        "answer": {
+          "answer": "Bronze",
+          "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) ist sieben Fuß hoch und ist Teil von Butterfields Sammlung von Bronzeguss-Werken und stellt ein stehendes Pferd dar."
+        },
+        "clue": "Finden Sie die \"Blackleaf\"-Statue von Deborah Butterfield. Woraus ist sie gemacht?"
       },
       "xH4xrNHYJe": {
         "answer": {

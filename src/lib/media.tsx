@@ -12,7 +12,8 @@ interface ResponsiveProperties {
  * Uses CSS media queries to avoid hydration mismatches
  */
 export function Responsive({ children, showOn }: ResponsiveProperties) {
-  const mobileClass = showOn === "mobile" ? "block md:hidden" : "hidden md:block";
-  
+  const mobileClass =
+    showOn === "mobile" ? "block md:hidden" : "hidden md:block";
+
   return <div className={mobileClass}>{children}</div>;
 }
