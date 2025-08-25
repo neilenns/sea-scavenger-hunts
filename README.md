@@ -36,6 +36,7 @@ The recommended way to develop this project is using VS Code with Dev Containers
    - Configure development tools
 
 3. **Start developing**: Once the container is ready, you can start the development server:
+
    ```bash
    pnpm run dev
    ```
@@ -56,6 +57,7 @@ If you prefer to develop without Docker, you can set up the project locally:
 ### Setup
 
 1. **Install the correct Node.js version**:
+
    ```bash
    # Using nvm (recommended)
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -75,6 +77,7 @@ If you prefer to develop without Docker, you can set up the project locally:
 - **Build for production**: `pnpm run build` (takes ~22 seconds)
 - **Start production server**: `pnpm run start`
 - **Lint code**: `pnpm run lint` (required before commits)
+- **Format code**: `pnpm run format` (formats all files), `pnpm run format:check` (checks formatting)
 - **Build for Cloudflare**: `pnpm run ci` (builds for deployment)
 
 ### Build Notes
@@ -88,11 +91,13 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
 ### Step 1: Add Clue Data
 
 1. **Open the clues file**:
+
    ```
    src/data/post-security-clues.ts
    ```
 
 2. **Add your new clue** to the `postSecurityClues` array:
+
    ```typescript
    {
      id: "unique-clue-id", // Generate using nanoid VSCode plugin (installed in dev container)
@@ -145,6 +150,7 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
 If using `ClueType.IMAGE`, add your image:
 
 1. **Add the image file**:
+
    ```
    public/clue-images/{clue-id}.webp
    ```
@@ -158,11 +164,13 @@ If using `ClueType.IMAGE`, add your image:
 ### Step 4: Test Your Changes
 
 1. **Start the development server**:
+
    ```bash
    pnpm run dev
    ```
 
 2. **Navigate to the scavenger hunt**:
+
    ```
    http://localhost:3000/en/post-security
    ```
@@ -246,9 +254,11 @@ pnpm run cf-populate
 
 Currently, the project relies on manual testing. Before committing changes:
 
-1. **Run linting** (required):
+1. **Run linting and formatting** (required):
+
    ```bash
-   pnpm run lint
+   pnpm run lint    # Required - CI will fail without this
+   pnpm run format  # Required - ensures consistent code formatting
    ```
 
 2. **Test functionality manually**:
@@ -267,7 +277,7 @@ Currently, the project relies on manual testing. Before committing changes:
 1. **Clone the repository** and set up the dev container (see setup instructions above)
 2. **Create a feature branch** from `main`
 3. **Make your changes** following the minimal-change principle
-4. **Run linting**: `pnpm run lint` (CI will fail without this)
+4. **Run linting and formatting**: `pnpm run lint && pnpm run format` (CI will fail without this)
 5. **Test manually** using the development server
 6. **Create a pull request** with a clear description of changes
 
@@ -282,6 +292,7 @@ Currently, the project relies on manual testing. Before committing changes:
 ## 📱 Screenshots
 
 ### Main Scavenger Hunt Interface (Mobile)
+
 ![Main scavenger hunt interface with sidebar navigation and clues organized by airport areas](https://github.com/user-attachments/assets/d42d744f-5e0b-47b6-8571-4fde690c7a71)
 
 ## 📄 License

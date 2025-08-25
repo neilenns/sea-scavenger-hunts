@@ -10,6 +10,8 @@
     "cf-typegen": "wrangler types --env=dev --env-interface CloudflareEnv src/types/cloudflare-env.d.ts",
     "ci": "opennextjs-cloudflare build --env=dev",
     "dev": "next dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "next lint",
     "start": "next start"
   },

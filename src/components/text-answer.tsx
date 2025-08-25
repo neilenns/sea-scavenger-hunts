@@ -1,8 +1,8 @@
 "use client";
 
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
-import { Clue } from "@/types/clue";
 import { isTextAnswer } from "@/types/answer";
+import { Clue } from "@/types/clue";
 import { useTranslations } from "next-intl";
 import { Input } from "./ui/input";
 
@@ -12,7 +12,7 @@ export interface TextAnswerProperties {
 
 export function TextAnswer({ clue }: TextAnswerProperties) {
   const { id } = clue;
-  
+
   if (!isTextAnswer(clue.answer)) {
     throw new Error("TextAnswer component expects a text answer");
   }

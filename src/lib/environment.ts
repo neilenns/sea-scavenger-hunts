@@ -9,7 +9,7 @@ const result = environmentSchema.safeParse(process.env);
 if (!result.success) {
   console.error("Environment validation failed:", result.error.format());
   throw new Error(
-    "Environment validation failed. Please check your environment variables."
+    "Environment validation failed. Please check your environment variables.",
   );
 }
 

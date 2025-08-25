@@ -35,15 +35,16 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     [files, getObjectUrl],
   );
 
-
-
   // Helper function to check if a file already exists
-  const isFileAlreadyAdded = (newFile: File, existingFiles: File[]): boolean => {
+  const isFileAlreadyAdded = (
+    newFile: File,
+    existingFiles: File[],
+  ): boolean => {
     return existingFiles.some(
       (existingFile) =>
         existingFile.name === newFile.name &&
         existingFile.lastModified === newFile.lastModified &&
-        existingFile.size === newFile.size
+        existingFile.size === newFile.size,
     );
   };
 
@@ -55,13 +56,13 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
 
     // Filter out files that are already added to prevent duplicates
     const uniqueNewFiles = newFiles.filter(
-      (newFile) => !isFileAlreadyAdded(newFile, files)
+      (newFile) => !isFileAlreadyAdded(newFile, files),
     );
 
     if (uniqueNewFiles.length > 0) {
       setFiles((previous) => [...previous, ...uniqueNewFiles]);
     }
-    
+
     // Clear the input value to allow re-selecting the same file if needed
     event.target.value = "";
   }
@@ -71,7 +72,9 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     if (fileToRemove) {
       // Revoke the object URL for the removed file
       revokeObjectUrl(fileToRemove);
-      setFiles((previous) => previous.filter((_, index) => index !== imageIndex));
+      setFiles((previous) =>
+        previous.filter((_, index) => index !== imageIndex),
+      );
     }
   }
 
