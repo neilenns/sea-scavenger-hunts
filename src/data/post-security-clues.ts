@@ -234,6 +234,34 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     sortOrder: 20,
   },
   {
+    id: "fyptkfnu62", // cspell: disable-line
+    airportArea: AirportArea.NORTH_SATELLITE,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+    sortOrder: 30,
+  },
+  {
+    id: "x7mtgkrj6s", // cspell: disable-line
+    airportArea: AirportArea.NORTH_SATELLITE,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+    sortOrder: 40,
+  },
+  {
+    id: "pngb9scdvn", // cspell: disable-line
+    airportArea: AirportArea.NORTH_SATELLITE,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+    sortOrder: 50,
+  },
+  {
+    id: "tqvatszvgw", // cspell: disable-line
+    airportArea: AirportArea.NORTH_SATELLITE,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+    sortOrder: 60,
+  },
+  {
     id: "v86d2mm7UT", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,
     answer: { type: AnswerType.TEXT },
