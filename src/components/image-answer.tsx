@@ -1,7 +1,7 @@
 "use client";
 
-import { useIsMobile } from "@/hooks/use-mobile";
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
+import { Responsive } from "@/lib/media";
 import { isImageAnswer } from "@/types/answer";
 import { Clue } from "@/types/clue";
 import { CameraIcon, FileIcon, TrashIcon } from "lucide-react";
@@ -26,7 +26,6 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const cameraInputReference = useRef<HTMLInputElement>(null);
   const galleryInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
-  const isMobile = useIsMobile();
 
   // Create object URLs when files change
   const objectUrls = useMemo(
@@ -84,7 +83,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
       />
 
       <div className="flex items-center gap-2">
-        {isMobile && (
+        <Responsive showOn="mobile">
           <Button
             type="button"
             variant="secondary"
@@ -94,7 +93,7 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
             <CameraIcon className="mr-2 h-4 w-4" aria-hidden />
             {t("image-answer.take-photo-button")}
           </Button>
-        )}
+        </Responsive>
 
         <Button
           type="button"
