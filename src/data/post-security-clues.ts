@@ -12,7 +12,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
   {
     id: "GVD-3xJExLzxesNvXJ0x7", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_A,
-    answer: { type: AnswerType.IMAGE, expectedImageCount: 3 },
+    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
     type: ClueType.TEXT,
     sortOrder: 10,
   },
