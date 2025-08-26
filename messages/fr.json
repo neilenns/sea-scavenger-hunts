@@ -45,54 +45,46 @@
       "trigger": "Effacer les réponses"
     },
     "clues": {
-      "-GLJeZ-L-K": {
-        "clue": "Trouvez le plus grand gobelet à boisson en vente et prenez une photo à côté."
-      },
-      "-buCfuZ_Js": {
+      "-E1XcSk87EwDjBtqM-7yy": {
         "answer": {
-          "answer": "Sub Pop, près du Concourse C."
+          "answer": "Les Seattle Storm de la WNBA."
         },
-        "clue": "Vous avez une carte postale à envoyer. Où dans le Terminal Central pouvez-vous acheter des timbres ?"
+        "clue": "Josie travaille au magasin Fireworks. Quelle est l'équipe sportive préférée de Josie ?"
       },
-      "1XWgzKECE6": {
+      "-E3M850P-0sKowzme28Yc": {
         "answer": {
-          "answer": "4",
-          "details": "Les garnitures sont :\n\n- Boba\n- Boba éclatant\n- Gelée\n- Coulis"
+          "answer": "Susan",
+          "details": "Les bénévoles de l'aéroport sont des ambassadeurs pour l'aéroport et la région de Puget Sound. [En savoir plus](https://www.portseattle.org/Volunteer) sur le programme."
         },
-        "clue": "Trouvez le magasin de boba. Combien de garnitures différentes pouvez-vous choisir ?"
+        "clue": "Écoutez les annonces de l'aéroport. Quel est le nom du bénévole ?"
       },
-      "4B8BuOoy-A": {
-        "answer": {
-          "answer": "26",
-          "details": "La porte D26 se trouve en bas, en face de la porte D5."
-        },
-        "clue": "Descendez et éloignez-vous de la foule. Quel est le numéro de porte D le plus élevé que vous voyez ?"
-      },
-      "6IjATuH8h-": {
-        "clue": "Prenez une photo d'un avion passant sous la passerelle des arrivées internationales."
-      },
-      "96FePKs7zD": {
+      "-VX30S9-vraooXMetaM4H": {
         "clue": "Prenez un selfie avec Jett la loutre de mer de SEA."
       },
-      "Ajg7X3_CWe": {
-        "clue": "Prenez une photo d'un chiot SEA.",
-        "hint": "Les [chiots SEA](https://www.portseattle.org/page/sea-pups) sont généralement à l'aéroport de 10h00 à 12h00 au terminal central."
-      },
-      "BL5xfCD1Pl": {
-        "clue": "Prenez des photos de trois queues d'avion différentes de compagnies non-américaines."
-      },
-      "CEDiAt5_TD": {
-        "clue": "Prenez une photo d'un panneau de porte pour un vol à destination de l'extérieur des États-Unis."
-      },
-
-      "FwkTyDghkR": {
+      "46-6IBcbtPuxwu_uhEUQb": {
         "answer": {
-          "answer": "20 (à vérifier)",
-          "details": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" de Peter Shelton est suspendu au-dessus du Concourse A près du Seattle Beer Union."
+          "answer": "Sur le mur du fond de Koi Shi Sushi."
         },
-        "clue": "Regardez en l'air près du Seattle Beer Union. Combien de sculptures de nuages flottent au-dessus de vous ?"
+        "clue": "Où se trouve ce motif de carreaux ?"
       },
-      "GpyOC1fxZv": {
+      "5L7-ZfPGR8hYtm8Nh82yR": {
+        "clue": "Prenez une photo d'un avion passant sous la passerelle des arrivées internationales."
+      },
+      "5QyJ9U1ucyNVrED6DJ7rC": {
+        "answer": {
+          "answer": "5 (à vérifier)",
+          "details": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" de James Schoppert est une sculpture en bois peint de 3 pieds de haut."
+        },
+        "clue": "Trouvez la sculpture en bois peint \"Modern Mask\". Combien de visages vous regardent ?"
+      },
+      "5RY2CaPBQ0ebzQqtrMH97": {
+        "answer": {
+          "answer": "Un bateau.",
+          "details": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" de Larry Kirkland est un bateau de 32 pieds de long fait d'aluminium et de verre. L'ombre est constituée d'environ soixante-dix éléments en bronze."
+        },
+        "clue": "Trouvez l'ombre dans le sol en terrazzo. Quel objet projette l'ombre ?"
+      },
+      "5YifmtYjD9kA9_ZjAXsPR": {
         "answer": {
           "answer": "Flux nord ou flux sud",
           "details": "Si les avions décollent de droite à gauche, l'aéroport est en flux sud. Si les avions décollent de gauche à droite, l'aéroport est en flux nord."
@@ -100,249 +92,257 @@
         "clue": "Observez quelques avions décoller. Basé sur la direction de décollage, dans quel flux l'aéroport est-il aujourd'hui ?",
         "hint": "Le flux d'aéroport est la direction vers laquelle les avions décollent. Par exemple, si les avions décollent vers le sud, l'aéroport est en flux sud."
       },
-      "JTaK-wv-cm": {
+      "7fp8LTXwpYKOjPevcL36u": {
         "answer": {
-          "answer": "14",
-          "details": "Il y a 13 balles dans la section nord de la sculpture, et une balle dans la section sud."
+          "answer": "Sub Pop, près du Concourse C."
         },
-        "clue": "Trouvez \"On: Matter, monkeys and the king\" de Trimpin. Combien de balles y a-t-il dans la sculpture ?"
+        "clue": "Vous avez une carte postale à envoyer. Où dans le Terminal Central pouvez-vous acheter des timbres ?"
       },
-      "JjwwVsnaNJ": {
-        "answer": {
-          "details": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises."
-        },
-        "clue": "Prenez une photo d'un sandwich japonais."
-      },
-      "KFNxBoixx9": {
-        "answer": {
-          "answer": "21",
-          "details": "La porte B21 est accessible en utilisant l'escalator ou l'ascenseur au bout du Concourse B, près de la porte B15."
-        },
-        "clue": "Après la porte B15, il y a un escalator vers une zone de portes cachée. Quel est le numéro de porte B le plus élevé là-bas ?"
-      },
-      "KGJ0DPoG4R": {
-        "answer": {
-          "answer": "Un lapin."
-        },
-        "clue": "Quel animal mange cette tranche de gâteau ?"
-      },
-      "Mr8NTBLVuw": {
-        "answer": {
-          "answer": "10"
-        },
-        "clue": "Visitez les toilettes mixtes. Combien de robinets y a-t-il au lavabo ?"
-      },
-      "PWYzT5xEM_": {
-        "answer": {
-          "answer": "Bleu, jaune et vert."
-        },
-        "clue": "Faites un tour dans le métro souterrain de SEA. Quelles sont les trois couleurs des différentes lignes de train ?"
-      },
-      "Sd9BH5N5gY": {
-        "answer": {
-          "answer": "Sur le mur du fond de Koi Shi Sushi."
-        },
-        "clue": "Où se trouve ce motif de carreaux ?"
-      },
-      "ShfXCzAYKC": {
-        "answer": {
-          "answer": "5 (à vérifier)",
-          "details": "\"[Modern Mask](https://www.portseattle.org/page/modern-mask)\" de James Schoppert est une sculpture en bois peint de 3 pieds de haut."
-        },
-        "clue": "Trouvez la sculpture en bois peint \"Modern Mask\". Combien de visages vous regardent ?"
-      },
-      "U2Ml_N2Ao1": {
-        "clue": "Prenez une photo d'une pochette d'album avec la lettre S dessus."
-      },
-      "VGDb3ekZZs": {
-        "answer": {
-          "answer": "Marcher",
-          "details": "Il faut neuf minutes à pied, et 11 minutes en train. Les temps sont affichés en bas de la carte sur l'écran d'information sur le palier entre les portes A et la gare."
-        },
-        "clue": "Vérifiez l'affichage des temps de trajet entre le Concourse A et la gare. Est-ce plus rapide de marcher ou de prendre le train pour les portes C ?"
-      },
-      "VcADSD4gkY": {
-        "answer": {
-          "answer": "Les Seattle Storm de la WNBA."
-        },
-        "clue": "Josie travaille au magasin Fireworks. Quelle est l'équipe sportive préférée de Josie ?"
-      },
-      "W8xP5ZKtnC": {
-        "clue": "Chester est le nom du visage sur la queue des avions d'Alaska Airlines. Regardez par la fenêtre à la porte D5. Combien de visages de Chester pouvez-vous voir ?"
-      },
-      "WOflQcqqRa": {
-        "clue": "Écoutez la Tour SEA et prenez une photo d'un avion que vous avez entendu autorisé au décollage.",
-        "hint": "LiveATC [diffuse l'audio de la Tour Est de SEA](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
-      },
-      "XU2Q6uk5Sj": {
-        "answer": {
-          "answer": "Trois poissons portent des valises, et huit avions ont des ailerons.",
-          "details": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)"
-        },
-        "clue": "Trouvez \"Flying Fish\" de Judith et Daniel Caldwell. Combien de poissons portent des valises ? Combien d'avions ont des ailerons ?"
-      },
-      "Y7qiTGjFDA": {
-        "answer": {
-          "answer": "8",
-          "details": "Les langues sont :\n\n- Anglais\n- Arabe\n- Chinois\n- Coréen\n- Espagnol\n- Japonais\n- Russe\n- Vietnamien"
-        },
-        "clue": "Prenez le train bleu vers le Satellite Sud. Combien de langues sont affichées sur le panneau numérique \"Please hold on\" ?"
-      },
-      "Z8uD5RIdFk": {
-        "clue": "Explorez les magasins. Prenez une photo de l'article le plus cher que vous puissiez trouver en vente."
-      },
-      "a8vW4xzkkW": {
+      "7gd4XfTbP4F6JmxyFTTeZ": {
         "clue": "Trouvez la fontaine de remplissage de bouteille avec le plus grand nombre de bouteilles économisées, et prenez une photo du compteur."
       },
-      "cvI9vHSRuC": {
-        "clue": "Prenez une photo d'un défibrillateur automatisé."
-      },
-      "ewJw9uhuxK": {
-        "clue": "Prenez une photo d'une plante vivante."
-      },
-      "fId26KufqS": {
-        "answer": {
-          "answer": "Cordell travaille au cirage de chaussures Luck Shines près de la porte D2."
-        },
-        "clue": "Où travaille Cordell \"The Transformer\" Truluck ?"
-      },
-      "fyptkfnu62": {
+      "9PjaSTS8H4J_g_Kc3q8V_": {
         "answer": {
           "details": "Les sandwichs au fromage grillé sont disponibles à :\n\n* Village Pub\n* Skillet\n* Beecher's Handmade Cheese\n* SkyGamerz"
         },
         "clue": "Trouvez deux restaurants où vous pouvez acheter un sandwich au fromage grillé."
       },
 
-      "jdadKFgQo7": {
-        "clue": "Trouvez OSCARsort et demandez-lui de vous aider à trier quelque chose dans le bon bac."
+      "DS9AWy5XWrErVSyJ-PSyO": {
+        "clue": "Cherchez dans les écrans des portes et prenez une photo du numéro de vol le plus élevé que vous repérez."
       },
-      "mdihls1FXP": {
-        "clue": "Trouvez une porte avec un vol vers une ville dans l'État de Washington et prenez une photo du panneau."
-      },
-      "nGRX7LLH2E": {
+      "DbVqTpJ609CcPTzKsHpln": {
         "answer": {
-          "details": "Le chien se trouve chez Hachi-Ko."
+          "answer": "Un lapin."
         },
-        "clue": "Prenez une photo du chien en néon."
+        "clue": "Quel animal mange cette tranche de gâteau ?"
       },
-      "nOMs1a7gGN": {
+      "GSY0Mrg6PoUcSC8Aqezde": {
+        "clue": "Prenez une photo d'un panneau écrit dans une langue autre que l'anglais."
+      },
+      "GVD-3xJExLzxesNvXJ0x7": {
+        "clue": "Prenez des photos de trois queues d'avion différentes de compagnies non-américaines."
+      },
+      "IZOUW-vMxsiGr9X_Cauyt": {
+        "answer": {
+          "answer": "Japan Airlines (JAL) et Qatar Airways"
+        },
+        "clue": "Quelles compagnies aériennes accordent aux passagers de classe affaires l'accès aux salons The Club et British Airways Terraces ?"
+      },
+      "L1rWFr4_u34oJns1h4PFt": {
         "answer": {
           "answer": "À l'entrée des toilettes près de Poke to The Max."
         },
         "clue": "Où se trouve ce motif de carreaux ?"
       },
-      "ndC0lIJES6": {
-        "clue": "Prenez une photo d'une fleur d'hibiscus."
+      "Lu6jq3W-rVpu5w9x0lSnR": {
+        "answer": {
+          "answer": "PF Chang's"
+        },
+        "clue": "Montez à l'étage vers la mezzanine dans le Satellite Nord. Quel restaurant s'y trouve ?"
       },
-      "pB53_yVOPQ": {
+      "MoNtCviUVedpHGuU2-pJH": {
+        "answer": {
+          "answer": "Bleu, jaune et vert."
+        },
+        "clue": "Faites un tour dans le métro souterrain de SEA. Quelles sont les trois couleurs des différentes lignes de train ?"
+      },
+      "NaCpOCFl3iVaPlJ-WURgH": {
+        "answer": {
+          "answer": "+1-800-TBD-9999 (à vérifier)"
+        },
+        "clue": "Trouvez le bureau CBP dans le Concourse A. Quel est le numéro de téléphone affiché à l'extérieur ?"
+      },
+      "OE4-ouJoiJora44d_tp7S": {
+        "clue": "Prenez une photo d'un panneau de porte pour un vol à destination de l'extérieur des États-Unis."
+      },
+
+      "Px7UsaumXcW401AH8Q9qo": {
+        "answer": {
+          "answer": "10"
+        },
+        "clue": "Visitez les toilettes mixtes. Combien de robinets y a-t-il au lavabo ?"
+      },
+      "Q9xsczpvl25rsz35Z8y2V": {
+        "clue": "Trouvez une porte avec un vol vers une ville dans l'État de Washington et prenez une photo du panneau."
+      },
+      "U6JTjIaue68wyMJY9fE_d": {
+        "clue": "Explorez les magasins. Prenez une photo de l'article le plus cher que vous puissiez trouver en vente."
+      },
+      "V0UJV_37iQO6UiE0o5FsU": {
         "answer": {
           "details": "Les salons sont :\n\n* Delta (A11)\n* Delta One (A11)\n* The Club (A11)\n* United (A10)\n* Delta (A1)\n* American Express Centurion (Terminal Central)\n* Alaska (C16)\n* Alaska (D1)\n* Alaska (mezzanine au-dessus de N13-N18)\n* The Club (au-dessus de S10)\n* British Airways (au-dessus de S10)."
         },
         "clue": "Prenez une photo devant l'entrée de chaque salon d'aéroport.",
         "hint": "Il y a onze salons à SEA, avec dix entrées."
       },
-      "pngb9scdvn": {
-        "alternateText": "Un motif de carrelage décoratif avec des dessins géométriques",
+      "WJ94F0WvEpw7yN6IVR8c3": {
+        "clue": "Chester est le nom du visage sur la queue des avions d'Alaska Airlines. Regardez par la fenêtre à la porte D5. Combien de visages de Chester pouvez-vous voir ?"
+      },
+      "WR8DZANfLKaOK8pJM11Sl": {
         "answer": {
-          "answer": "Au restaurant Lil' Woody's."
+          "answer": "21",
+          "details": "La porte B21 est accessible en utilisant l'escalator ou l'ascenseur au bout du Concourse B, près de la porte B15."
         },
-        "clue": "Où pouvez-vous trouver ce motif de carrelage ?"
+        "clue": "Après la porte B15, il y a un escalator vers une zone de portes cachée. Quel est le numéro de porte B le plus élevé là-bas ?"
       },
-      "qsWmZtJQx9": {
-        "clue": "Cherchez dans les écrans des portes et prenez une photo du numéro de vol le plus élevé que vous repérez."
+      "Xo5Q5XcDDarxFjzV_4yh2": {
+        "answer": {
+          "answer": "\"50 Sunsets\" de Joey Veltkamp",
+          "details": "L'œuvre d'art est accrochée au mur à l'extérieur des toilettes mixtes."
+        },
+        "clue": "Quelle œuvre d'art a ce motif ?"
       },
-      "qtcTszICZ5": {
+      "Z1FASo8jIVIjvxTKvnBXX": {
         "answer": {
           "answer": "12"
         },
         "clue": "Prenez la ligne de train jaune. Combien d'extincteurs sont fixés au mur dans le tunnel ?",
         "hint": "Comptez uniquement les extincteurs fixés au mur du tunnel; celui dans le train ne compte pas."
       },
-      "sZLbWTNUXK": {
-        "clue": "Prenez une photo d'un panneau écrit dans une langue autre que l'anglais."
-      },
-      "tYEDPlu30G": {
+      "ZFa35g9EoOt4RcP7zltUn": {
         "answer": {
-          "answer": "Japan Airlines (JAL) et Qatar Airways"
+          "answer": "Au bureau Washington Lotto près de la porte C10."
         },
-        "clue": "Quelles compagnies aériennes accordent aux passagers de classe affaires l'accès aux salons The Club et British Airways Terraces ?"
+        "clue": "Si vous gagnez le gros lot, où dans le Concourse C encaisseriez-vous votre ticket Washington Lotto ?"
       },
-      "tqvatszvgw": {
+      "_wd4kXAl-tgYJ0xkz0k96": {
         "answer": {
-          "answer": "À SEA Pop Culture, Pike and Pine, et chalo&co"
+          "answer": "Cordell travaille au cirage de chaussures Luck Shines près de la porte D2."
         },
-        "clue": "Où pouvez-vous acheter un animal en peluche ?"
+        "clue": "Où travaille Cordell \"The Transformer\" Truluck ?"
       },
-      "uaPC_HvMqd": {
+      "aAyql1sdjUPJn6JTY0gd4": {
+        "answer": {
+          "answer": "Chez Floret, près de la porte A1."
+        },
+        "clue": "Où pouvez-vous prendre un toast à l'avocat pour le petit-déjeuner ?"
+      },
+      "bGUEjTb-qWFkoRKOKl27F": {
+        "answer": {
+          "details": "Les distributeurs automatiques près des escalators dans le Satellite Sud vendent une variété de nourriture et boissons japonaises."
+        },
+        "clue": "Prenez une photo d'un sandwich japonais."
+      },
+      "bdhG4xPpHjfcnlQxjPFky": {
+        "answer": {
+          "answer": "20 (à vérifier)",
+          "details": "\"[cloudsandclunkers](https://www.portseattle.org/page/cloudsandclunkers-peter-shelton)\" de Peter Shelton est suspendu au-dessus du Concourse A près du Seattle Beer Union."
+        },
+        "clue": "Regardez en l'air près du Seattle Beer Union. Combien de sculptures de nuages flottent au-dessus de vous ?"
+      },
+      "bgkOlbXT8DN3B9hXCjJ-p": {
+        "answer": {
+          "answer": "10 (à vérifier)"
+        },
+        "clue": "Vérifiez les panneaux des portes dans l'aéroport. Combien de portes ont une lettre après le numéro ?"
+      },
+      "cfjLLFrc-2woBd8Uq694I": {
         "clue": "Prenez une photo de quelque chose avec la Space Needle dessus."
       },
-      "uzxCpAxD0O": {
+      "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
           "details": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord"
         },
         "clue": "Prenez une photo à chaque bureau d'information.",
         "hint": "Il y a huit bureaux d'information après la sécurité."
       },
-      "v86d2mm7UT": {
-        "answer": {
-          "answer": "10 (à vérifier)"
-        },
-        "clue": "Vérifiez les panneaux des portes dans l'aéroport. Combien de portes ont une lettre après le numéro ?"
+      "e6AnH10fHCD2QHx6V14vA": {
+        "clue": "Écoutez la Tour SEA et prenez une photo d'un avion que vous avez entendu autorisé au décollage.",
+        "hint": "LiveATC [diffuse l'audio de la Tour Est de SEA](https://www.liveatc.net/hlisten.php?mount=ksea3_twr_east&icao=ksea)."
       },
-      "vV3adEqeuE": {
-        "answer": {
-          "answer": "Chez Floret, près de la porte A1."
-        },
-        "clue": "Où pouvez-vous prendre un toast à l'avocat pour le petit-déjeuner ?"
-      },
-      "vVonLvfgvX": {
-        "clue": "Prenez une photo d'un distributeur automatique vendant autre chose que de la nourriture et des boissons."
-      },
-      "vVzEujhDHt": {
-        "answer": {
-          "answer": "Au bureau Washington Lotto près de la porte C10."
-        },
-        "clue": "Si vous gagnez le gros lot, où dans le Concourse C encaisseriez-vous votre ticket Washington Lotto ?"
-      },
-      "wIuAhUYSUJ": {
-        "answer": {
-          "answer": "+1-800-TBD-9999 (à vérifier)"
-        },
-        "clue": "Trouvez le bureau CBP dans le Concourse A. Quel est le numéro de téléphone affiché à l'extérieur ?"
-      },
-      "x7mtgkrj6s": {
+      "eNu3Q7QBpjKpsBfnQoz8d": {
         "answer": {
           "answer": "Bronze",
           "details": "[\"Blackleaf\"](https://www.portseattle.org/page/blackleaf-deborah-butterfield) mesure sept pieds de haut et fait partie de la collection d'œuvres en bronze coulé de Butterfield et représente un cheval debout."
         },
         "clue": "Trouvez la statue \"Blackleaf\" de Deborah Butterfield. De quoi est-elle faite ?"
       },
-      "xH4xrNHYJe": {
+      "emGRGRzNgzNs4lKXgocDg": {
         "answer": {
-          "answer": "Un bateau.",
-          "details": "\"[Journey Home](https://www.portseattle.org/page/journey-home-larry-kirkland)\" de Larry Kirkland est un bateau de 32 pieds de long fait d'aluminium et de verre. L'ombre est constituée d'environ soixante-dix éléments en bronze."
+          "answer": "Marcher",
+          "details": "Il faut neuf minutes à pied, et 11 minutes en train. Les temps sont affichés en bas de la carte sur l'écran d'information sur le palier entre les portes A et la gare."
         },
-        "clue": "Trouvez l'ombre dans le sol en terrazzo. Quel objet projette l'ombre ?"
+        "clue": "Vérifiez l'affichage des temps de trajet entre le Concourse A et la gare. Est-ce plus rapide de marcher ou de prendre le train pour les portes C ?"
       },
-      "xNr6O90eQa": {
+      "geEFxTD8QpniO60DO11lZ": {
         "answer": {
-          "answer": "Susan",
-          "details": "Les bénévoles de l'aéroport sont des ambassadeurs pour l'aéroport et la région de Puget Sound. [En savoir plus](https://www.portseattle.org/Volunteer) sur le programme."
+          "answer": "8",
+          "details": "Les langues sont :\n\n- Anglais\n- Arabe\n- Chinois\n- Coréen\n- Espagnol\n- Japonais\n- Russe\n- Vietnamien"
         },
-        "clue": "Écoutez les annonces de l'aéroport. Quel est le nom du bénévole ?"
+        "clue": "Prenez le train bleu vers le Satellite Sud. Combien de langues sont affichées sur le panneau numérique \"Please hold on\" ?"
       },
-      "yTNP29jtdB": {
-        "answer": {
-          "answer": "PF Chang's"
-        },
-        "clue": "Montez à l'étage vers la mezzanine dans le Satellite Nord. Quel restaurant s'y trouve ?"
+      "hHG1YkBJ-5u50FkJ8PVh0": {
+        "clue": "Prenez une photo d'une plante vivante."
       },
-      "zCMksb5cxu": {
+      "i7XqRvbF2OgZ8vGMPpsY2": {
         "answer": {
-          "answer": "\"50 Sunsets\" de Joey Veltkamp",
-          "details": "L'œuvre d'art est accrochée au mur à l'extérieur des toilettes mixtes."
+          "answer": "Trois poissons portent des valises, et huit avions ont des ailerons.",
+          "details": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)"
         },
-        "clue": "Quelle œuvre d'art a ce motif ?"
+        "clue": "Trouvez \"Flying Fish\" de Judith et Daniel Caldwell. Combien de poissons portent des valises ? Combien d'avions ont des ailerons ?"
+      },
+      "j_5OksylrGdyHGMkGtuov": {
+        "answer": {
+          "answer": "26",
+          "details": "La porte D26 se trouve en bas, en face de la porte D5."
+        },
+        "clue": "Descendez et éloignez-vous de la foule. Quel est le numéro de porte D le plus élevé que vous voyez ?"
+      },
+      "lG45_3f0vGDYZ2mrtvW8I": {
+        "answer": {
+          "details": "Le chien se trouve chez Hachi-Ko."
+        },
+        "clue": "Prenez une photo du chien en néon."
+      },
+      "lrP_0Qdwfnzk7tncPnV6i": {
+        "answer": {
+          "answer": "14",
+          "details": "Il y a 13 balles dans la section nord de la sculpture, et une balle dans la section sud."
+        },
+        "clue": "Trouvez \"On: Matter, monkeys and the king\" de Trimpin. Combien de balles y a-t-il dans la sculpture ?"
+      },
+      "mAIMoWWNidmjgQxd6TLuF": {
+        "clue": "Prenez une photo d'une fleur d'hibiscus."
+      },
+      "pp9Jt-TAHQdDjfJ1dKi4A": {
+        "clue": "Prenez une photo d'un chiot SEA.",
+        "hint": "Les [chiots SEA](https://www.portseattle.org/page/sea-pups) sont généralement à l'aéroport de 10h00 à 12h00 au terminal central."
+      },
+      "qJBja7yQHti0hT091c51T": {
+        "clue": "Trouvez OSCARsort et demandez-lui de vous aider à trier quelque chose dans le bon bac."
+      },
+      "sxSHjJU9P5XO-mBgwmIrZ": {
+        "clue": "Prenez une photo d'une pochette d'album avec la lettre S dessus."
+      },
+      "twyHItTys8lObHJWX2v4B": {
+        "alternateText": "Un motif de carrelage décoratif avec des dessins géométriques",
+        "answer": {
+          "answer": "Au restaurant Lil' Woody's."
+        },
+        "clue": "Où pouvez-vous trouver ce motif de carrelage ?"
+      },
+      "xIjspemlVBDUzP01oFjkL": {
+        "clue": "Prenez une photo d'un distributeur automatique vendant autre chose que de la nourriture et des boissons."
+      },
+      "xJD7jXeLbn893ZMnRPFYD": {
+        "clue": "Trouvez le plus grand gobelet à boisson en vente et prenez une photo à côté."
+      },
+      "yfFpGPQ6Ua_RY1xLU6e4y": {
+        "answer": {
+          "answer": "4",
+          "details": "Les garnitures sont :\n\n- Boba\n- Boba éclatant\n- Gelée\n- Coulis"
+        },
+        "clue": "Trouvez le magasin de boba. Combien de garnitures différentes pouvez-vous choisir ?"
+      },
+      "z5FTGL-v6UfvKcF71Z714": {
+        "clue": "Prenez une photo d'un défibrillateur automatisé."
+      },
+      "zb4RUPwSfnbQBgDeKz-O8": {
+        "answer": {
+          "answer": "À SEA Pop Culture, Pike and Pine, et chalo&co"
+        },
+        "clue": "Où pouvez-vous acheter un animal en peluche ?"
       }
     },
     "description": "Chasse au trésor à l'aéroport SEA",
