@@ -1,4 +1,8 @@
 {
+  "cSpell.ignoreRegExpList": [
+    "/[A-Za-z0-9_-]{21}/"
+  ],
+  "cSpell.language": "en,fr,de-DE,es-ES",
   "cSpell.words": [
     "Aeromexico",
     "Airporter",
@@ -9,8 +13,11 @@
     "Asiana",
     "badcasserole",
     "Bellair",
+    "Blackleaf",
     "Brewtop",
     "Brookstone",
+    "Butterfield",
+    "Butterfields",
     "Caffé",
     "callsign",
     "Chalo",
@@ -27,6 +34,7 @@
     "Huntleigh",
     "Icelandair",
     "Jabra",
+    "Jett",
     "Kawaii",
     "kinde",
     "Kitsap",
@@ -53,14 +61,17 @@
     "Starlux",
     "Swarovski",
     "Theo",
+    "Trimpin",
     "Truluck",
     "Tumi",
     "Turo",
     "typegen",
     "unrs",
+    "Veltkamp",
     "Volaris",
     "VYNE",
     "Whidbey",
+    "WNBA",
     "workerd",
     "Wunderground"
   ],
@@ -78,5 +89,6 @@
     "messages",
     "src/i18n"
   ],
+  "nanoid-generator.length": 21,
   "npm.packageManager": "pnpm"
 }
