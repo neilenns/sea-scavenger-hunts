@@ -1,4 +1,7 @@
 {
+  "cSpell.ignoreRegExpList": [
+    "/\\b[A-Za-z0-9_-]{21}\\b/"
+  ],
   "cSpell.language": "en,fr,de-DE,es-ES",
   "cSpell.words": [
     "Aeromexico",
@@ -28,6 +31,7 @@
     "Huntleigh",
     "Icelandair",
     "Jabra",
+    "Jett",
     "Kawaii",
     "kinde",
     "Kitsap",
@@ -62,6 +66,7 @@
     "Volaris",
     "VYNE",
     "Whidbey",
+    "WNBA",
     "workerd",
     "Wunderground"
   ],
@@ -79,5 +84,6 @@
     "messages",
     "src/i18n"
   ],
+  "nanoid-generator.length": 21,
   "npm.packageManager": "pnpm"
 }
