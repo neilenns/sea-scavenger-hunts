@@ -1,5 +1,6 @@
 "use client";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { ImageUrlProvider } from "@/contexts/image-url-context";
 import { postSecurityClues } from "@/data/post-security-clues";
 import { getAnchorId } from "@/lib/anchors";
 import { AirportArea, airportAreaNames, Clue } from "@/types/clue";
@@ -40,55 +41,57 @@ export default function Page() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <SidebarProvider>
-        <PostSecuritySidebar />
-        <SidebarInset className="flex flex-col">
-          <Header />
-          <div className="flex-1 p-4">
-            <div className="grid gap-6 max-w-2xl mx-auto">
-              <p>{t("introduction1")}</p>
-              <p>{t("introduction2")}</p>
-              <p>{t("introduction3")}</p>
-              {airportAreaNames.map(({ area, key }) => {
-                const areaClues = grouped[area];
+      <ImageUrlProvider>
+        <SidebarProvider>
+          <PostSecuritySidebar />
+          <SidebarInset className="flex flex-col">
+            <Header />
+            <div className="flex-1 p-4">
+              <div className="grid gap-6 max-w-2xl mx-auto">
+                <p>{t("introduction1")}</p>
+                <p>{t("introduction2")}</p>
+                <p>{t("introduction3")}</p>
+                {airportAreaNames.map(({ area, key }) => {
+                  const areaClues = grouped[area];
 
-                if (!areaClues || areaClues.length === 0) return;
+                  if (!areaClues || areaClues.length === 0) return;
 
-                const anchorId = getAnchorId(key);
+                  const anchorId = getAnchorId(key);
 
-                return (
-                  <div
-                    key={area}
-                    role="region"
-                    aria-labelledby={anchorId}
-                    className="space-y-2"
-                  >
-                    <a
-                      href={`#${anchorId}`}
-                      className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  return (
+                    <div
+                      key={area}
+                      role="region"
+                      aria-labelledby={anchorId}
+                      className="space-y-2"
                     >
-                      <h2
-                        id={anchorId}
-                        tabIndex={-1}
-                        className="flex items-center gap-2 text-[var(--primary)]"
+                      <a
+                        href={`#${anchorId}`}
+                        className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                       >
-                        {t(`areas.${key}`)}
-                      </h2>
-                    </a>
-                    {areaClues.map((clue) => (
-                      <ClueItem
-                        key={clue.id}
-                        clue={clue}
-                        namespace={NAMESPACE}
-                      />
-                    ))}
-                  </div>
-                );
-              })}
+                        <h2
+                          id={anchorId}
+                          tabIndex={-1}
+                          className="flex items-center gap-2 text-[var(--primary)]"
+                        >
+                          {t(`areas.${key}`)}
+                        </h2>
+                      </a>
+                      {areaClues.map((clue) => (
+                        <ClueItem
+                          key={clue.id}
+                          clue={clue}
+                          namespace={NAMESPACE}
+                        />
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </SidebarInset>
-      </SidebarProvider>
+          </SidebarInset>
+        </SidebarProvider>
+      </ImageUrlProvider>
     </main>
   );
 }

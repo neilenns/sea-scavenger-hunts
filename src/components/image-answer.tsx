@@ -1,5 +1,6 @@
 "use client";
 
+import { useImageUrl } from "@/contexts/image-url-context";
 import { usePersistentAnswer } from "@/hooks/use-persistent-answer";
 import { Responsive } from "@/lib/media";
 import { isImageAnswer } from "@/types/answer";
@@ -7,7 +8,7 @@ import { Clue } from "@/types/clue";
 import { CameraIcon, FileIcon, TrashIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useMemo, useRef } from "react";
+import { useMemo, useRef } from "react";
 import { Button } from "./ui/button";
 
 export interface ImageAnswerProperties {
@@ -16,6 +17,7 @@ export interface ImageAnswerProperties {
 
 export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const { id } = clue;
+  const { getObjectUrl, getFileKey } = useImageUrl();
 
   if (!isImageAnswer(clue.answer)) {
     throw new Error("ImageAnswer component expects an image answer");
@@ -27,20 +29,22 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
   const galleryInputReference = useRef<HTMLInputElement>(null);
   const t = useTranslations("components");
 
-  // Create object URLs when files change
+  // Create object URLs using the shared context
   const objectUrls = useMemo(
-    () => files.map((f) => URL.createObjectURL(f)),
-    [files],
+    () => files.map((file) => getObjectUrl(file)),
+    [files, getObjectUrl],
   );
 
-  // Cleanup when files change or component unmounts
-  useEffect(() => {
-    return () => {
-      for (const url of objectUrls) {
-        URL.revokeObjectURL(url);
-      }
-    };
-  }, [objectUrls]);
+  // Helper function to check if a file already exists
+  const isFileAlreadyAdded = (
+    newFile: File,
+    existingFiles: File[],
+  ): boolean => {
+    const newKey = getFileKey(newFile);
+    return existingFiles.some(
+      (existingFile) => getFileKey(existingFile) === newKey,
+    );
+  };
 
   function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) return;
@@ -48,12 +52,26 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     // eslint-disable-next-line unicorn/prefer-spread
     const newFiles = Array.from(event.target.files); // type is File[]
 
-    setFiles((previous) => [...previous, ...newFiles]);
-    event.target.value = ""; // allow re-adding same file
+    // Filter out files that are already added to prevent duplicates
+    const uniqueNewFiles = newFiles.filter(
+      (newFile) => !isFileAlreadyAdded(newFile, files),
+    );
+
+    if (uniqueNewFiles.length > 0) {
+      setFiles((previous) => [...previous, ...uniqueNewFiles]);
+    }
+
+    // Clear the input value to allow re-selecting the same file if needed
+    event.target.value = "";
   }
 
   function handleRemove(imageIndex: number) {
-    setFiles((previous) => previous.filter((_, index) => index !== imageIndex));
+    const fileToRemove = files[imageIndex];
+    if (fileToRemove) {
+      setFiles((previous) =>
+        previous.filter((_, index) => index !== imageIndex),
+      );
+    }
   }
 
   if (!loaded) return;
@@ -112,13 +130,14 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
         <div className="mt-3 flex flex-wrap gap-2">
           {files.map((file, index) => (
             <div
-              key={`${file.name}-${file.lastModified}`}
+              key={getFileKey(file)}
               className="relative aspect-[4/3] w-24 overflow-hidden rounded"
             >
               <Image
                 src={objectUrls[index]}
                 alt=""
                 fill
+                sizes="96px"
                 className="object-cover"
               />
               <Button
