@@ -6,7 +6,10 @@
       "extensions": [
         "Jacano.vscode-pnpm",
         "lokalise.i18n-ally",
-        "vk-l.nanoid-generator"
+        "vk-l.nanoid-generator",
+        "streetsidesoftware.code-spell-checker-french",
+        "streetsidesoftware.code-spell-checker-german",
+        "streetsidesoftware.code-spell-checker-spanish"
       ]
     }
   },
