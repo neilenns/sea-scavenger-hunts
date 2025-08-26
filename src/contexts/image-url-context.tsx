@@ -6,6 +6,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useMemo,
   useRef,
 } from "react";
 
@@ -30,7 +31,6 @@ interface ImageUrlProviderProperties {
  */
 export function ImageUrlProvider({ children }: ImageUrlProviderProperties) {
   // Use a Map to store file -> object URL mappings
-  // The key is generated from file name and lastModified to identify unique files
   const urlCacheReference = useRef(
     new Map<string, { file: File; url: string }>(),
   );
@@ -79,12 +79,15 @@ export function ImageUrlProvider({ children }: ImageUrlProviderProperties) {
     cache.clear();
   }, []);
 
-  const contextValue: ImageUrlContextValue = {
-    getObjectUrl,
-    revokeObjectUrl,
-    revokeAllUrls,
-    getFileKey,
-  };
+  const contextValue: ImageUrlContextValue = useMemo(
+    () => ({
+      getObjectUrl,
+      revokeObjectUrl,
+      revokeAllUrls,
+      getFileKey,
+    }),
+    [getObjectUrl, revokeObjectUrl, revokeAllUrls, getFileKey],
+  );
 
   // Cleanup all URLs when the provider unmounts to prevent memory leaks
   useEffect(() => {

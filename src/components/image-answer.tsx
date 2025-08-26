@@ -40,11 +40,9 @@ export function ImageAnswer({ clue }: ImageAnswerProperties) {
     newFile: File,
     existingFiles: File[],
   ): boolean => {
+    const newKey = getFileKey(newFile);
     return existingFiles.some(
-      (existingFile) =>
-        existingFile.name === newFile.name &&
-        existingFile.lastModified === newFile.lastModified &&
-        existingFile.size === newFile.size,
+      (existingFile) => getFileKey(existingFile) === newKey,
     );
   };
 
