@@ -1,6 +1,6 @@
 {
   "cSpell.ignoreRegExpList": [
-    "/\\b[A-Za-z0-9_-]{21}\\b/"
+    "/[A-Za-z0-9_-]{21}/"
   ],
   "cSpell.language": "en,fr,de-DE,es-ES",
   "cSpell.words": [
@@ -13,8 +13,11 @@
     "Asiana",
     "badcasserole",
     "Bellair",
+    "Blackleaf",
     "Brewtop",
     "Brookstone",
+    "Butterfield",
+    "Butterfields",
     "Caffé",
     "callsign",
     "Chalo",
@@ -58,11 +61,13 @@
     "Starlux",
     "Swarovski",
     "Theo",
+    "Trimpin",
     "Truluck",
     "Tumi",
     "Turo",
     "typegen",
     "unrs",
+    "Veltkamp",
     "Volaris",
     "VYNE",
     "Whidbey",
