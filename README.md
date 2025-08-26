@@ -1,10 +1,14 @@
 # SEA Scavenger Hunts
 
-SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger hunts at Seattle-Tacoma International Airport (SEA). The app features internationalization (English/French), deploys to Cloudflare via OpenNext, and provides a mobile-first experience for airport visitors.
+SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger
+hunts at Seattle-Tacoma International Airport (SEA). The app features
+internationalization (English/French), deploys to Cloudflare via OpenNext,
+and provides a mobile-first experience for airport visitors.
 
 ## 🌟 Features
 
-- **Interactive Scavenger Hunts**: Explore different areas of SEA Airport with engaging clues and challenges
+- **Interactive Scavenger Hunts**: Explore different areas of SEA Airport with
+  engaging clues and challenges
 - **Multi-language Support**: Available in English, French, Spanish, and German
 - **Mobile-First Design**: Optimized for phones and tablets for use while traveling
 - **Offline Capable**: Answers are saved locally in the browser
@@ -13,7 +17,8 @@ SEA Scavenger Hunts is a Next.js 15 web application for interactive scavenger hu
 
 ## 🚀 Getting Started with VS Code Dev Containers
 
-The recommended way to develop this project is using VS Code with Dev Containers, which provides a consistent development environment.
+The recommended way to develop this project is using VS Code with Dev
+Containers, which provides a consistent development environment.
 
 ### Prerequisites
 
@@ -35,21 +40,24 @@ The recommended way to develop this project is using VS Code with Dev Containers
    - Install all dependencies
    - Configure development tools
 
-3. **Start developing**: Once the container is ready, you can start the development server:
+3. **Start developing**: Once the container is ready, you can start the
+   development server:
 
    ```bash
    pnpm run dev
    ```
 
-4. **Debug your code**: Press `F5` to start debugging with breakpoints and step-through debugging.
+4. **Debug your code**: Press `F5` to start debugging with breakpoints and
+   step-through debugging.
 
-The app will be available at http://localhost:3000 and will automatically redirect to `/en` for the English version.
+The app will be available at <http://localhost:3000> and will automatically
+redirect to `/en` for the English version.
 
 ## 🔧 Local Development (Without Dev Containers)
 
 If you prefer to develop without Docker, you can set up the project locally:
 
-### Prerequisites
+### Requirements
 
 - Node.js 22.18.0 (check `.nvmrc` file)
 - pnpm 10.14.0+
@@ -66,6 +74,7 @@ If you prefer to develop without Docker, you can set up the project locally:
    ```
 
 2. **Enable corepack and install dependencies**:
+
    ```bash
    corepack enable
    pnpm install --frozen-lockfile
@@ -77,22 +86,27 @@ If you prefer to develop without Docker, you can set up the project locally:
 - **Build for production**: `pnpm run build` (takes ~22 seconds)
 - **Start production server**: `pnpm run start`
 - **Lint code**: `pnpm run lint` (required before commits)
-- **Format code**: `pnpm run format` (formats all files), `pnpm run format:check` (checks formatting)
+- **Lint markdown**: `pnpm run lint:md` (validates markdown files)
+- **Format code**: `pnpm run format` (formats all files),
+  `pnpm run format:check` (checks formatting)
 - **Build for Cloudflare**: `pnpm run ci` (builds for deployment)
 
 ### Build Notes
 
-⚠️ **Production builds may fail** in restricted network environments due to Google Fonts access. This is expected and the build will work in CI/CD environments.
+⚠️ **Production builds may fail** in restricted network environments due to
+Google Fonts access. This is expected and the build will work in CI/CD
+environments.
 
 ## 📝 Adding New Clues
 
-Adding new scavenger hunt clues involves three main steps: creating the clue data, adding translations, and optionally adding clue images.
+Adding new scavenger hunt clues involves three main steps: creating the clue
+data, adding translations, and optionally adding clue images.
 
 ### Step 1: Add Clue Data
 
 1. **Open the clues file**:
 
-   ```
+   ```text
    src/data/post-security-clues.ts
    ```
 
@@ -108,7 +122,8 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
    },
    ```
 
-3. **Sort Order**: The `sortOrder` property determines the order clues appear within each airport area:
+3. **Sort Order**: The `sortOrder` property determines the order clues appear
+   within each airport area:
    - Use increments of 10 (10, 20, 30, etc.) for easy insertion of new clues
    - To insert between existing clues, use values like 15 (between 10 and 20)
    - Lower numbers appear first in the list
@@ -129,6 +144,7 @@ Adding new scavenger hunt clues involves three main steps: creating the clue dat
    - Add to other language files as needed
 
 2. **Add your clue translations** under the `post-security.clues` section:
+
    ```json
    "post-security": {
      "clues": {
@@ -151,7 +167,7 @@ If using `ClueType.IMAGE`, add your image:
 
 1. **Add the image file**:
 
-   ```
+   ```text
    public/clue-images/{clue-id}.webp
    ```
 
@@ -171,7 +187,7 @@ If using `ClueType.IMAGE`, add your image:
 
 2. **Navigate to the scavenger hunt**:
 
-   ```
+   ```text
    http://localhost:3000/en/post-security
    ```
 
@@ -183,7 +199,8 @@ If using `ClueType.IMAGE`, add your image:
 
 ### Clue ID Generation
 
-Generate unique clue IDs using the nanoid VSCode plugin (automatically installed in the dev container):
+Generate unique clue IDs using the nanoid VSCode plugin (automatically
+installed in the dev container):
 
 1. **Place your cursor** where you need a new ID
 2. **Use Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`)
@@ -191,7 +208,7 @@ Generate unique clue IDs using the nanoid VSCode plugin (automatically installed
 
 ## 🏗️ Project Structure
 
-```
+```text
 sea-scavenger-hunts/
 ├── src/
 │   ├── app/[locale]/              # Next.js App Router with i18n
@@ -259,14 +276,16 @@ Currently, the project relies on manual testing. Before committing changes:
    ```bash
    pnpm run lint    # Required - CI will fail without this
    pnpm run format  # Required - ensures consistent code formatting
+   pnpm run lint:md # Required - validates markdown files
    ```
 
 2. **Test functionality manually**:
    - Start dev server: `pnpm run dev`
-   - Navigate to http://localhost:3000/en/post-security
+   - Navigate to <http://localhost:3000/en/post-security>
    - Verify clue navigation, answers, language switching, and themes
 
 3. **Test builds**:
+
    ```bash
    pnpm run build  # Test standard Next.js build
    pnpm run ci     # Test Cloudflare deployment build
@@ -274,10 +293,12 @@ Currently, the project relies on manual testing. Before committing changes:
 
 ## 🤝 Contributing
 
-1. **Clone the repository** and set up the dev container (see setup instructions above)
+1. **Clone the repository** and set up the dev container (see setup
+   instructions above)
 2. **Create a feature branch** from `main`
 3. **Make your changes** following the minimal-change principle
-4. **Run linting and formatting**: `pnpm run lint && pnpm run format` (CI will fail without this)
+4. **Run linting and formatting**: `pnpm run lint && pnpm run format &&
+pnpm run lint:md` (CI will fail without this)
 5. **Test manually** using the development server
 6. **Create a pull request** with a clear description of changes
 
