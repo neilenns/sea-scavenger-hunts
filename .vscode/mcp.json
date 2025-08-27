@@ -5,6 +5,9 @@
       "type": "sse",
       "url": "https://bindings.mcp.cloudflare.com/sse"
     },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
     "shadcn": {
       "type": "http",
       "url": "https://www.shadcn.io/api/mcp"
