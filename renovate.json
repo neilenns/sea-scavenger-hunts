@@ -33,6 +33,13 @@
     {
       "automerge": true,
       "automergeType": "branch",
+      "groupName": "lucide-react updates",
+      "groupSlug": "lucide-react",
+      "matchPackageNames": ["lucide-react"]
+    },
+    {
+      "automerge": true,
+      "automergeType": "branch",
       "excludePackageNames": ["pnpm"],
       "groupName": "all minor and patch dependencies",
       "groupSlug": "all-minor-patch",
