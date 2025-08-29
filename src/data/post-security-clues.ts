@@ -403,4 +403,18 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     type: ClueType.IMAGE,
     sortOrder: 120,
   },
+  {
+    id: "vd9aIeqC1rSTYJfnHRdOJ", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_C,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+    sortOrder: 50,
+  },
+  {
+    id: "BbUdyCfsmlvpnycTt9miR", // cspell: disable-line
+    airportArea: AirportArea.CONCOURSE_D,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.TEXT,
+    sortOrder: 130,
+  },
 ];
