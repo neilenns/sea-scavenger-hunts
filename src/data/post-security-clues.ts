@@ -44,13 +44,7 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     type: ClueType.TEXT,
     sortOrder: 40,
   },
-  {
-    id: "NaCpOCFl3iVaPlJ-WURgH", // cspell: disable-line
-    airportArea: AirportArea.CONCOURSE_A,
-    answer: { type: AnswerType.TEXT },
-    type: ClueType.TEXT,
-    sortOrder: 50,
-  },
+
   {
     id: "Px7UsaumXcW401AH8Q9qo", // cspell: disable-line
     airportArea: AirportArea.CONCOURSE_D,
