@@ -229,7 +229,8 @@
       },
       "bgkOlbXT8DN3B9hXCjJ-p": {
         "answer": {
-          "answer": "10 (zu überprüfen)"
+          "answer": "18",
+          "details": "Das sind die Gates: A12A, B7A, S1A, S9A, C2A bis C2H, C10A bis C10F"
         },
         "clue": "Prüfen Sie die Gate-Schilder im Flughafen. Wie viele Gates haben einen Buchstaben nach der Nummer?"
       },
