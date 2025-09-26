@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sea-resource-guides",
+  "name": "sea-scavenger-hunts",
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-06-18",
   "compatibility_flags": [
