@@ -40,11 +40,11 @@
     {
       "automerge": true,
       "automergeType": "branch",
-      "excludePackageNames": ["pnpm"],
       "groupName": "all minor and patch dependencies",
       "groupSlug": "all-minor-patch",
       "matchCurrentVersion": "!/^0/",
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackageNames": ["!pnpm"]
     }
   ]
 }
