@@ -49,6 +49,7 @@
     {
       "automerge": true,
       "groupName": "next patch updates",
+      "groupSlug": "next-patch",
       "matchPackageNames": ["next"],
       "matchUpdateTypes": ["patch"],
       "schedule": ["daily"]
