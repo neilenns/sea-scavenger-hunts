@@ -43,8 +43,15 @@
       "groupName": "all minor and patch dependencies",
       "groupSlug": "all-minor-patch",
       "matchCurrentVersion": "!/^0/",
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["!pnpm"]
+      "matchPackageNames": ["!pnpm"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "automerge": true,
+      "groupName": "next patch updates",
+      "matchPackageNames": ["next"],
+      "matchUpdateTypes": ["patch"],
+      "schedule": ["daily"]
     }
   ]
 }
