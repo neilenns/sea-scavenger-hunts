@@ -3,6 +3,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   typedRoutes: true,
+  images: {
+    localPatterns: [
+      {
+        pathname: "/clue-images/**",
+      },
+    ],
+  },
 };
 const withNextIntl = createNextIntlPlugin();
 
