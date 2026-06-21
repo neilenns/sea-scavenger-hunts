@@ -1,11 +1,10 @@
-"use client";
+// Migrated to https://themes.wrksz.dev/docs to deal with errors using next themes in nextjs 16
+import { ThemeProvider } from "@wrksz/themes/next";
 
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-import * as React from "react";
-
-export function ThemeProvider({
+export default function RootLayout({
   children,
-  ...properties
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...properties}>{children}</NextThemesProvider>;
+}: {
+  children: React.ReactNode;
+}) {
+  return <ThemeProvider>{children}</ThemeProvider>;
 }
