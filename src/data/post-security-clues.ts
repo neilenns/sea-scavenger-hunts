@@ -187,13 +187,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     sortOrder: 10,
   },
   {
-    id: "7fp8LTXwpYKOjPevcL36u", // cspell: disable-line
-    airportArea: AirportArea.CENTRAL_TERMINAL,
-    answer: { type: AnswerType.TEXT },
-    type: ClueType.TEXT,
-    sortOrder: 30,
-  },
-  {
     id: "bGUEjTb-qWFkoRKOKl27F", // cspell: disable-line
     airportArea: AirportArea.SOUTH_SATELLITE,
     answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
