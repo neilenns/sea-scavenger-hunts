@@ -151,7 +151,7 @@ src/
 ├── types/                   # TypeScript type definitions
 │   ├── clue.ts             # Core clue and airport area types
 │   └── cloudflare-env.d.ts # Auto-generated Cloudflare types
-└── middleware.ts            # Next.js middleware for i18n routing
+└── proxy.ts            # Next.js proxy for i18n routing
 messages/                    # Translation files (see src/i18n/routing.ts for supported locales)
 ├── en.json                 # English translations
 ├── fr.json                 # French translations

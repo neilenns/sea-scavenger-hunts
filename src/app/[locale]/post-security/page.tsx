@@ -26,7 +26,8 @@ export default function Page() {
   };
 
   for (const clue of postSecurityClues) {
-    if (!grouped[clue.airportArea]) grouped[clue.airportArea] = [];
+    if (!Object.hasOwn(grouped, clue.airportArea))
+      grouped[clue.airportArea] = [];
     grouped[clue.airportArea].push(clue);
   }
 
@@ -72,7 +73,7 @@ export default function Page() {
                         <h2
                           id={anchorId}
                           tabIndex={-1}
-                          className="flex items-center gap-2 text-[var(--primary)]"
+                          className="flex items-center gap-2 text-primary"
                         >
                           {t(`areas.${key}`)}
                         </h2>

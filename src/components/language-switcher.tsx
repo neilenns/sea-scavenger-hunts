@@ -49,7 +49,7 @@ export default function LanguageSwitcher({
   const switchLocale = useCallback(
     (nextLocale: string) => {
       // Guard against unexpected values
-      if (!languages.some((l) => l.code === nextLocale)) {
+      if (languages.every((l) => l.code !== nextLocale)) {
         console.warn("Unknown locale:", nextLocale);
         return;
       }
@@ -60,6 +60,7 @@ export default function LanguageSwitcher({
           // are used in combination with a given `pathname`. Since the two will
           // always match for the current route, we can skip runtime checks.
           { pathname, params: parameters },
+          // eslint-disable-next-line unicorn/no-unsafe-string-replacement -- this is router.replace, not String#replace
           { locale: nextLocale as Locale },
         );
       });
