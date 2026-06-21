@@ -1,11 +1,22 @@
-"use client";
+// Migrated to https://themes.wrksz.dev/docs to deal with
+//
+import { ThemeProvider } from "@wrksz/themes/next";
+import { Geist, Geist_Mono } from "next/font/google";
 
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-import * as React from "react";
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-export function ThemeProvider({
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export default function RootLayout({
   children,
-  ...properties
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...properties}>{children}</NextThemesProvider>;
+}: {
+  children: React.ReactNode;
+}) {
+  return <ThemeProvider>{children}</ThemeProvider>;
 }
