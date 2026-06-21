@@ -27,6 +27,11 @@ const eslintConfig = [
   },
   eslintConfigPrettier,
   eslintPluginUnicorn.configs.recommended,
+  {
+    rules: {
+      "unicorn/logical-assignment-operators": "off",
+    },
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     ...pluginReact.configs.flat.recommended,

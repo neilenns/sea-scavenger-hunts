@@ -60,7 +60,7 @@ export function PostSecuritySidebar({
       setOpen(false);
 
       // Use full page reload to ensure all components remount and reload state
-      globalThis.location.reload();
+      location.reload();
     } catch (error) {
       console.error("Failed to clear answers", error);
     } finally {

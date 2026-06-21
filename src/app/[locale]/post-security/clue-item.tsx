@@ -26,17 +26,15 @@ export function ClueItem({ clue, namespace }: ClueItemProperties) {
   return (
     <Card className="p-0" aria-labelledby={`clue-${clue.id}`} role="group">
       <CardContent className="px-4 py-3 space-y-2">
-        <h3 id={`clue-${clue.id}`} className="pb-2 font-bold !text-base">
+        <h3 id={`clue-${clue.id}`} className="pb-2 font-bold text-base!">
           {t(`${baseKey}.clue`)}
         </h3>
         {isImageClue(clue) && (
-          <div className="relative mx-auto max-w-[400px] aspect-video">
+          <div className="relative mx-auto max-w-100 aspect-video">
             <Image
-              alt={
-                t.has(`${baseKey}.alternateText`)
-                  ? t(`${baseKey}.alternateText`)
-                  : t(`${baseKey}.clue`)
-              }
+              alt={t(
+                `${baseKey}.${t.has(`${baseKey}.alternateText`) ? "alternateText" : "clue"}`,
+              )}
               src={`/clue-images/${clue.id}.webp`}
               fill
               sizes="(max-width: 420px) 100vw, 400px"
