@@ -44,7 +44,8 @@
       "groupSlug": "all-minor-patch",
       "matchCurrentVersion": "!/^0/",
       "matchPackageNames": ["!pnpm"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "minimumReleaseAge": "1 day"
     },
     {
       "automerge": true,
