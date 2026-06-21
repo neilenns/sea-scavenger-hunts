@@ -75,9 +75,6 @@ importers:
         specifier: ^4.0.17
         version: 4.4.3
     devDependencies:
-      '@eslint/eslintrc':
-        specifier: ^3.3.1
-        version: 3.3.5
       '@next/eslint-plugin-next':
         specifier: 16.2.9
         version: 16.2.9

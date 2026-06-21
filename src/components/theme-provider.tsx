@@ -1,17 +1,5 @@
-// Migrated to https://themes.wrksz.dev/docs to deal with
-//
+// Migrated to https://themes.wrksz.dev/docs to deal with errors using next themes in nextjs 16
 import { ThemeProvider } from "@wrksz/themes/next";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function RootLayout({
   children,

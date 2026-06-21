@@ -12,7 +12,7 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "next lint",
+    "lint": "eslint .",
     "lint:md": "markdownlint *.md",
     "start": "next start"
   },
@@ -41,7 +41,6 @@
     "zod": "^4.0.17"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@next/eslint-plugin-next": "16.2.9",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/node": "^24.0.0",
