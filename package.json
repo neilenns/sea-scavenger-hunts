@@ -64,14 +64,5 @@
     "typescript": "^5.9.2",
     "wrangler": "^4.31.0"
   },
-  "packageManager": "pnpm@10.34.4",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "@tailwindcss/oxide",
-      "sharp",
-      "unrs-resolver",
-      "workerd"
-    ]
-  }
+  "packageManager": "pnpm@11.8.0"
 }
