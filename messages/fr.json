@@ -51,13 +51,6 @@
         },
         "clue": "Josie travaille au magasin Fireworks. Quelle est l'équipe sportive préférée de Josie ?"
       },
-      "-E3M850P-0sKowzme28Yc": {
-        "answer": {
-          "answer": "Susan",
-          "details": "Les bénévoles de l'aéroport sont des ambassadeurs pour l'aéroport et la région de Puget Sound. [En savoir plus](https://www.portseattle.org/Volunteer) sur le programme."
-        },
-        "clue": "Écoutez les annonces de l'aéroport. Quel est le nom du bénévole ?"
-      },
       "-VX30S9-vraooXMetaM4H": {
         "clue": "Prenez un selfie avec Jett la loutre de mer de SEA."
       },
@@ -233,10 +226,10 @@
       },
       "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
-          "details": "Les bureaux d'information sont :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face du Starbucks près de la porte A3\n- Contrôle 1 : à l'intérieur du Contrôle 1 sur le palier entre le Concourse A et la gare A\n- Train A : dans la gare A\n- Info Central : dans le terminal central près de Dilettante Chocolates & Mocha Cafe\n- Info D : En face des toilettes mixtes dans le Concourse D\n- Train D : dans la gare D\n- Info N : dans le Satellite Nord"
+          "details": "Les bureaux d'information sont situés :\n\n- Info A : en face de Swarovski dans le Concourse A\n- Info A3 : en face de Starbucks près de la porte A3\n- Point de contrôle 1 : à l'intérieur du point de contrôle 1, sur le palier entre le Concourse A et la station de train A\n- Train A : dans la station de train A\n- Info centrale : dans le terminal central, près de Dilettante Chocolates & Mocha Cafe\n- Info C : à l'entrée du Concourse C\n- Point de contrôle 6 : à l'intérieur du point de contrôle 6, avant les escalators menant à la station de train D\n- Train D : dans la station de train D\n- Info N : dans le North Satellite"
         },
         "clue": "Prenez une photo à chaque bureau d'information.",
-        "hint": "Il y a huit bureaux d'information après la sécurité."
+        "hint": "Il y a neuf bureaux d'information après la sécurité."
       },
       "e6AnH10fHCD2QHx6V14vA": {
         "clue": "Écoutez la Tour SEA et prenez une photo d'un avion que vous avez entendu autorisé au décollage.",
@@ -286,9 +279,6 @@
       },
       "qJBja7yQHti0hT091c51T": {
         "clue": "Trouvez OSCARsort et demandez-lui de vous aider à trier quelque chose dans le bon bac."
-      },
-      "sxSHjJU9P5XO-mBgwmIrZ": {
-        "clue": "Prenez une photo d'une pochette d'album avec la lettre S dessus."
       },
       "twyHItTys8lObHJWX2v4B": {
         "alternateText": "Un motif de carrelage décoratif avec des dessins géométriques",

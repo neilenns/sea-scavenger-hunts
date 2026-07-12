@@ -109,13 +109,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     sortOrder: 30,
   },
   {
-    id: "sxSHjJU9P5XO-mBgwmIrZ", // cspell: disable-line
-    airportArea: AirportArea.CENTRAL_TERMINAL,
-    answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
-    type: ClueType.TEXT,
-    sortOrder: 10,
-  },
-  {
     id: "cfjLLFrc-2woBd8Uq694I", // cspell: disable-line
     airportArea: AirportArea.CENTRAL_TERMINAL,
     answer: { type: AnswerType.IMAGE, expectedImageCount: 1 },
@@ -270,15 +263,6 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     type: ClueType.TEXT,
     sortOrder: 50,
   },
-
-  {
-    id: "-E3M850P-0sKowzme28Yc", // cspell: disable-line
-    airportArea: AirportArea.AIRPORT_WIDE,
-    answer: { type: AnswerType.TEXT },
-    type: ClueType.TEXT,
-    sortOrder: 100,
-  },
-
   {
     id: "7gd4XfTbP4F6JmxyFTTeZ", // cspell: disable-line
     airportArea: AirportArea.AIRPORT_WIDE,

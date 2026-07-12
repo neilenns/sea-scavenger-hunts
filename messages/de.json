@@ -51,13 +51,6 @@
         },
         "clue": "Josie arbeitet im Fireworks-Laden. Was ist Josies liebste Sportmannschaft?"
       },
-      "-E3M850P-0sKowzme28Yc": {
-        "answer": {
-          "answer": "Susan",
-          "details": "Flughafen-Freiwillige sind Botschafter sowohl für den Flughafen als auch für die Puget Sound Region. [Erfahren Sie mehr](https://www.portseattle.org/Volunteer) über das Programm."
-        },
-        "clue": "Hören Sie den Flughafendurchsagen zu. Wie heißt die Freiwillige?"
-      },
       "-VX30S9-vraooXMetaM4H": {
         "clue": "Machen Sie ein Selfie mit Jett dem SEA-Otter."
       },
@@ -233,10 +226,10 @@
       },
       "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
-          "details": "Die Informationsschalter sind:\n\n- A Info: gegenüber von Swarovski in Flugsteig A\n- A3 Info: gegenüber von Starbucks bei Gate A3\n- Checkpoint 1: innerhalb von Checkpoint 1 auf dem Zwischenpodest zwischen Flugsteig A und der A-Bahnstation\n- A-Bahn: in der A-Bahnstation\n- Zentrale Info: im zentralen Terminal in der Nähe von Dilettante Chocolates & Mocha Cafe\n- D Info: Gegenüber von den geschlechtsneutralen Toiletten in Flugsteig D\n- D-Bahn: in der D-Bahnstation\n- N Info: im Nord-Satelliten"
+          "details": "Die Informationsschalter befinden sich:\n\n- A Info: gegenüber von Swarovski in Concourse A\n- A3 Info: gegenüber von Starbucks am Gate A3\n- Kontrollpunkt 1: innerhalb von Kontrollpunkt 1 auf dem Treppenabsatz zwischen Concourse A und der A-Zugstation\n- A-Zug: in der A-Zugstation\n- Zentrale Info: im Hauptterminal in der Nähe von Dilettante Chocolates & Mocha Cafe\n- C Info: am Eingang zu Concourse C\n- Kontrollpunkt 6: innerhalb von Kontrollpunkt 6 vor den Rolltreppen zur D-Zugstation\n- D-Zug: in der D-Zugstation\n- N Info: im North Satellite"
         },
         "clue": "Machen Sie ein Foto an jedem Informationsschalter.",
-        "hint": "Es gibt acht Informationsschalter nach der Sicherheitskontrolle."
+        "hint": "Es gibt neun Informationsschalter nach der Sicherheitskontrolle."
       },
       "e6AnH10fHCD2QHx6V14vA": {
         "clue": "Hören Sie SEA Tower zu und machen Sie ein Foto von einem Flugzeug, das Sie zum Start freigegeben hören.",
@@ -286,9 +279,6 @@
       },
       "qJBja7yQHti0hT091c51T": {
         "clue": "Finden Sie OSCARsort und bitten Sie es, Ihnen beim Sortieren von etwas in den richtigen Behälter zu helfen."
-      },
-      "sxSHjJU9P5XO-mBgwmIrZ": {
-        "clue": "Machen Sie ein Foto von einem Albumcover mit dem Buchstaben S darauf."
       },
       "twyHItTys8lObHJWX2v4B": {
         "alternateText": "Ein dekoratives Fliesenmuster mit geometrischen Designs",

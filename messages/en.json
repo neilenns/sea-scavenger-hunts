@@ -51,13 +51,6 @@
         },
         "clue": "Josie works at the Fireworks store. What is Josie's favorite sports team?"
       },
-      "-E3M850P-0sKowzme28Yc": {
-        "answer": {
-          "answer": "Susan",
-          "details": "Airport volunteers are ambassadors for both the airport and the Puget Sound region. [Learn more](https://www.portseattle.org/Volunteer) about the program."
-        },
-        "clue": "Listen to the airport announcements. What is the name of the volunteer?"
-      },
       "-VX30S9-vraooXMetaM4H": {
         "clue": "Take a selfie with Jett the SEA otter."
       },
@@ -235,10 +228,10 @@
       },
       "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
-          "details": "The information desks are:\n\n- A info: across from Swarovski in Concourse A\n- A3 info: across from Starbucks by Gate A3\n- Checkpoint 1: inside Checkpoint 1 on the landing between Concourse A and the A train station\n- A train: in the A train station\n- Central info: in the central terminal near Dilettante Chocolates & Mocha Cafe\n- D info: Across from the all-gender restrooms in Concourse D\n- D train: in the D train station\n- N info: in the North Satellite"
+          "details": "The information desks are:\n\n- A info: across from Swarovski in Concourse A\n- A3 info: across from Starbucks by Gate A3\n- Checkpoint 1: inside Checkpoint 1 on the landing between Concourse A and the A train station\n- A train: in the A train station\n- Central info: in the central terminal near Dilettante Chocolates & Mocha Cafe\n- C info: At the entrance to the C concourse\n- Checkpoint 6: inside Checkpoint 6 before the escalators to the D train station\n- D train: in the D train station\n- N info: in the North Satellite"
         },
         "clue": "Take a photo at every information desk.",
-        "hint": "There are eight information desks post-security."
+        "hint": "There are nine information desks post-security."
       },
       "e6AnH10fHCD2QHx6V14vA": {
         "clue": "Listen to SEA Tower and take a photo of a plane you heard cleared for takeoff.",
@@ -288,9 +281,6 @@
       },
       "qJBja7yQHti0hT091c51T": {
         "clue": "Find OSCARsort and ask it to help you sort something into the correct bin."
-      },
-      "sxSHjJU9P5XO-mBgwmIrZ": {
-        "clue": "Take a photo of an album cover with the letter S on it."
       },
       "twyHItTys8lObHJWX2v4B": {
         "alternateText": "A decorative tile pattern with geometric designs",
