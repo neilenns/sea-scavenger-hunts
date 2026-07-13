@@ -347,4 +347,11 @@ export const postSecurityClues: ReadonlyArray<Clue> = [
     type: ClueType.TEXT,
     sortOrder: 130,
   },
+  {
+    id: "ivDtz7p_0M2yEAiK-ywFW",
+    airportArea: AirportArea.NORTH_SATELLITE,
+    answer: { type: AnswerType.TEXT },
+    type: ClueType.IMAGE,
+    sortOrder: 100,
+  },
 ];

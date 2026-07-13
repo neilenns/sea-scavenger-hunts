@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/messages.schema.json",
   "components": {
     "clue-item": {
       "answer": "Antwort"
@@ -262,6 +263,14 @@
           "details": "Die Fische befinden sich:\n\n- Gegenüber von Gate B3\n- Am unteren Ende der Rampe in der Nähe des Stillbereichs\n- Am oberen Ende der Rolltreppen der B-Bahnstation.\n\nDie Flugzeuge befinden sich:\n\n- In der Nähe von Gate B3 (drei Flugzeuge)\n- In der Nähe von Gate B6\n- In der Nähe von Gate B7/B7A\n- In der Nähe der Sitzplätze am unteren Ende der Rampe (drei Flugzeuge)"
         },
         "clue": "Finden Sie \"Flying Fish\" von Judith und Daniel Caldwell. Wie viele Fische tragen Koffer? Wie viele Flugzeuge haben Flossen?"
+      },
+      "ivDtz7p_0M2yEAiK-ywFW": {
+        "alternateText": "Ein Stück Teppich in einem Bilderrahmen.",
+        "answer": {
+          "answer": "Schlaflos in Seattle",
+          "details": "Tom Hanks und Meg Ryan trafen sich im Film am Gate N7. Als der Nordsatellit umgebaut wurde, wurde ein Stück des Teppichs aufbewahrt und gerahmt, um den Film zu verewigen. Das Stück hängt im Bahnhof des Nordsatelliten in der Nähe der Toiletten."
+        },
+        "clue": "Finde das Stück Teppich von Gate N7. In welchem Film kam es vor?"
       },
       "lrP_0Qdwfnzk7tncPnV6i": {
         "answer": {

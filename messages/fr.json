@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/messages.schema.json",
   "components": {
     "clue-item": {
       "answer": "Réponse"
@@ -262,6 +263,14 @@
           "details": "Les poissons se trouvent :\n\n- En face de la porte B3\n- Au bas de la rampe près du coin allaitement\n- En haut des escalators de la gare du train B.\n\nLes avions se trouvent :\n\n- Près de la porte B3 (trois avions)\n- Près de la porte B6\n- Près de la porte B7/B7A\n- Près des sièges au bas de la rampe (trois avions)"
         },
         "clue": "Trouvez \"Flying Fish\" de Judith et Daniel Caldwell. Combien de poissons portent des valises ? Combien d'avions ont des ailerons ?"
+      },
+      "ivDtz7p_0M2yEAiK-ywFW": {
+        "alternateText": "Un carré de moquette dans un cadre photo.",
+        "answer": {
+          "answer": "Nuits blanches à Seattle",
+          "details": "Tom Hanks et Meg Ryan se sont croisés à la porte N7 dans le film. Lors de la rénovation du satellite Nord, un carré de la moquette a été conservé et encadré pour immortaliser le film. Le cadre est accroché dans la gare du satellite Nord, près des toilettes."
+        },
+        "clue": "Trouvez le carré de moquette de la porte N7. Dans quel film apparaissait-il ?"
       },
       "lrP_0Qdwfnzk7tncPnV6i": {
         "answer": {

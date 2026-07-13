@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/messages.schema.json",
   "components": {
     "clue-item": {
       "answer": "Respuesta"
@@ -262,6 +263,14 @@
           "details": "Los peces se encuentran:\n\n- Frente a la puerta B3\n- En la parte inferior de la rampa cerca del área de lactancia\n- En la parte superior de las escaleras mecánicas de la estación de tren B.\n\nLos aviones se encuentran:\n\n- Cerca de la puerta B3 (tres aviones)\n- Cerca de la puerta B6\n- Cerca de la puerta B7/B7A\n- Cerca de los asientos en la parte inferior de la rampa (tres aviones)"
         },
         "clue": "Encuentre \"Flying Fish\" por Judith y Daniel Caldwell. ¿Cuántos peces llevan maletas? ¿Cuántos aviones tienen aletas?"
+      },
+      "ivDtz7p_0M2yEAiK-ywFW": {
+        "alternateText": "Un trozo de alfombra en un marco de fotos.",
+        "answer": {
+          "answer": "Sintonía de amor",
+          "details": "Tom Hanks y Meg Ryan se cruzaron en la puerta N7 en la película. Cuando se remodeló el satélite norte, se conservó y enmarcó un trozo de la alfombra para inmortalizar la película. El cuadro está colgado en la estación de tren del satélite norte, cerca de los baños."
+        },
+        "clue": "Encuentra el trozo de alfombra de la puerta N7. ¿En qué película apareció?"
       },
       "lrP_0Qdwfnzk7tncPnV6i": {
         "answer": {
