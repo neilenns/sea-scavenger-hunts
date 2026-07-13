@@ -1,5 +1,4 @@
 {
-  "$schema": "../schemas/messages.schema.json",
   "components": {
     "clue-item": {
       "answer": "Answer"

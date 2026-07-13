@@ -1,4 +1,9 @@
 {
+  "cSpell.ignorePaths": [
+    "messages/de.json",
+    "messages/es.json",
+    "messages/fr.json"
+  ],
   "cSpell.ignoreRegExpList": [
     "/[A-Za-z0-9_-]{21}/"
   ],
@@ -25,6 +30,7 @@
     "cloudsandclunkers",
     "Comptoir",
     "Cordell",
+    "Elinar",
     "Embarque",
     "Filson",
     "Finnair",
@@ -35,6 +41,7 @@
     "Huntleigh",
     "Icelandair",
     "Jabra",
+    "Jamex",
     "Jett",
     "Kawaii",
     "kinde",
