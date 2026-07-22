@@ -227,10 +227,10 @@
       },
       "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
-          "details": "Die Informationsschalter befinden sich:\n\n- A Info: gegenüber von Swarovski in Concourse A\n- A3 Info: gegenüber von Starbucks am Gate A3\n- Kontrollpunkt 1: innerhalb von Kontrollpunkt 1 auf dem Treppenabsatz zwischen Concourse A und der A-Zugstation\n- A-Zug: in der A-Zugstation\n- Zentrale Info: im Hauptterminal in der Nähe von Dilettante Chocolates & Mocha Cafe\n- C Info: am Eingang zu Concourse C\n- Kontrollpunkt 6: innerhalb von Kontrollpunkt 6 vor den Rolltreppen zur D-Zugstation\n- D-Zug: in der D-Zugstation\n- N Info: im North Satellite"
+          "details": "Die Informationsschalter sind:\n\n- A-Information: gegenüber von Swarovski in Concourse A\n- A3-Podium: gegenüber von Starbucks bei Gate A3\n- Checkpoint-1-Podium: innerhalb von Checkpoint 1 auf dem Absatz zwischen Concourse A und dem A-Bahnhof\n- A-Bahnhof-Kiosk: im A-Bahnhof, in einer der Säulen\n- Kiosk im Zentralterminal: im Zentralterminal in der Nähe von Dilettante Chocolates & Mocha Cafe, in einer der Säulen\n- C-Concourse-Podium: am Eingang zum C-Concourse\n- Checkpoint-6-Podium: innerhalb von Checkpoint 6 vor den Rolltreppen zum D-Bahnhof\n- D-Bahnhof-Kiosk: im D-Bahnhof, in einer der Säulen\n- N-Bahnhof-Information: im Bahnhof des North Satellite\n- S-Concourse-Podium"
         },
-        "clue": "Machen Sie ein Foto an jedem Informationsschalter.",
-        "hint": "Es gibt neun Informationsschalter nach der Sicherheitskontrolle."
+        "clue": "Mache an jedem Informationsschalter, Podium und Kiosk ein Foto.",
+        "hint": "Es gibt zehn Informationsschalter nach der Sicherheitskontrolle."
       },
       "e6AnH10fHCD2QHx6V14vA": {
         "clue": "Hören Sie SEA Tower zu und machen Sie ein Foto von einem Flugzeug, das Sie zum Start freigegeben hören.",
