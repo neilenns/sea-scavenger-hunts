@@ -227,10 +227,10 @@
       },
       "cvw4layL7wI_AVYjDy2vv": {
         "answer": {
-          "details": "Los mostradores de información se encuentran:\n\n- Info A: frente a Swarovski en el Concourse A\n- Info A3: frente a Starbucks junto a la puerta A3\n- Punto de control 1: dentro del punto de control 1, en el rellano entre el Concourse A y la estación del tren A\n- Tren A: en la estación del tren A\n- Info central: en la terminal central, cerca de Dilettante Chocolates & Mocha Cafe\n- Info C: en la entrada del Concourse C\n- Punto de control 6: dentro del punto de control 6, antes de las escaleras mecánicas hacia la estación del tren D\n- Tren D: en la estación del tren D\n- Info N: en el North Satellite"
+          "details": "Los mostradores de información son:\n\n- Información A: frente a Swarovski en el Concourse A\n- Podio A3: frente a Starbucks junto a la Puerta A3\n- Podio del Checkpoint 1: dentro del Checkpoint 1, en el rellano entre el Concourse A y la estación de tren A\n- Quiosco de la estación de tren A: en la estación de tren A, dentro de una de las columnas\n- Quiosco de la terminal central: en la terminal central, cerca de Dilettante Chocolates & Mocha Cafe, dentro de una de las columnas\n- Podio del concourse C: en la entrada del concourse C\n- Podio del Checkpoint 6: dentro del Checkpoint 6, antes de las escaleras mecánicas hacia la estación de tren D\n- Quiosco de la estación de tren D: en la estación de tren D, dentro de una de las columnas\n- Información de la estación de tren N: en la estación de tren del North Satellite\n- Podio del concourse S"
         },
-        "clue": "Tome una foto en cada mostrador de información.",
-        "hint": "Hay nueve mostradores de información después de seguridad."
+        "clue": "Toma una foto en cada mostrador de información, podio y quiosco.",
+        "hint": "Hay diez mostradores de información después del control de seguridad."
       },
       "e6AnH10fHCD2QHx6V14vA": {
         "clue": "Escuche la Torre SEA y tome una foto de un avión que escuchó autorizado para el despegue.",
